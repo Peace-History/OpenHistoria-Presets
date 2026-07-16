@@ -1,0 +1,10 @@
+{
+  "name": "preset-exporter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export": "bun run src/cli.ts",
+    "check-hub-conformance": "bun run scripts/check-hub-conformance.ts",
+    "export-and-check": "bun run scripts/export-and-check.ts"
+  }
+}

@@ -1,0 +1,8631 @@
+{
+  "polities": [
+    {
+      "id": "Northern Rhodesia",
+      "name": "Northern Rhodesia",
+      "color": "#D33115"
+    },
+    {
+      "id": "Bulgaria",
+      "name": "Bulgaria",
+      "color": "#F87171"
+    },
+    {
+      "id": "British Somaliland",
+      "name": "British Somaliland",
+      "color": "#D33115"
+    },
+    {
+      "id": "Syria",
+      "name": "Syria",
+      "color": "#C2410C"
+    },
+    {
+      "id": "Emirate of Cyrenaica",
+      "name": "Emirate of Cyrenaica",
+      "color": "#333333"
+    },
+    {
+      "id": "Sikkim",
+      "name": "Sikkim",
+      "color": "#EF4444"
+    },
+    {
+      "id": "British Military Administration of Libya",
+      "name": "British Military Administration of Libya",
+      "color": "#E27300"
+    },
+    {
+      "id": "Colombia",
+      "name": "Colombia",
+      "color": "#EAB308"
+    },
+    {
+      "id": "Incorporated Territory of Hawaii",
+      "name": "Incorporated Territory of Hawaii",
+      "color": "#005194"
+    },
+    {
+      "id": "Mysore Princely State",
+      "name": "Mysore Princely State",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Incorporated Territory of Alaska",
+      "name": "Incorporated Territory of Alaska",
+      "color": "#005194"
+    },
+    {
+      "id": "French West Africa",
+      "name": "French West Africa",
+      "color": "#0062B1"
+    },
+    {
+      "id": "Switzerland",
+      "name": "Switzerland",
+      "color": "#FF0800"
+    },
+    {
+      "id": "Sultanate of Muscat and Oman",
+      "name": "Sultanate of Muscat and Oman",
+      "color": "#653294"
+    },
+    {
+      "id": "Iran",
+      "name": "Iran",
+      "color": "#B0BC00",
+      "leaderName": "Persia"
+    },
+    {
+      "id": "People's Republic of South Azerbaijan",
+      "name": "People's Republic of South Azerbaijan",
+      "color": "#B91C1C"
+    },
+    {
+      "id": "Portuguese Angola",
+      "name": "Portuguese Angola",
+      "color": "#0A5E61"
+    },
+    {
+      "id": "Belgium",
+      "name": "Belgium",
+      "color": "#FB9E00"
+    },
+    {
+      "id": "People's Republic of Mongolia",
+      "name": "People's Republic of Mongolia",
+      "color": "#D33115"
+    },
+    {
+      "id": "Panama",
+      "name": "Panama",
+      "color": "#4F46E5"
+    },
+    {
+      "id": "British Gold Coast",
+      "name": "British Gold Coast",
+      "color": "#D33115",
+      "leaderName": "Ghana"
+    },
+    {
+      "id": "Lebanon",
+      "name": "Lebanon",
+      "color": "#F44E3B"
+    },
+    {
+      "id": "Argentina",
+      "name": "Argentina",
+      "color": "#14B8A6"
+    },
+    {
+      "id": "Kingdom of Sanwi",
+      "name": "Kingdom of Sanwi",
+      "color": "#0062B1"
+    },
+    {
+      "id": "British Nigeria",
+      "name": "British Nigeria",
+      "color": "#D33115"
+    },
+    {
+      "id": "Norway",
+      "name": "Norway",
+      "color": "#5F0A07"
+    },
+    {
+      "id": "Southern Rhodesia",
+      "name": "Southern Rhodesia",
+      "color": "#D33115"
+    },
+    {
+      "id": "Paraguay",
+      "name": "Paraguay",
+      "color": "#C2410C"
+    },
+    {
+      "id": "Hyderabad Princely State",
+      "name": "Hyderabad Princely State",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Belgian Congo",
+      "name": "Belgian Congo",
+      "color": "#FB9E00"
+    },
+    {
+      "id": "Tangier International Zone",
+      "name": "Tangier International Zone",
+      "color": "#D1D5DB"
+    },
+    {
+      "id": "American Administered Austria",
+      "name": "American Administered Austria",
+      "color": "#CCCCCC"
+    },
+    {
+      "id": "Poland",
+      "name": "Poland",
+      "color": "#F87171"
+    },
+    {
+      "id": "British Cameroons",
+      "name": "British Cameroons",
+      "color": "#D33115"
+    },
+    {
+      "id": "Khairpur Princely State",
+      "name": "Khairpur Princely State",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Belgian Rwanda-Urundi",
+      "name": "Belgian Rwanda-Urundi",
+      "color": "#FB9E00"
+    },
+    {
+      "id": "Chile",
+      "name": "Chile",
+      "color": "#4338CA"
+    },
+    {
+      "id": "Monaco",
+      "name": "Monaco",
+      "color": "#8D6E63"
+    },
+    {
+      "id": "United Nations",
+      "name": "United Nations",
+      "color": "#3B82F6",
+      "leaderName": "UN"
+    },
+    {
+      "id": "Sweden",
+      "name": "Sweden",
+      "color": "#8ADEFF"
+    },
+    {
+      "id": "Saar Protectorate",
+      "name": "Saar Protectorate",
+      "color": "#2563EB"
+    },
+    {
+      "id": "Luxembourg",
+      "name": "Luxembourg",
+      "color": "#68CCCA"
+    },
+    {
+      "id": "Guatemala",
+      "name": "Guatemala",
+      "color": "#4F46E5"
+    },
+    {
+      "id": "People's Republic of Greece",
+      "name": "People's Republic of Greece",
+      "color": "#F87171"
+    },
+    {
+      "id": "British Administered Germany",
+      "name": "British Administered Germany",
+      "color": "#D33115"
+    },
+    {
+      "id": "Union of Burma",
+      "name": "Union of Burma",
+      "color": "#F44E3B",
+      "leaderName": "Burma"
+    },
+    {
+      "id": "Regency of Tunis",
+      "name": "Regency of Tunis",
+      "color": "#0062B1"
+    },
+    {
+      "id": "French Equatorial Guinea",
+      "name": "French Equatorial Guinea",
+      "color": "#0062B1"
+    },
+    {
+      "id": "India",
+      "name": "India",
+      "color": "#FE9200",
+      "leaderName": "Bharat"
+    },
+    {
+      "id": "Peru",
+      "name": "Peru",
+      "color": "#DC2626"
+    },
+    {
+      "id": "Bhutan",
+      "name": "Bhutan",
+      "color": "#E0B000"
+    },
+    {
+      "id": "British Togoland",
+      "name": "British Togoland",
+      "color": "#D33115"
+    },
+    {
+      "id": "Egypt",
+      "name": "Egypt",
+      "color": "#E29222"
+    },
+    {
+      "id": "Iraq",
+      "name": "Iraq",
+      "color": "#833701"
+    },
+    {
+      "id": "El Salvador",
+      "name": "El Salvador",
+      "color": "#F3F4F6"
+    },
+    {
+      "id": "Venezuela",
+      "name": "Venezuela",
+      "color": "#6D28D9"
+    },
+    {
+      "id": "Honduras",
+      "name": "Honduras",
+      "color": "#2563EB"
+    },
+    {
+      "id": "French Madagascar",
+      "name": "French Madagascar",
+      "color": "#0062B1"
+    },
+    {
+      "id": "American Administration of Japan",
+      "name": "American Administration of Japan",
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "Soviet Occupied Manchuria",
+      "name": "Soviet Occupied Manchuria",
+      "color": "#B91C1C"
+    },
+    {
+      "id": "People's Republic of Mahabad",
+      "name": "People's Republic of Mahabad",
+      "color": "#B91C1C"
+    },
+    {
+      "id": "Portuguese Timor",
+      "name": "Portuguese Timor",
+      "color": "#194D33"
+    },
+    {
+      "id": "Democratic People's Republic of Korea",
+      "name": "Democratic People's Republic of Korea",
+      "color": "#D33115",
+      "leaderName": "North Korea"
+    },
+    {
+      "id": "Rajputana Princely Confederacy",
+      "name": "Rajputana Princely Confederacy",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Costa Rica",
+      "name": "Costa Rica",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "Tibet",
+      "name": "Tibet",
+      "color": "#FCC400"
+    },
+    {
+      "id": "Denmark",
+      "name": "Denmark",
+      "color": "#6A330B"
+    },
+    {
+      "id": "Bechuanaland Protectorate",
+      "name": "Bechuanaland Protectorate",
+      "color": "#D33115"
+    },
+    {
+      "id": "Hashemite Kingdom of Transjordan",
+      "name": "Hashemite Kingdom of Transjordan",
+      "color": "#D33115"
+    },
+    {
+      "id": "Pakistan",
+      "name": "Pakistan",
+      "color": "#194D33"
+    },
+    {
+      "id": "American Administered Germany",
+      "name": "American Administered Germany",
+      "color": "#009CE0"
+    },
+    {
+      "id": "Soviet Administered Germany",
+      "name": "Soviet Administered Germany",
+      "color": "#830B0B"
+    },
+    {
+      "id": "South Africa",
+      "name": "South Africa",
+      "color": "#7B64FF"
+    },
+    {
+      "id": "Cochinchina",
+      "name": "Cochinchina",
+      "color": "#6366F1"
+    },
+    {
+      "id": "Mandatory Palestine",
+      "name": "Mandatory Palestine",
+      "color": "#D33115"
+    },
+    {
+      "id": "Manipur Princely State",
+      "name": "Manipur Princely State",
+      "color": "#EF4444"
+    },
+    {
+      "id": "French Morocco",
+      "name": "French Morocco",
+      "color": "#0062B1"
+    },
+    {
+      "id": "Union of Soviet Socialist Republics",
+      "name": "Union of Soviet Socialist Republics",
+      "color": "#800000",
+      "leaderName": "Russia"
+    },
+    {
+      "id": "East Germany",
+      "name": "East Germany",
+      "color": "#374151"
+    },
+    {
+      "id": "Yugoslavia",
+      "name": "Yugoslavia",
+      "color": "#653294"
+    },
+    {
+      "id": "Anglo-Egyptian Sudan",
+      "name": "Anglo-Egyptian Sudan",
+      "color": "#D33115"
+    },
+    {
+      "id": "Portuguese Mozambique",
+      "name": "Portuguese Mozambique",
+      "color": "#0A5E61"
+    },
+    {
+      "id": "Nepal",
+      "name": "Nepal",
+      "color": "#AEA1FF"
+    },
+    {
+      "id": "Austria",
+      "name": "Austria",
+      "color": "#D33115"
+    },
+    {
+      "id": "North Vietnam",
+      "name": "North Vietnam",
+      "color": "#DC2626"
+    },
+    {
+      "id": "Canada",
+      "name": "Canada",
+      "color": "#D33115"
+    },
+    {
+      "id": "United States",
+      "name": "United States",
+      "color": "#005194",
+      "leaderName": "United States of America"
+    },
+    {
+      "id": "New Zealand",
+      "name": "New Zealand",
+      "color": "#653294"
+    },
+    {
+      "id": "Mexico",
+      "name": "Mexico",
+      "color": "#68BC00"
+    },
+    {
+      "id": "French Laos",
+      "name": "French Laos",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "French Administered Germany",
+      "name": "French Administered Germany",
+      "color": "#0062B1"
+    },
+    {
+      "id": "Liberia",
+      "name": "Liberia",
+      "color": "#73D8FF"
+    },
+    {
+      "id": "South Korea",
+      "name": "South Korea",
+      "color": "#0062B1"
+    },
+    {
+      "id": "Netherlands",
+      "name": "Netherlands",
+      "color": "#C45100",
+      "leaderName": "The Dutch"
+    },
+    {
+      "id": "Junagadh Princely State",
+      "name": "Junagadh Princely State",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Dominican Republic",
+      "name": "Dominican Republic",
+      "color": "#4C1D95"
+    },
+    {
+      "id": "Francoist Spain",
+      "name": "Francoist Spain",
+      "color": "#C45100"
+    },
+    {
+      "id": "North Yemen",
+      "name": "North Yemen",
+      "color": "#C45100"
+    },
+    {
+      "id": "Israel",
+      "name": "Israel",
+      "color": "#009CE0"
+    },
+    {
+      "id": "East Turkestan",
+      "name": "East Turkestan",
+      "color": "#194D33"
+    },
+    {
+      "id": "Romania",
+      "name": "Romania",
+      "color": "#F87171"
+    },
+    {
+      "id": "Ireland",
+      "name": "Ireland",
+      "color": "#036814"
+    },
+    {
+      "id": "Portugal",
+      "name": "Portugal",
+      "color": "#0A5E61"
+    },
+    {
+      "id": "British East Africa",
+      "name": "British East Africa",
+      "color": "#D33115"
+    },
+    {
+      "id": "Vatican",
+      "name": "Vatican",
+      "color": "#ffcb0f"
+    },
+    {
+      "id": "British Lesotho",
+      "name": "British Lesotho",
+      "color": "#D33115"
+    },
+    {
+      "id": "Tripura Princely State",
+      "name": "Tripura Princely State",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Hungary",
+      "name": "Hungary",
+      "color": "#F87171"
+    },
+    {
+      "id": "France",
+      "name": "France",
+      "color": "#0062B1",
+      "leaderName": "French Republic"
+    },
+    {
+      "id": "Bolivia",
+      "name": "Bolivia",
+      "color": "#EAB308"
+    },
+    {
+      "id": "French Cambodia",
+      "name": "French Cambodia",
+      "color": "#2563EB"
+    },
+    {
+      "id": "Military Territory of Fezzan-Ghadames",
+      "name": "Military Territory of Fezzan-Ghadames",
+      "color": "#808080"
+    },
+    {
+      "id": "Brunei Protectorate",
+      "name": "Brunei Protectorate",
+      "color": "#E27300"
+    },
+    {
+      "id": "Dutch East Indies",
+      "name": "Dutch East Indies",
+      "color": "#E27300"
+    },
+    {
+      "id": "British Sierra Leone",
+      "name": "British Sierra Leone",
+      "color": "#D33115"
+    },
+    {
+      "id": "British Military Administration in Ogaden and Haud",
+      "name": "British Military Administration in Ogaden and Haud",
+      "color": "#D33115"
+    },
+    {
+      "id": "Brazil",
+      "name": "Brazil",
+      "color": "#166534"
+    },
+    {
+      "id": "French Lebanon",
+      "name": "French Lebanon",
+      "color": "#0062B1"
+    },
+    {
+      "id": "Iceland",
+      "name": "Iceland",
+      "color": "#FFFFFF"
+    },
+    {
+      "id": "British Burma",
+      "name": "British Burma",
+      "color": "#C45100"
+    },
+    {
+      "id": "Turkey",
+      "name": "Turkey",
+      "color": "#EF4444",
+      "leaderName": "Turkiye"
+    },
+    {
+      "id": "Italy",
+      "name": "Italy",
+      "color": "#68BC00",
+      "leaderName": "Italian Empire"
+    },
+    {
+      "id": "British Suez Canal Administration",
+      "name": "British Suez Canal Administration",
+      "color": "#D33115"
+    },
+    {
+      "id": "Trieste Territory",
+      "name": "Trieste Territory",
+      "color": "#B3B3B3"
+    },
+    {
+      "id": "British Raj",
+      "name": "British Raj",
+      "color": "#EF4444"
+    },
+    {
+      "id": "French Indochina",
+      "name": "French Indochina",
+      "color": "#0062B1"
+    },
+    {
+      "id": "Kingdom of Greece",
+      "name": "Kingdom of Greece",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "British Military Administation in Aegean",
+      "name": "British Military Administation in Aegean",
+      "color": "#D33115"
+    },
+    {
+      "id": "Australia",
+      "name": "Australia",
+      "color": "#003180"
+    },
+    {
+      "id": "Uruguay",
+      "name": "Uruguay",
+      "color": "#2563EB"
+    },
+    {
+      "id": "French Annam",
+      "name": "French Annam",
+      "color": "#EAB308"
+    },
+    {
+      "id": "Andorra",
+      "name": "Andorra",
+      "color": "#653294"
+    },
+    {
+      "id": "San Marino",
+      "name": "San Marino",
+      "color": "#0062B1"
+    },
+    {
+      "id": "Haiti",
+      "name": "Haiti",
+      "color": "#EA580C"
+    },
+    {
+      "id": "British Trucial States",
+      "name": "British Trucial States",
+      "color": "#D33115"
+    },
+    {
+      "id": "Ecuador",
+      "name": "Ecuador",
+      "color": "#EA580C"
+    },
+    {
+      "id": "Afghanistan",
+      "name": "Afghanistan",
+      "color": "#653294"
+    },
+    {
+      "id": "British Eswatini",
+      "name": "British Eswatini",
+      "color": "#D33115"
+    },
+    {
+      "id": "Kashmir",
+      "name": "Kashmir",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Chinese Communists",
+      "name": "Chinese Communists",
+      "color": "#D33115",
+      "leaderName": "People's Republic of China"
+    },
+    {
+      "id": "Albania",
+      "name": "Albania",
+      "color": "#D33115"
+    },
+    {
+      "id": "Finland",
+      "name": "Finland",
+      "color": "#F3F4F6"
+    },
+    {
+      "id": "Algerian Movement",
+      "name": "Algerian Movement",
+      "color": "#14532D"
+    },
+    {
+      "id": "Chitral Princely State",
+      "name": "Chitral Princely State",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Nyasaland",
+      "name": "Nyasaland",
+      "color": "#D33115"
+    },
+    {
+      "id": "Travancore Princely State",
+      "name": "Travancore Princely State",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Guangdong Clique",
+      "name": "Guangdong Clique",
+      "color": "#7c2718"
+    },
+    {
+      "id": "West Germany",
+      "name": "West Germany",
+      "color": "#EAB308",
+      "leaderName": "Germany"
+    },
+    {
+      "id": "British North Borneo",
+      "name": "British North Borneo",
+      "color": "#D33115"
+    },
+    {
+      "id": "Territory of the Afars and the Issas",
+      "name": "Territory of the Afars and the Issas",
+      "color": "#0062B1",
+      "leaderName": "Djibouti"
+    },
+    {
+      "id": "Indonesian Revolutionaries",
+      "name": "Indonesian Revolutionaries",
+      "color": "#D33115"
+    },
+    {
+      "id": "Saudi Arabia",
+      "name": "Saudi Arabia",
+      "color": "#194D33"
+    },
+    {
+      "id": "Liechtenstein",
+      "name": "Liechtenstein",
+      "color": "#5f1902"
+    },
+    {
+      "id": "Czechoslovakia",
+      "name": "Czechoslovakia",
+      "color": "#F87171"
+    },
+    {
+      "id": "Nicaragua",
+      "name": "Nicaragua",
+      "color": "#60A5FA"
+    },
+    {
+      "id": "United Kingdom",
+      "name": "United Kingdom",
+      "color": "#D33115",
+      "leaderName": "Great Britain"
+    },
+    {
+      "id": "Federated Malay States",
+      "name": "Federated Malay States",
+      "color": "#0062B1"
+    },
+    {
+      "id": "Siam",
+      "name": "Siam",
+      "color": "#653294"
+    },
+    {
+      "id": "Republic of China",
+      "name": "Republic of China",
+      "color": "#0062B1",
+      "leaderName": "China"
+    },
+    {
+      "id": "British South Yemen",
+      "name": "British South Yemen",
+      "color": "#D33115"
+    },
+    {
+      "id": "Ethiopia",
+      "name": "Ethiopia",
+      "color": "#7B64FF"
+    },
+    {
+      "id": "Cuba",
+      "name": "Cuba",
+      "color": "#4F46E5"
+    },
+    {
+      "id": "British Ceylon",
+      "name": "British Ceylon",
+      "color": "#D33115"
+    },
+    {
+      "id": "South West Africa",
+      "name": "South West Africa",
+      "color": "#7B64FF"
+    },
+    {
+      "id": "Baloch Princely States",
+      "name": "Baloch Princely States",
+      "color": "#EF4444"
+    },
+    {
+      "id": "Palestine",
+      "name": "Palestine",
+      "color": "#194D33"
+    },
+    {
+      "id": "Bahawalpur Princely State",
+      "name": "Bahawalpur Princely State",
+      "color": "#EF4444"
+    },
+    {
+      "id": "US Administration of Philippines",
+      "name": "US Administration of Philippines",
+      "color": "#009CE0"
+    },
+    {
+      "id": "South Vietnam",
+      "name": "South Vietnam",
+      "color": "#FACC15"
+    }
+  ],
+  "cities": [
+    {
+      "id": "h4bezdpx",
+      "name": "Sydney",
+      "location": [
+        151.15306396539506,
+        -33.81977654579978
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "1aitmswp",
+      "name": "Cheboksary",
+      "location": [
+        47.16987160960686,
+        56.13795105042104
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "7t37x3xi",
+      "name": "Atyrau",
+      "location": [
+        51.882826140471686,
+        47.033060393105984
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "r24y3l9k",
+      "name": "Leiria",
+      "location": [
+        -8.827630473672302,
+        39.81692075206942
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8vqy9r1d",
+      "name": "Frunze",
+      "location": [
+        74.56488282623721,
+        42.83726553714337
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "e57vru62",
+      "name": "Stockholm",
+      "location": [
+        18.00435545921124,
+        59.315983324781996
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "byressov",
+      "name": "Guarda",
+      "location": [
+        -7.286648898452372,
+        40.65528374887461
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "bo7g1010",
+      "name": "Kuching",
+      "location": [
+        110.38277576056265,
+        1.6349472020235254
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "iy5a90pk",
+      "name": "Parma",
+      "location": [
+        10.321415245508007,
+        44.79848073659383
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kadedoln",
+      "name": "Belfast",
+      "location": [
+        -5.946614616003609,
+        54.600361341769684
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "qoq87lp6",
+      "name": "Tambov",
+      "location": [
+        41.4756822044393,
+        52.72222184310672
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "27djyppk",
+      "name": "Stalingrad",
+      "location": [
+        44.46309563915203,
+        48.70479230953609
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "geaxsjxr",
+      "name": "Juba",
+      "location": [
+        31.57582481618146,
+        5.047198486650416
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ycphu6zv",
+      "name": "Kherson",
+      "location": [
+        32.59917432918434,
+        46.61715610793442
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "um7mmvz7",
+      "name": "Timișoara",
+      "location": [
+        21.234954627060418,
+        45.80378755291875
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "omdh482g",
+      "name": "Bari",
+      "location": [
+        16.86365107677354,
+        41.126072610260394
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ohl4otc6",
+      "name": "Portsmouth",
+      "location": [
+        -1.0590865614953162,
+        50.82724302742878
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nscfzxzt",
+      "name": "Eindhoven",
+      "location": [
+        5.448827080410347,
+        51.46642161567706
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "rianw5ul",
+      "name": "Vladivostok",
+      "location": [
+        132.07924232423892,
+        43.28375892515973
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "vj98x2hr",
+      "name": "Hull",
+      "location": [
+        -0.39189172674641354,
+        53.777611166725364
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zr6afgdk",
+      "name": "Mecca",
+      "location": [
+        39.83253525570381,
+        21.47297251942709
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2cz9wzd8",
+      "name": "Cayenne",
+      "location": [
+        -52.32990823975882,
+        4.883381873609707
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "mhr30t2e",
+      "name": "Xuzhou",
+      "location": [
+        117.21352156548697,
+        34.28316988030576
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "apknwvrs",
+      "name": "Breslau",
+      "location": [
+        16.98775598257291,
+        51.07611095636304
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "xoi4ha0t",
+      "name": "Barcelona",
+      "location": [
+        2.1514439962771053,
+        41.42550242016782
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "tfenxlm9",
+      "name": "Kyoto",
+      "location": [
+        135.82391089865,
+        35.021413791394394
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "ydha2tnr",
+      "name": "Panama City",
+      "location": [
+        -79.50971606233249,
+        9.053901364636943
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "hpykor73",
+      "name": "Leningrad",
+      "location": [
+        30.382799185251724,
+        59.95012092337302
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "o049knc4",
+      "name": "Sandakan",
+      "location": [
+        117.93909291972592,
+        5.859764352979255
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "97qtx90d",
+      "name": "Las Palmas",
+      "location": [
+        0.004874177178183764,
+        40.03463693647038
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "l54vbsa5",
+      "name": "Washington D.C.",
+      "location": [
+        -77.03208025646981,
+        38.89935785087357
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "94sobwlp",
+      "name": "West Berlin",
+      "location": [
+        13.446877335730603,
+        52.49402129452534
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "t90mb1gx",
+      "name": "Freetown",
+      "location": [
+        -13.204731583360653,
+        8.43974714630609
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "n43zmlwe",
+      "name": "Tiksi",
+      "location": [
+        128.79279131803915,
+        71.64686194436086
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "6le7jxpz",
+      "name": "Chania",
+      "location": [
+        24.01407429544605,
+        35.50281272381932
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "day4fgvq",
+      "name": "Palma",
+      "location": [
+        2.676648159868063,
+        39.584823775694105
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kjz2vlfn",
+      "name": "Kiev",
+      "location": [
+        30.509045437422575,
+        50.464855441028135
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "niu83n6j",
+      "name": "Chelyabinsk",
+      "location": [
+        61.65569361256831,
+        55.03930021210823
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "9ffo2euc",
+      "name": "Linköping",
+      "location": [
+        15.631865618379523,
+        58.40659688778513
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wkgkuaq6",
+      "name": "Leshan",
+      "location": [
+        103.76098924920856,
+        29.553459784953745
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "xiasfd2e",
+      "name": "Lille",
+      "location": [
+        3.060374474992985,
+        50.63678138090239
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "97fhi6fm",
+      "name": "Kargopol",
+      "location": [
+        38.93467498144358,
+        61.513588432113096
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "musi95kq",
+      "name": "Malmö",
+      "location": [
+        13.019525307907719,
+        55.56838312282764
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kg09vy0t",
+      "name": "Adana",
+      "location": [
+        35.27327309352026,
+        37.02259317377596
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kbbsb6hp",
+      "name": "Matsuyama",
+      "location": [
+        132.75022774575308,
+        33.83790803413548
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "l2sc3rsd",
+      "name": "Kuybyshev",
+      "location": [
+        50.21325111919249,
+        53.27060121388487
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "5odhimau",
+      "name": "Córdoba",
+      "location": [
+        -64.25363715420536,
+        -31.354194298648565
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gt4r7xfm",
+      "name": "Misrata",
+      "location": [
+        15.08511387697072,
+        32.34698394804363
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "fpewsyjh",
+      "name": "Miami",
+      "location": [
+        -80.21539250583614,
+        25.78242854997559
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "u7b7qhfh",
+      "name": "Santander",
+      "location": [
+        -3.823186642433178,
+        43.460713426244524
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5rn33f5v",
+      "name": "Durrës",
+      "location": [
+        19.450923893206696,
+        41.34259687660162
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "0aw2kgg5",
+      "name": "Kunming",
+      "location": [
+        102.85336658858492,
+        24.875533758660396
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "jutym2j8",
+      "name": "Antwerp",
+      "location": [
+        4.3550584300895965,
+        51.265522591358774
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "g4x3l7nx",
+      "name": "Hanoi",
+      "location": [
+        105.76805108895266,
+        21.0182566797086
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "cm2jj0w5",
+      "name": "Oslo",
+      "location": [
+        10.724032292910387,
+        59.95133098929284
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "6a8nla4z",
+      "name": "Managua",
+      "location": [
+        -86.23082015247431,
+        12.11168018909278
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "0529zupt",
+      "name": "Gaborone",
+      "location": [
+        25.87968009690744,
+        -24.58532863440837
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "fftfcqh8",
+      "name": "Tampere",
+      "location": [
+        23.788301645273897,
+        61.500098693038126
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5py3q3aj",
+      "name": "Norilsk",
+      "location": [
+        88.153226269707,
+        69.25469152654006
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "actin5zt",
+      "name": "Melitopol",
+      "location": [
+        35.33462042837364,
+        46.84721156583271
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8rbhwqat",
+      "name": "Kassel",
+      "location": [
+        9.485959440076519,
+        51.3050502266764
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "7sntyfjq",
+      "name": "Hanover",
+      "location": [
+        9.724500823687054,
+        52.374765894186254
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "k0asiwm2",
+      "name": "Townsville",
+      "location": [
+        146.75772422114767,
+        -19.27132255410416
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "j286i2sg",
+      "name": "Goa",
+      "location": [
+        74.06506482629028,
+        15.335934863904953
+      ],
+      "scale": 1
+    },
+    {
+      "id": "urqcr1en",
+      "name": "Wrexham",
+      "location": [
+        -2.9891839554419266,
+        53.063094762463834
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "yiojez0g",
+      "name": "Atlanta",
+      "location": [
+        -84.43597154346153,
+        33.79801388749493
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wa8pk1yx",
+      "name": "Kiel",
+      "location": [
+        10.146933893457634,
+        54.328450498249
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "huuccqpj",
+      "name": "Oldenburg",
+      "location": [
+        8.187499109987375,
+        53.3596195182528
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "94p9sec4",
+      "name": "Seville",
+      "location": [
+        -5.992339528492462,
+        37.381006081244706
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "peq6bkcl",
+      "name": "Innsbruck",
+      "location": [
+        11.362781126467459,
+        47.29082048574017
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "9ntls1q9",
+      "name": "Punakha",
+      "location": [
+        89.87695269784257,
+        27.59315430363702
+      ],
+      "ownerPolityId": "Bhutan",
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "mr329463",
+      "name": "Brașov",
+      "location": [
+        25.57760731738168,
+        45.72721690599843
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zd8ay22k",
+      "name": "Sevastopol",
+      "location": [
+        33.571801849567166,
+        44.62966949833188
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "s7r3kdri",
+      "name": "Nancy",
+      "location": [
+        6.197754232699901,
+        48.73822838871206
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kxhc3fwk",
+      "name": "Montevideo",
+      "location": [
+        -56.19977568175097,
+        -34.75039311186452
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "a8me6orw",
+      "name": "Nagoya",
+      "location": [
+        136.82946975991183,
+        35.143605072351065
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "b3olhtxl",
+      "name": "Ryazan",
+      "location": [
+        39.772036045999464,
+        54.625078206848286
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "z6efsqrg",
+      "name": "Nanjing",
+      "location": [
+        118.77922692625816,
+        31.99278505642613
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "hfdavrnp",
+      "name": "Quetta",
+      "location": [
+        67.13146970098973,
+        30.185559518368763
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "sl80zrhe",
+      "name": "Bazargic",
+      "location": [
+        28.004177572753246,
+        43.56400436933578
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "msuuici4",
+      "name": "Quezon",
+      "location": [
+        122.51293400035108,
+        10.755797658947188
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ubc2du3b",
+      "name": "Mariupol",
+      "location": [
+        37.50583594868554,
+        47.11188575032065
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "uo44lwpe",
+      "name": "Ulyanovsk",
+      "location": [
+        48.31161711464459,
+        54.26525642252875
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "hr3iyt0y",
+      "name": "Bobruisk",
+      "location": [
+        29.22786201716732,
+        53.152580992212904
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "pfuf3rmy",
+      "name": "Puerto Montt",
+      "location": [
+        -72.95128953161017,
+        -41.39529682708098
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ft4e999n",
+      "name": "Hiroshima",
+      "location": [
+        132.46330276108733,
+        34.4211854590003
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "nqu501rk",
+      "name": "Chișinău",
+      "location": [
+        28.779091430866462,
+        46.99369711408525
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "m2lk20dn",
+      "name": "Kaifeng",
+      "location": [
+        114.32021599725176,
+        34.80048710477686
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "126s8oeq",
+      "name": "Port Sudan",
+      "location": [
+        37.19992437469402,
+        19.551723298198368
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "71cvn7l3",
+      "name": "Hyderabad, Sindh",
+      "location": [
+        68.39962113962083,
+        25.46605053729992
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "z6tpfzbj",
+      "name": "Los Angeles",
+      "location": [
+        -118.33214936550915,
+        34.02343994079462
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "20s95599",
+      "name": "Luleå",
+      "location": [
+        22.122135481230725,
+        65.60153249577951
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "iulbwpwa",
+      "name": "Suva",
+      "location": [
+        178.4407850545817,
+        -18.095569785915984
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "15xqti80",
+      "name": "Saransk",
+      "location": [
+        45.16813240989737,
+        54.23285151406856
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "g0gj4p3a",
+      "name": "Schwerin",
+      "location": [
+        11.400344925799509,
+        53.63659327435454
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "99gcnrjs",
+      "name": "Pretoria",
+      "location": [
+        28.18772519324197,
+        -25.728797335872542
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "png5kcgo",
+      "name": "Kuwait City",
+      "location": [
+        47.98503915672716,
+        29.346143646395888
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "9ytsj10b",
+      "name": "Salisbury",
+      "location": [
+        30.933187389243106,
+        -17.774507395566516
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "lhp6su5k",
+      "name": "Jelgava",
+      "location": [
+        23.704163417667953,
+        56.657839640741855
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "j2co4l34",
+      "name": "Gibraltar",
+      "location": [
+        -5.343879444254629,
+        36.133238324674295
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "t6bh39n2",
+      "name": "Tunis",
+      "location": [
+        10.206056906405161,
+        36.86332375434834
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "bc5kzmyh",
+      "name": "Monterrey",
+      "location": [
+        -100.07255075156492,
+        25.72173336478589
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "eb4zpp9q",
+      "name": "Burgas",
+      "location": [
+        27.45105395975337,
+        42.51617064356242
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "6fkvndu8",
+      "name": "The Hague",
+      "location": [
+        4.233956925212745,
+        52.04956349863272
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "crcx0nci",
+      "name": "Aguascalientes",
+      "location": [
+        -102.30286481133444,
+        21.895001238139855
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gahx5yzn",
+      "name": "Léopoldville",
+      "location": [
+        15.269023283536237,
+        -4.410212406421238
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "1qy3iigp",
+      "name": "Makassar",
+      "location": [
+        119.51676325473667,
+        -5.006793478018551
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nzf2ha8k",
+      "name": "Makhachkala",
+      "location": [
+        47.50126829211316,
+        42.948967215832226
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "rcc8h8kn",
+      "name": "Alexandria",
+      "location": [
+        29.950839174658856,
+        31.148411114792808
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "ji7lh14w",
+      "name": "Hailar",
+      "location": [
+        119.66563343703915,
+        49.228599621864504
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "j40yl6zx",
+      "name": "Brno",
+      "location": [
+        16.780990179310535,
+        49.320045650902074
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "9oneiqdg",
+      "name": "Belgrade",
+      "location": [
+        20.470478252700367,
+        44.77797386846109
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "h2bsmw2a",
+      "name": "Bombay",
+      "location": [
+        72.86763458561457,
+        19.033270118665797
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "32mwyy0o",
+      "name": "Lima",
+      "location": [
+        -76.96081221489459,
+        -11.949638531510175
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "jpx3p9hy",
+      "name": "Riyadh",
+      "location": [
+        46.86799320623892,
+        24.90126532881841
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "7yerl9kk",
+      "name": "Wakayama",
+      "location": [
+        135.17083062906323,
+        34.23093792471839
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zum1drk7",
+      "name": "Krakow",
+      "location": [
+        19.946270706950735,
+        50.06965225711647
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "x58hh51u",
+      "name": "Wenzhou",
+      "location": [
+        120.73887185478335,
+        27.990480876080383
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kyke19dj",
+      "name": "Frankfurt",
+      "location": [
+        8.617600194001925,
+        50.10899878515005
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "3xtqdclf",
+      "name": "Niamey",
+      "location": [
+        2.087733607266356,
+        13.519864100124934
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "v242ipyt",
+      "name": "Haifa",
+      "location": [
+        34.98730703960986,
+        32.802755476542686
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ltb6ve1q",
+      "name": "El Obeid",
+      "location": [
+        30.20582046853189,
+        13.195246223956019
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "sis7ctxj",
+      "name": "Zhangbei",
+      "location": [
+        114.72500640059603,
+        41.165773822587596
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "fpf4uc9k",
+      "name": "Herat",
+      "location": [
+        62.338540196224095,
+        34.31985616468026
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "q4ujnrhc",
+      "name": "Orenburg",
+      "location": [
+        54.97995777643246,
+        51.784178423008086
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "z5i2jv8p",
+      "name": "Dacca",
+      "location": [
+        90.2296534079071,
+        23.802902860710745
+      ],
+      "scale": 1
+    },
+    {
+      "id": "42ux7plu",
+      "name": "Sirte",
+      "location": [
+        16.491314712406822,
+        31.176594706751615
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "4w9unaoa",
+      "name": "Prague",
+      "location": [
+        14.429255905081586,
+        50.08711403697791
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "n71gp68i",
+      "name": "Niigata",
+      "location": [
+        138.9217570241988,
+        37.81549334921742
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "1nlgafpi",
+      "name": "Lanzhou",
+      "location": [
+        103.7174259855371,
+        36.06122299798142
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "e93g1g57",
+      "name": "Santa Isabel",
+      "location": [
+        8.73759653774877,
+        3.7433324405977118
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8i1xfpzw",
+      "name": "Plovdiv",
+      "location": [
+        24.6699814811106,
+        42.14437570136897
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "pk90r1cy",
+      "name": "Kirovograd",
+      "location": [
+        32.22292094673999,
+        48.57288439425699
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "dmt13pf1",
+      "name": "Sidi Ifni",
+      "location": [
+        -10.169442294603915,
+        29.330796545881157
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "xn93nkuf",
+      "name": "Villa Cisneros",
+      "location": [
+        -15.93747664512271,
+        23.715298171355684
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gxdvt1kk",
+      "name": "Dunkirk",
+      "location": [
+        2.3585745126984925,
+        51.04051453930035
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zoca1v44",
+      "name": "Regensburg",
+      "location": [
+        12.10319183411177,
+        49.012909388170584
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "12vw3s5a",
+      "name": "Valencia",
+      "location": [
+        -0.36911357756133273,
+        39.48251286131634
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "hvle85ru",
+      "name": "Karachi",
+      "location": [
+        67.10241485861266,
+        24.969769142024873
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "1a9vufdf",
+      "name": "Venice",
+      "location": [
+        10.992843962435396,
+        45.44102028909782
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "666o2izg",
+      "name": "Elista",
+      "location": [
+        44.25883826961136,
+        46.29486562199361
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "b6cmjvmj",
+      "name": "Tirana",
+      "location": [
+        19.718678506677957,
+        41.33733610620425
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "shaq7cdn",
+      "name": "Shanghai",
+      "location": [
+        121.48957286478229,
+        31.28774639707717
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "nw1n9mfr",
+      "name": "Usumbura",
+      "location": [
+        29.36091586843408,
+        -3.2906673823041643
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "y2cdcspg",
+      "name": "Maracaibo",
+      "location": [
+        -71.76417630726478,
+        10.6255983425619
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8tqii7nv",
+      "name": "Magnitogorsk",
+      "location": [
+        59.106346775530355,
+        53.52016940862862
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "bun66mus",
+      "name": "Iași",
+      "location": [
+        27.64666514812802,
+        47.161822733504636
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1f1oa67a",
+      "name": "Kaunas",
+      "location": [
+        23.907638783173272,
+        54.903101029574685
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "lwktluzm",
+      "name": "Naha",
+      "location": [
+        127.67425461586443,
+        26.216613153135953
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "dwaa8y9b",
+      "name": "Sheffield",
+      "location": [
+        -1.4566031778869948,
+        53.40205585467254
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "qjg5rn3d",
+      "name": "Manchester",
+      "location": [
+        -2.2506530010286947,
+        53.484371922436566
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "2ddy4eok",
+      "name": "Praia",
+      "location": [
+        -23.60951396794206,
+        15.002153385318167
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "4kctifhy",
+      "name": "Orel",
+      "location": [
+        36.04838224294405,
+        52.97338567372873
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "ww4bmvh8",
+      "name": "Vancouver",
+      "location": [
+        -123.06060656336501,
+        49.25338668393073
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "x6ocxt9o",
+      "name": "Poltava",
+      "location": [
+        34.567960504199334,
+        49.57990635345999
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "pkayt8hj",
+      "name": "Kingston",
+      "location": [
+        -76.80865448149828,
+        18.029502901958764
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vzxugdps",
+      "name": "Toledo",
+      "location": [
+        -4.030241464266073,
+        39.86669369521451
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1ntyo3v9",
+      "name": "Białystok",
+      "location": [
+        23.24575189559744,
+        53.08224826563381
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "isqzcm0v",
+      "name": "Petrozavodsk",
+      "location": [
+        34.22500491933654,
+        61.82823453003928
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "d6cjf6qt",
+      "name": "Bourges",
+      "location": [
+        2.409714628947517,
+        47.08854507221068
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "p3idp4di",
+      "name": "Nassau",
+      "location": [
+        -77.36110789856293,
+        25.046318162323402
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ik5h5xcz",
+      "name": "Nouméa",
+      "location": [
+        166.4651936983645,
+        -22.233023051277144
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wqr9b1o3",
+      "name": "Tianjin",
+      "location": [
+        117.44494945305482,
+        39.026255435011024
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8nhsrjst",
+      "name": "Pécs",
+      "location": [
+        18.18938918482364,
+        46.13545892121073
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "mt71dl5r",
+      "name": "Chimkent",
+      "location": [
+        69.54560421220302,
+        42.35305788857582
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gczjiq4a",
+      "name": "Brest",
+      "location": [
+        -4.4715866671589835,
+        48.405556115377834
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "d3hm4dps",
+      "name": "Nuremberg",
+      "location": [
+        11.074302182988635,
+        49.44732958515172
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "9e3q8ett",
+      "name": "Bielefeld",
+      "location": [
+        8.56876710149574,
+        52.046911655141656
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "z8djx38p",
+      "name": "Shizuoka",
+      "location": [
+        138.4110164461834,
+        34.98867623792424
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "l9hmphde",
+      "name": "Göteborg",
+      "location": [
+        11.884042498098099,
+        57.81468833535186
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5ihxuft7",
+      "name": "Jodhpur",
+      "location": [
+        71.99550474099675,
+        27.332619875160262
+      ],
+      "ownerPolityId": "Rajputana Princely Confederacy",
+      "isCapital": true,
+      "scale": 1
+    },
+    {
+      "id": "gts365jt",
+      "name": "Le Havre",
+      "location": [
+        0.15624066609164786,
+        49.53186488802686
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "lqti9ru3",
+      "name": "Glasgow",
+      "location": [
+        -4.3893195520279935,
+        55.894784101754595
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "xctarl35",
+      "name": "Heraklion",
+      "location": [
+        25.120998327820224,
+        35.33086171514944
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "cjjr59wv",
+      "name": "Cape Town",
+      "location": [
+        18.546166243414202,
+        -33.966930399905884
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "1x22wzu4",
+      "name": "Basel",
+      "location": [
+        7.590455370466813,
+        47.538416970256606
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "lhtqyy9e",
+      "name": "Bremen",
+      "location": [
+        8.697436032129561,
+        53.168120464549474
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "3suouos6",
+      "name": "Semarang",
+      "location": [
+        110.4244139800403,
+        -6.974580735973319
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "bbzczqkg",
+      "name": "Montpellier",
+      "location": [
+        3.797119618023408,
+        43.58080912277987
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "dx43airs",
+      "name": "Suez",
+      "location": [
+        32.466472546681594,
+        29.987552189134945
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "j625wlgd",
+      "name": "Vlorë",
+      "location": [
+        19.490023963656032,
+        40.47532815691034
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "607nfllb",
+      "name": "Yerevan",
+      "location": [
+        44.65088031420119,
+        40.113503719306124
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "g4f4dglj",
+      "name": "Copenhagen",
+      "location": [
+        12.261295202071677,
+        55.38218031835265
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "c1ns08k1",
+      "name": "Colombo",
+      "location": [
+        79.88653080184561,
+        6.939470660880801
+      ],
+      "scale": 1
+    },
+    {
+      "id": "zss2vlm5",
+      "name": "Maputo",
+      "location": [
+        32.55126705571132,
+        -25.908891744052625
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "qew3n7u8",
+      "name": "Leeds",
+      "location": [
+        -1.536969039988485,
+        53.83420079906395
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "w46uztyy",
+      "name": "Chongqing",
+      "location": [
+        106.5075091557433,
+        29.568735626883594
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "wnf5i0er",
+      "name": "Samsun",
+      "location": [
+        36.20438781437206,
+        41.32110481619807
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "xf3ojp6m",
+      "name": "Isfahan",
+      "location": [
+        51.717602799004744,
+        32.72814836250514
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "7e9bzijg",
+      "name": "Massawa",
+      "location": [
+        39.41940351230761,
+        15.638791747954699
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "6ly93a5g",
+      "name": "Zara",
+      "location": [
+        15.303646328439727,
+        44.08995887368229
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ybgxitx3",
+      "name": "Puerto Princesa",
+      "location": [
+        118.673258460286,
+        9.85160418764724
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "6lmadyqy",
+      "name": "Delhi",
+      "location": [
+        77.41794102521204,
+        28.35078629701917
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "1ov2eu1y",
+      "name": "Pittsburgh",
+      "location": [
+        -80.0116904237479,
+        40.44256235695573
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "oeh6jt1o",
+      "name": "Akmolinsk",
+      "location": [
+        71.39383381960063,
+        51.06759740607845
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "stkvc514",
+      "name": "Tashkent",
+      "location": [
+        69.17128540789696,
+        41.29709548484374
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "b31pgge0",
+      "name": "Gwadar",
+      "location": [
+        61.8811963555613,
+        25.103848811712695
+      ],
+      "ownerPolityId": "Sultanate of Oman",
+      "scale": 1
+    },
+    {
+      "id": "8rl4xj3e",
+      "name": "Gorky",
+      "location": [
+        43.94735708222411,
+        56.34263698327399
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "k9cwbfm6",
+      "name": "Groningen",
+      "location": [
+        6.600439883632156,
+        53.20497442454794
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5g80ru5j",
+      "name": "Östersund",
+      "location": [
+        14.671071468391665,
+        63.165673581952035
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ewfxtbre",
+      "name": "El Alamein",
+      "location": [
+        28.979047887899373,
+        30.805058997690082
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "o3x5wr6o",
+      "name": "Belgorod",
+      "location": [
+        36.592743153994924,
+        50.6103432438739
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "dzpf3g9s",
+      "name": "Varna",
+      "location": [
+        27.909651501648355,
+        43.22099436435258
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "proqudwy",
+      "name": "Kuolajärvi",
+      "location": [
+        29.227388595694876,
+        66.97369111164079
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nmimg42o",
+      "name": "San Juan",
+      "location": [
+        -66.06613213660889,
+        18.42339355698583
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wamafmul",
+      "name": "Rouen",
+      "location": [
+        1.0727872999677366,
+        49.46840001589521
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "b538z17d",
+      "name": "Nuku'alofa",
+      "location": [
+        -175.21413613101544,
+        -21.14512410256785
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nvxr9q5m",
+      "name": "Ouagadougou",
+      "location": [
+        -1.5338036291394437,
+        12.412682186117067
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "qsfr52yn",
+      "name": "Nottingham",
+      "location": [
+        -1.175135924553091,
+        52.95197272291199
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "3sex64hz",
+      "name": "Gondar",
+      "location": [
+        37.40258657099292,
+        12.491976091674843
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "d0x2iy7g",
+      "name": "Calgary",
+      "location": [
+        -113.98345128493042,
+        50.992205985835966
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1rbmvyz7",
+      "name": "Lhasa",
+      "location": [
+        91.08953798011106,
+        29.60030332975822
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "uppvwltv",
+      "name": "Magdeburg",
+      "location": [
+        11.626073533751564,
+        52.12562774824181
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "dmsrh5py",
+      "name": "Daugavpils",
+      "location": [
+        26.5138956902896,
+        55.89685190497525
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "lje2yn50",
+      "name": "Tokyo",
+      "location": [
+        139.73892208781032,
+        35.69002785028813
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "l2lloe4l",
+      "name": "Bathurst",
+      "location": [
+        -16.685721933785267,
+        13.43970869630374
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ada6pjm1",
+      "name": "Lisbon",
+      "location": [
+        -9.180964911777483,
+        38.76621431754447
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "a7fsocrv",
+      "name": "Ciudad Bolívar",
+      "location": [
+        -63.6193030251878,
+        8.087830039087336
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "bbb76ck6",
+      "name": "Tegucigalpa",
+      "location": [
+        -87.24601599237947,
+        14.068442790604536
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "7v9zdt2s",
+      "name": "Batumi",
+      "location": [
+        41.635702447947054,
+        41.605986872324365
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ez4f3d3a",
+      "name": "Rio de Janeiro",
+      "location": [
+        -43.53454142029517,
+        -22.776997166111173
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "7y692kmf",
+      "name": "Warsaw",
+      "location": [
+        20.991313489484767,
+        52.2199408614662
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "nqprmd8w",
+      "name": "Voroshilovgrad ",
+      "location": [
+        39.32559736396747,
+        48.566855037348006
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gqx7ziyq",
+      "name": "Vladimir",
+      "location": [
+        40.386966786038585,
+        56.13753011634557
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "jzxb8pt6",
+      "name": "Leipzig",
+      "location": [
+        12.389758261778718,
+        51.36111452788455
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "4y6qdisp",
+      "name": "San Luis Potosí",
+      "location": [
+        -100.94067886790005,
+        22.174287599758415
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "vtslicd9",
+      "name": "Darwin",
+      "location": [
+        130.8905844654969,
+        -12.404331347004259
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zopku2mw",
+      "name": "Port of Spain",
+      "location": [
+        -61.46628515826757,
+        10.671732492413526
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "44z1ode0",
+      "name": "Thimphu",
+      "location": [
+        89.64226623349614,
+        27.465479445158422
+      ],
+      "ownerPolityId": "Bhutan",
+      "scale": 0.8
+    },
+    {
+      "id": "y5yw0tpv",
+      "name": "Dijon",
+      "location": [
+        5.04546303749678,
+        47.330700731664166
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "xktqsab2",
+      "name": "Melilla",
+      "location": [
+        -2.939950750618508,
+        35.29462021667487
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "cfg4mhvf",
+      "name": "Rome",
+      "location": [
+        12.46631611236335,
+        41.82840112365193
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "5lqt665m",
+      "name": "Aalborg",
+      "location": [
+        9.938755525293574,
+        57.03819382520831
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wmdqybfh",
+      "name": "Havana",
+      "location": [
+        -82.3649606751402,
+        23.109348018633213
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "4sa7mu8g",
+      "name": "Helsinki",
+      "location": [
+        24.90525570062603,
+        60.194827051541296
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "0krfkbd9",
+      "name": "Gomel",
+      "location": [
+        30.977405530972597,
+        52.42283523531171
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "w0h6p71s",
+      "name": "Ramallah",
+      "location": [
+        35.30737868957685,
+        32.023214464136245
+      ],
+      "scale": 1
+    },
+    {
+      "id": "51885qjm",
+      "name": "Yancheng",
+      "location": [
+        120.12734429711504,
+        33.3830843187621
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "rclsi446",
+      "name": "Izmir",
+      "location": [
+        27.143985176140774,
+        38.39621989517272
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "qgpz4l83",
+      "name": "Košice",
+      "location": [
+        21.214309693712334,
+        48.73111724742682
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2tisa286",
+      "name": "Maastricht",
+      "location": [
+        5.667665834286887,
+        50.85610201275631
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2dfvdu5t",
+      "name": "Abu Dhabi",
+      "location": [
+        54.534413638435836,
+        24.41648999709183
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "olapjtrk",
+      "name": "Faro",
+      "location": [
+        -7.933571251555538,
+        37.03189956551205
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "6afjhqb8",
+      "name": "Conakry",
+      "location": [
+        -13.605842050354855,
+        9.610633816684071
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "0kynu1ta",
+      "name": "Montreal",
+      "location": [
+        -73.62229582817628,
+        45.54753081442925
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "ldfhrqv0",
+      "name": "Stavanger",
+      "location": [
+        5.725369163098228,
+        58.9329789639975
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ukre02b2",
+      "name": "Mariehamn",
+      "location": [
+        19.93470991639096,
+        60.10343122532578
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1qyctoy5",
+      "name": "London",
+      "location": [
+        -0.15111302598853785,
+        51.501798019342544
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "gneq5h1c",
+      "name": "Lagos",
+      "location": [
+        3.2649655930167025,
+        6.523725148871193
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "nvbt3l7z",
+      "name": "Budapest",
+      "location": [
+        19.065679301981643,
+        47.504477844120714
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "izsajtf1",
+      "name": "Guilin",
+      "location": [
+        110.27890091651298,
+        25.324528959795146
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ngev3tqo",
+      "name": "Bergen",
+      "location": [
+        5.415171579057593,
+        60.34969400134412
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "puh2hgnp",
+      "name": "Milan",
+      "location": [
+        9.216425426132481,
+        45.48680466368873
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "6664s4sw",
+      "name": "Sendai",
+      "location": [
+        140.9656710992973,
+        38.322112256769145
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "eo8av9vk",
+      "name": "Strasbourg",
+      "location": [
+        7.760001118054597,
+        48.547558302168824
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "rensaj6a",
+      "name": "Augsburg",
+      "location": [
+        10.91054622394578,
+        48.35100984259543
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "8gd0vlnb",
+      "name": "Limoges",
+      "location": [
+        1.2757155360577925,
+        45.82131105685025
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "thg6trh2",
+      "name": "Sarajevo",
+      "location": [
+        18.146305744649233,
+        43.8887821361686
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "n5o7gsju",
+      "name": "Velsk",
+      "location": [
+        42.100906176563704,
+        61.077079222215445
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "9np9jtdw",
+      "name": "Skopje",
+      "location": [
+        21.39569015946113,
+        42.04695661683195
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "7uip7m1y",
+      "name": "Dudinka",
+      "location": [
+        86.18354140674752,
+        69.41359604769141
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "3b9ujpjp",
+      "name": "Hsinking",
+      "location": [
+        125.44167918783457,
+        43.852144796070945
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "l5nr7jjf",
+      "name": "Olomouc",
+      "location": [
+        17.242417630030964,
+        49.614568055797776
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "idfx25rz",
+      "name": "Barnaul",
+      "location": [
+        83.6653193303336,
+        53.37866241023454
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "418ukf9q",
+      "name": "Leicester",
+      "location": [
+        -1.1456232787705412,
+        52.67866176372772
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "usncdw13",
+      "name": "Granada",
+      "location": [
+        -3.6152328091824515,
+        37.21339348972674
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "4cc8m0md",
+      "name": "Hefei",
+      "location": [
+        117.24803073933207,
+        31.76933424055838
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "k1hn2r3h",
+      "name": "Rutba",
+      "location": [
+        40.29195652782842,
+        33.03857444645679
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vencth1t",
+      "name": "Yulin",
+      "location": [
+        109.71567574690138,
+        38.290388147211615
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "iky0kjh4",
+      "name": "Lomé",
+      "location": [
+        1.2096257157143493,
+        6.183943677237821
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ecamzcjg",
+      "name": "Yoshkar-Ola",
+      "location": [
+        47.87242032942199,
+        56.620788670309196
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "yvt2tdku",
+      "name": "Braga",
+      "location": [
+        -8.40160670615157,
+        41.562003643372066
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "tsppgb65",
+      "name": "Novgorod",
+      "location": [
+        31.277618260758658,
+        58.56393207371849
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "2c7uavsg",
+      "name": "Agrinio",
+      "location": [
+        21.39062426495228,
+        38.630744215843805
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ijzpml1h",
+      "name": "Rabaul",
+      "location": [
+        152.11472672618538,
+        -4.244520613490948
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gr1hhl86",
+      "name": "Izhevsk",
+      "location": [
+        53.18030365059578,
+        56.86322871784387
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "y8ait6sk",
+      "name": "Nairobi",
+      "location": [
+        36.6967445783565,
+        -1.1629240558809215
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "gwh4uf58",
+      "name": "Murcia",
+      "location": [
+        -1.1616503020563527,
+        38.021197209950145
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wrz2el7n",
+      "name": "Kyzyl",
+      "location": [
+        94.43394888486063,
+        51.68697060893666
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "j9rn9asc",
+      "name": "Medina",
+      "location": [
+        39.64129881292966,
+        24.402280599213086
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "99gwnfcy",
+      "name": "Krasnoyarsk",
+      "location": [
+        92.94981446810793,
+        56.075614634713276
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "u6gbzph0",
+      "name": "Rhodes",
+      "location": [
+        28.208389444406254,
+        36.4180415554831
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2d4i8lpm",
+      "name": "Sacramento",
+      "location": [
+        -121.48664766250118,
+        38.56633808733022
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "upb2jazx",
+      "name": "Johannesburg",
+      "location": [
+        28.059255670801303,
+        -25.968514446703225
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "ism5vofl",
+      "name": "Indianapolis",
+      "location": [
+        -86.15062042925959,
+        39.85838528850266
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "baswj31m",
+      "name": "Oran",
+      "location": [
+        -0.618492671680722,
+        35.673346200403174
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "fk9r0ifo",
+      "name": "Mörön",
+      "location": [
+        99.95132173560644,
+        49.62578714747036
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "hvk2slnh",
+      "name": "Chiang Mai",
+      "location": [
+        99.0424179973367,
+        18.822635191767702
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "de6w8lig",
+      "name": "Minsk",
+      "location": [
+        27.525411222857674,
+        53.90638451537063
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "5zm6knzt",
+      "name": "Bayonne",
+      "location": [
+        -1.4617722056390545,
+        43.47778288333987
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "aq5vgtyq",
+      "name": "Málaga",
+      "location": [
+        -4.450121871642412,
+        36.71907513395078
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "ejpkh0jl",
+      "name": "Rabat",
+      "location": [
+        -6.790221839833333,
+        33.98828013168682
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vjvhllgl",
+      "name": "Ioannina",
+      "location": [
+        20.84871295043025,
+        39.66027345676477
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "imf0egbx",
+      "name": "Brussels",
+      "location": [
+        4.255322916228635,
+        50.92097847978704
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "stmzsk3g",
+      "name": "Tangier",
+      "location": [
+        -5.816793400480346,
+        35.788496182355686
+      ],
+      "scale": 1
+    },
+    {
+      "id": "aj82w9zp",
+      "name": "Kirov",
+      "location": [
+        49.667743875747405,
+        58.64569418132922
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "uvko77q3",
+      "name": "Khabarovsk",
+      "location": [
+        135.09567934250302,
+        48.51810387234269
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "1j0winjn",
+      "name": "Saigon",
+      "location": [
+        106.68036730407681,
+        10.908857987715393
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "7surp3ss",
+      "name": "Vatican City",
+      "location": [
+        12.453477692389633,
+        41.90241561353787
+      ],
+      "ownerPolityId": "Vatican",
+      "isCapital": true,
+      "scale": 0.8
+    },
+    {
+      "id": "tefvdrqe",
+      "name": "Norwich",
+      "location": [
+        1.467693375667959,
+        52.59188991994145
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "w3eudus5",
+      "name": "Zurich",
+      "location": [
+        8.581958041920432,
+        47.37692739203439
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "csxf0gcj",
+      "name": "Santiago",
+      "location": [
+        -70.74517176830655,
+        -33.53095386744757
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "qmdwoiz2",
+      "name": "Abidjan",
+      "location": [
+        -4.036814180681143,
+        5.396374839418598
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "um0guhl8",
+      "name": "Luoyang",
+      "location": [
+        112.43392930494929,
+        34.6127868581636
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gv3mwpse",
+      "name": "Muscat",
+      "location": [
+        58.3860071565499,
+        23.590035226255438
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "0ktzp2md",
+      "name": "San Francisco",
+      "location": [
+        -122.4486892936095,
+        37.700378182145386
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "3x1ejfh5",
+      "name": "Bilbao",
+      "location": [
+        -2.9670915896555923,
+        43.30724260037658
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "11odhe41",
+      "name": "Cambridge",
+      "location": [
+        0.1470194437844693,
+        52.2057061920072
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "cmm49u3j",
+      "name": "Brisbane",
+      "location": [
+        153.04592709388282,
+        -27.423939723952813
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "4rmt4xxd",
+      "name": "Kerman",
+      "location": [
+        57.38029304941146,
+        30.26287512381802
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "g5wgie5q",
+      "name": "Puerto Ayora",
+      "location": [
+        -90.35740569811051,
+        -0.676239400277737
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "7ugr060t",
+      "name": "Ottawa",
+      "location": [
+        -75.86096753416015,
+        45.345868879349325
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "0fq96dz5",
+      "name": "Pescara",
+      "location": [
+        14.021625899907413,
+        42.65260857514539
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "q189rxjk",
+      "name": "Ljubljana",
+      "location": [
+        14.522997808789537,
+        46.10897544026855
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8t21mn2u",
+      "name": "Nicosia",
+      "location": [
+        33.40685337872424,
+        35.17269086779295
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gl85qd1m",
+      "name": "Sumy",
+      "location": [
+        34.816291808305124,
+        50.89079979558579
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "w195z4ti",
+      "name": "Odessa",
+      "location": [
+        30.669578256740376,
+        46.49623493299566
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "005934t5",
+      "name": "Ruse",
+      "location": [
+        25.968334854028893,
+        43.8308023951752
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "n9ht3tpi",
+      "name": "Chihuahua",
+      "location": [
+        -106.03598202207198,
+        28.754691470817633
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "o6rip9bv",
+      "name": "Troyes",
+      "location": [
+        4.060099829630439,
+        48.29785598385553
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "hd4gefh0",
+      "name": "Richmond",
+      "location": [
+        -77.47272166084225,
+        37.51661974922051
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "9lzpwh8a",
+      "name": "Mandalay",
+      "location": [
+        96.10581854939208,
+        21.96095118739946
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "itvfkj75",
+      "name": "Asunción",
+      "location": [
+        -57.47413524320653,
+        -25.34761123796858
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "95iq63jf",
+      "name": "Vienna",
+      "location": [
+        16.3751971569607,
+        48.20726900929171
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "qz66qq4n",
+      "name": "Andong",
+      "location": [
+        124.30006316801273,
+        40.02807981701028
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "7dvnymv0",
+      "name": "Addis Ababa",
+      "location": [
+        38.801876322201366,
+        8.977230372555312
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "w9ex91et",
+      "name": "Vientiane",
+      "location": [
+        102.63448133115946,
+        18.092105287181496
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "rb0xbftr",
+      "name": "Gaza",
+      "location": [
+        34.428069997066366,
+        31.478571204040918
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "o0aut60d",
+      "name": "Van",
+      "location": [
+        43.35197035587313,
+        38.49313444194951
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "now02sw0",
+      "name": "La Coruña",
+      "location": [
+        -8.416983694933393,
+        43.35271139427388
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ii395v3q",
+      "name": "Luxembourg City",
+      "location": [
+        6.1181370437168665,
+        49.6013288118352
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "wa90sqsc",
+      "name": "Šiauliai",
+      "location": [
+        23.314834223466207,
+        55.92751026368447
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "w6xurge3",
+      "name": "Münster",
+      "location": [
+        7.627637658127811,
+        51.94897586202103
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "lvkmkk7b",
+      "name": "Magadan",
+      "location": [
+        150.81882962428946,
+        59.57081705219531
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "oaggqet5",
+      "name": "Zaragoza",
+      "location": [
+        -0.9027688304546394,
+        41.66766965825377
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "csn10fxb",
+      "name": "Ismailia",
+      "location": [
+        32.24666696920552,
+        30.5854072557415
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "56dr7maw",
+      "name": "Ploiești",
+      "location": [
+        25.950570491374794,
+        44.96379668232166
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zfj0xkb8",
+      "name": "Pau",
+      "location": [
+        -0.40136893517292255,
+        43.32710147275711
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "b0a014mg",
+      "name": "Anqing",
+      "location": [
+        117.03909815705187,
+        30.545216552930555
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "fnjm678w",
+      "name": "Georgetown",
+      "location": [
+        -58.13125741549153,
+        6.753144840192462
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "tyz9fve0",
+      "name": "Guernica",
+      "location": [
+        -2.6757845672908926,
+        43.31070385333928
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vaa6q8lz",
+      "name": "Xi’an",
+      "location": [
+        108.92752810862738,
+        34.316723454221716
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "9arj57h6",
+      "name": "Amsterdam",
+      "location": [
+        4.902996476871371,
+        52.36771878323489
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "mz47awzc",
+      "name": "Aberdeen",
+      "location": [
+        -2.1382085169241987,
+        57.140297959448446
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "74gew8q7",
+      "name": "Winnipeg",
+      "location": [
+        -97.20991499897734,
+        49.877410733456
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "dnzjczsv",
+      "name": "East Jerusalem",
+      "location": [
+        35.28106025676501,
+        31.83852839589737
+      ],
+      "ownerPolityId": "Mandatory Palestine",
+      "scale": 1
+    },
+    {
+      "id": "jkyrh4dy",
+      "name": "Liepāja",
+      "location": [
+        21.063324931299356,
+        56.57472168522929
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "istl7bqi",
+      "name": "Alma-Ata",
+      "location": [
+        76.99478412311268,
+        43.235516296100116
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "xxoa6xc7",
+      "name": "Essen",
+      "location": [
+        7.022127201676843,
+        51.44022810520025
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "yq3fizkf",
+      "name": "Dublin",
+      "location": [
+        -6.2253606620070085,
+        53.35263215638241
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "8ywt8koi",
+      "name": "Kathmandu",
+      "location": [
+        85.32580227860986,
+        27.71063921857231
+      ],
+      "ownerPolityId": "Nepal",
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "jpvihkdn",
+      "name": "Kochi",
+      "location": [
+        133.56102002353626,
+        33.55039218350447
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vvqt2iyn",
+      "name": "Madrid",
+      "location": [
+        -3.7711564573643774,
+        40.50241421076291
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "fr0dd9ot",
+      "name": "Galway",
+      "location": [
+        -9.053465383735588,
+        53.286833805592124
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "podtu73y",
+      "name": "Detroit",
+      "location": [
+        -83.11875811185817,
+        42.34204245776121
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "bke629ka",
+      "name": "Syktyvkar",
+      "location": [
+        50.80733512175994,
+        61.67891291597161
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5z68azyl",
+      "name": "Stuttgart",
+      "location": [
+        9.201709773558099,
+        48.79997927781912
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "hclr0mmz",
+      "name": "Antananarivo",
+      "location": [
+        47.41299573957269,
+        -18.90726479850683
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "q4t2q4zy",
+      "name": "Dresden",
+      "location": [
+        13.776867984086644,
+        51.07640620854073
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "leag1kei",
+      "name": "Córdoba",
+      "location": [
+        -4.743357692495339,
+        37.925651281811994
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "3hi1fcfo",
+      "name": "Chicago",
+      "location": [
+        -87.60995159579602,
+        41.74289518399132
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "exc9pxip",
+      "name": "Bloemfontein",
+      "location": [
+        26.170309333724102,
+        -29.1430903847672
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2rj56zod",
+      "name": "Gaziantep",
+      "location": [
+        37.36250922085788,
+        37.135517265703356
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "hgykggk6",
+      "name": "Belmopan",
+      "location": [
+        -88.68301446844843,
+        17.298913361423416
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nw5l945a",
+      "name": "Khartoum",
+      "location": [
+        32.52610826209762,
+        15.574772337359931
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "584c0dvw",
+      "name": "Uralsk",
+      "location": [
+        51.39591077672529,
+        51.22833396905986
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "82wo6o35",
+      "name": "Jakarta",
+      "location": [
+        106.87148585340357,
+        -6.192224449862209
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "76nq71c4",
+      "name": "Aleppo",
+      "location": [
+        37.176650234015895,
+        36.202994589467835
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "5e7baocl",
+      "name": "Antalya",
+      "location": [
+        30.670776486490045,
+        36.959573678750914
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "becrkww0",
+      "name": "Stalino",
+      "location": [
+        37.822734423250274,
+        48.00159358619297
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "07kamzeu",
+      "name": "Tripoli",
+      "location": [
+        13.221041305889932,
+        32.83411155405743
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "y5myy0j2",
+      "name": "Peshawar",
+      "location": [
+        71.57939678548588,
+        34.08044621845417
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "0qioml9m",
+      "name": "Tobruk",
+      "location": [
+        23.939213471961786,
+        32.06992704666253
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "3b9esaol",
+      "name": "Tbilisi",
+      "location": [
+        44.7674058648773,
+        41.75212598313138
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "nczuv11k",
+      "name": "Mérida",
+      "location": [
+        -89.87783908193192,
+        21.020947807428556
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "yi4fhfm9",
+      "name": "Amiens",
+      "location": [
+        2.161512178023729,
+        49.95149646668503
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "jf2m5a4p",
+      "name": "Durango",
+      "location": [
+        -104.63053643391692,
+        24.05031351658721
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "0bxm0gxj",
+      "name": "Shkodër",
+      "location": [
+        19.485341200308905,
+        42.07261566408076
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "uye9p3ry",
+      "name": "Sapporo",
+      "location": [
+        141.38879530166545,
+        43.13879944790557
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "1cdq2upl",
+      "name": "Palermo",
+      "location": [
+        13.350326786712372,
+        38.11743468206751
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "32ouvawg",
+      "name": "Florence",
+      "location": [
+        11.263783098097406,
+        43.80343379561458
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "715kotiy",
+      "name": "Libreville",
+      "location": [
+        9.486308053027194,
+        0.4756616564623215
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "973r33pq",
+      "name": "Kampala",
+      "location": [
+        32.580137817084186,
+        0.34404457473416983
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "p62xco00",
+      "name": "Cleveland",
+      "location": [
+        -81.80801611429378,
+        41.427610854074715
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "z6m6s4jo",
+      "name": "Alytus",
+      "location": [
+        24.04737177304102,
+        54.395353991685226
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "4p8qtm3n",
+      "name": "Manila",
+      "location": [
+        121.04178694613096,
+        14.633816714682112
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "q8w6sqv9",
+      "name": "Boston",
+      "location": [
+        -71.1420590016949,
+        42.34522735965896
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "vtxm8ghg",
+      "name": "Singapore",
+      "location": [
+        103.81477551778794,
+        1.3242664316212682
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "m8l9ae2f",
+      "name": "Fort Lamy",
+      "location": [
+        15.057872882174173,
+        12.15954040704841
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "g1jrdis2",
+      "name": "Dallas",
+      "location": [
+        -96.81929480849277,
+        32.84620418800543
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "vn6of6lm",
+      "name": "Bursa",
+      "location": [
+        28.879794159970363,
+        40.248529029077474
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "s3ko502g",
+      "name": "Vologda",
+      "location": [
+        40.020860118336465,
+        59.19609422530536
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ks59vem2",
+      "name": "Madras",
+      "location": [
+        80.21307201522644,
+        13.152542562346525
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "82oa0qxs",
+      "name": "Bristol",
+      "location": [
+        -2.6128497287432606,
+        51.50377699807012
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "kf6z7j99",
+      "name": "Doha",
+      "location": [
+        51.47495832450396,
+        25.285008946175907
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "toighxx3",
+      "name": "Calais",
+      "location": [
+        1.8653480151459159,
+        50.9522892419846
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ip99yp9k",
+      "name": "Windhoek",
+      "location": [
+        17.09456820516325,
+        -22.633986492355305
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "fgixkacf",
+      "name": "Zagreb",
+      "location": [
+        15.96249616224157,
+        45.81110694050054
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "abtri5bb",
+      "name": "East Berlin",
+      "location": [
+        13.455511404225547,
+        52.50336599377687
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "rny57v5h",
+      "name": "Esutoru",
+      "location": [
+        142.04752692531812,
+        49.06358627303638
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zv5xi5oc",
+      "name": "Kostroma",
+      "location": [
+        40.94865600816078,
+        57.78698434589592
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wwbgzkyb",
+      "name": "Mashhad",
+      "location": [
+        59.83992105486255,
+        36.319728782693446
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "tua5k3uo",
+      "name": "Zwolle",
+      "location": [
+        6.098735587981058,
+        52.52310953775532
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "v1j8hmxz",
+      "name": "Århus",
+      "location": [
+        10.161889794232232,
+        56.138383218684055
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "rpyrwp6z",
+      "name": "Baoding",
+      "location": [
+        115.60059688297535,
+        38.8369103340367
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "uzs53slw",
+      "name": "Beirut",
+      "location": [
+        35.51042744156047,
+        33.87771376540822
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "b4t55pof",
+      "name": "Passau",
+      "location": [
+        13.427479667218865,
+        48.613062078872304
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "q3jzlfpe",
+      "name": "Badajoz",
+      "location": [
+        -7.024621534691788,
+        38.84167315889053
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kujh4dca",
+      "name": "Karaganda",
+      "location": [
+        73.08489915729268,
+        49.79563991543165
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "07ui70o8",
+      "name": "Galați",
+      "location": [
+        28.00140449422334,
+        45.44953899213564
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "fj3j3ze8",
+      "name": "Zhengzhou",
+      "location": [
+        113.68066007109974,
+        34.85517246516868
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "yh1g27ud",
+      "name": "Arkhangelsk",
+      "location": [
+        40.52548345295091,
+        64.54683384150519
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "g5leas26",
+      "name": "Trujillo",
+      "location": [
+        -79.03177638603174,
+        -8.107061172901282
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vnshigee",
+      "name": "Katowice",
+      "location": [
+        19.043476022818197,
+        50.19299163206816
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "yy8qvn1n",
+      "name": "Ankara",
+      "location": [
+        32.76794833136696,
+        39.975065940420194
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "af4v65xd",
+      "name": "Debrecen",
+      "location": [
+        21.45089529306844,
+        47.55345300939564
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "hujx23x8",
+      "name": "Guatemala City",
+      "location": [
+        -90.64072987935995,
+        14.635960458963794
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "pq0t2q9k",
+      "name": "Nagasaki",
+      "location": [
+        129.8738611193546,
+        32.76012608197712
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "ksq5bhfo",
+      "name": "Astrakhan",
+      "location": [
+        48.04548592150552,
+        46.402960862751286
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8cyskcbk",
+      "name": "Sukhumi",
+      "location": [
+        41.00503307913522,
+        43.016248897103424
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1sklj2b0",
+      "name": "Komotini",
+      "location": [
+        25.31166340385199,
+        41.08040651663529
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "db2jb49f",
+      "name": "Grozny",
+      "location": [
+        45.705442016187845,
+        43.309047662416276
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "v1itktr2",
+      "name": "Minneapolis",
+      "location": [
+        -93.2705117142287,
+        44.96270823874701
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "tvd6gw8v",
+      "name": "Yaroslavl",
+      "location": [
+        39.92313628083081,
+        57.61570439700674
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "jyzk8jw5",
+      "name": "Casablanca",
+      "location": [
+        -7.632177108893494,
+        33.563243949775824
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "tmcyoiik",
+      "name": "Samarkand",
+      "location": [
+        66.90743851765694,
+        39.67461376964383
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "p23keuf5",
+      "name": "Port-au-Prince",
+      "location": [
+        -72.2840230980337,
+        18.611194983631336
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "19nyel8p",
+      "name": "São Paulo",
+      "location": [
+        -46.50429281014182,
+        -23.49233909433096
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "h9uadtbd",
+      "name": "Kuala Lumpur",
+      "location": [
+        101.7173669513568,
+        3.121134983954505
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "w7ml7oed",
+      "name": "Caracas",
+      "location": [
+        -67.00048247882965,
+        10.470908670617902
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "8btj03p1",
+      "name": "Győr",
+      "location": [
+        17.623314823921593,
+        47.699883024457165
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "l0fcv8l0",
+      "name": "Benghazi",
+      "location": [
+        20.088746346869318,
+        32.09133537430873
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "gboa71ym",
+      "name": "Moscow",
+      "location": [
+        37.646756505860694,
+        55.75833464082035
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "vjjpn5bx",
+      "name": "Zaporozhye",
+      "location": [
+        35.13720041028214,
+        47.88529891772879
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "6cr83t9n",
+      "name": "La Paz",
+      "location": [
+        -68.19862969111855,
+        -16.49696413212797
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "mm5376o4",
+      "name": "Ufa",
+      "location": [
+        56.0584075691346,
+        54.73245532202063
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "pu0mk3w2",
+      "name": "Philadelphia",
+      "location": [
+        -75.17255564175198,
+        39.97187376847995
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "jsyrglm8",
+      "name": "Thessaloniki",
+      "location": [
+        22.972995321283438,
+        40.65139950470217
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "wtmlwvl4",
+      "name": "Milwaukee",
+      "location": [
+        -87.93781669869566,
+        43.02225867147149
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "6x8ig6me",
+      "name": "Rostov",
+      "location": [
+        39.443546647271376,
+        47.189375835238394
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "w6w0wgyj",
+      "name": "Munich",
+      "location": [
+        11.542767637717304,
+        48.12938960192554
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "lorps7iy",
+      "name": "Porto-Novo",
+      "location": [
+        2.595974824908607,
+        6.511911885967734
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "c0swe1pm",
+      "name": "Kalinin",
+      "location": [
+        35.8806795374854,
+        56.8682839204005
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "e4nofgl3",
+      "name": "Honolulu",
+      "location": [
+        -157.86191397432754,
+        21.366454237331794
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "796m55hp",
+      "name": "Shiraz",
+      "location": [
+        52.6145755550466,
+        29.591204680146063
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "qabrtp2w",
+      "name": "Nikolaev ",
+      "location": [
+        31.9865752535103,
+        46.97935384979911
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "jkjmfclv",
+      "name": "Paramaribo",
+      "location": [
+        -55.24141329990832,
+        5.818560751445432
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "fizklar4",
+      "name": "Dover",
+      "location": [
+        1.3064197966705888,
+        51.132511717407425
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vj3i0t6q",
+      "name": "Toyohara",
+      "location": [
+        142.74103794477352,
+        46.89461141640686
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kyzvekxg",
+      "name": "Hami",
+      "location": [
+        93.41245725851748,
+        42.92892961225246
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "uxu8z68q",
+      "name": "Kashgar",
+      "location": [
+        75.96904395557468,
+        39.57998324839039
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5ucf9ko0",
+      "name": "Birmingham",
+      "location": [
+        -1.9087323110734344,
+        52.58999222937132
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "me9t1wwj",
+      "name": "Aberystwyth",
+      "location": [
+        -4.084167470552863,
+        52.39909749527703
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "i4xugx3x",
+      "name": "Lyon",
+      "location": [
+        4.860910751805878,
+        45.75158605374111
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "tx3qq5y8",
+      "name": "Ghent",
+      "location": [
+        3.7173506696608936,
+        51.073671398087924
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "n8izp41a",
+      "name": "Sorong",
+      "location": [
+        131.30384571757412,
+        -0.879999063849155
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1jcjty3k",
+      "name": "Weimar",
+      "location": [
+        11.27582104676392,
+        51.006039257494876
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "xmo46tsa",
+      "name": "Xiamen",
+      "location": [
+        118.03137740387342,
+        24.57169499292982
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "jsryr647",
+      "name": "Andorra la Vella",
+      "location": [
+        1.526868400176653,
+        42.51194234983268
+      ],
+      "ownerPolityId": "Andorra",
+      "isCapital": true,
+      "scale": 0.8
+    },
+    {
+      "id": "o1r2d47g",
+      "name": "Dakar",
+      "location": [
+        -17.226553680254263,
+        14.795886388885023
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "sqer6uur",
+      "name": "Lancaster",
+      "location": [
+        -2.87368340361299,
+        53.99066992357649
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "04ce37li",
+      "name": "Mexico City",
+      "location": [
+        -99.12499330200009,
+        19.531124030927828
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "lqxk8z03",
+      "name": "Port Vila",
+      "location": [
+        168.32656473873817,
+        -17.698375794790266
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "3uju9krq",
+      "name": "Dnepropetrovsk",
+      "location": [
+        35.074062174565135,
+        48.46379309303359
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "8qj6jmzf",
+      "name": "Zhytomyr",
+      "location": [
+        28.637550529311767,
+        50.266876941558166
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "i2gv8qc8",
+      "name": "Brest-Litovsk",
+      "location": [
+        23.811826562185654,
+        52.16364164620995
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "by5u354k",
+      "name": "Sofia",
+      "location": [
+        23.352162752027816,
+        42.64534830479124
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "q34ctpdh",
+      "name": "Craiova",
+      "location": [
+        23.633085824012,
+        44.28737132867366
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kaquvnyv",
+      "name": "Oulu",
+      "location": [
+        25.49282746259917,
+        65.01023774844606
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vt90z5r4",
+      "name": "Penza",
+      "location": [
+        44.987641476375515,
+        53.16960776041523
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nz9e4e9w",
+      "name": "Venice",
+      "location": [
+        12.255537922024335,
+        45.46324888348448
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "jql2bkm5",
+      "name": "Visby",
+      "location": [
+        18.274592004972696,
+        57.61809794044774
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "420milar",
+      "name": "Hamadan",
+      "location": [
+        48.86020533004185,
+        34.71025984721618
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ygvb2rc1",
+      "name": "Natal",
+      "location": [
+        -35.24634500431553,
+        -5.835720935096944
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "mmmolqsa",
+      "name": "Patras",
+      "location": [
+        21.762607158190804,
+        38.25602268678546
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ee2v5q9z",
+      "name": "Quito",
+      "location": [
+        -78.46373357512357,
+        -0.06458430465551146
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "95mjvw9e",
+      "name": "Trieste",
+      "location": [
+        13.77477051454867,
+        45.65335146271485
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "7lscmq31",
+      "name": "Dihua",
+      "location": [
+        87.54599456276662,
+        43.817025132423396
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "hw5sepmc",
+      "name": "Grodno",
+      "location": [
+        23.901822621650478,
+        53.683574261338435
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ynt5n7fp",
+      "name": "Bucharest",
+      "location": [
+        26.13661315078051,
+        44.463336441792876
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "3ffww0lu",
+      "name": "Baltimore",
+      "location": [
+        -76.62937547779669,
+        39.29982153852947
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "illyjgzs",
+      "name": "New York",
+      "location": [
+        -73.9207622174482,
+        40.69824871044011
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "suid0px9",
+      "name": "Holguin",
+      "location": [
+        -76.25957167011495,
+        20.887018230725147
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "41s9pbyh",
+      "name": "Ulaanbaatar",
+      "location": [
+        106.77322941387685,
+        47.91190562916921
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "jmot12px",
+      "name": "Geneva",
+      "location": [
+        6.133511954691512,
+        46.20423308027762
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8d3bfrxu",
+      "name": "Ningbo",
+      "location": [
+        121.58710215128397,
+        29.975576413124486
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "hnvu4trb",
+      "name": "Cork",
+      "location": [
+        -8.462695608581905,
+        51.93335895736013
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kt4b2ovm",
+      "name": "Gdańsk",
+      "location": [
+        18.644177295279192,
+        54.360045835695246
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "9ftpasza",
+      "name": "Cali",
+      "location": [
+        -76.46314965766314,
+        3.4497041327350217
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "mq6ykctc",
+      "name": "Hobart",
+      "location": [
+        147.3804862362166,
+        -42.82359854854513
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "kysqjlom",
+      "name": "Baku",
+      "location": [
+        49.85963241788658,
+        40.40198635365769
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "7ev8xw8m",
+      "name": "Rosario",
+      "location": [
+        -60.70010502607561,
+        -32.94906543935249
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5bb12b47",
+      "name": "Amman",
+      "location": [
+        35.87391506277833,
+        31.912777771136874
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ssubm7yf",
+      "name": "Saint-Nazaire",
+      "location": [
+        -2.240699603652237,
+        47.28598541085347
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "yi13g4e7",
+      "name": "Aden",
+      "location": [
+        45.005527839836475,
+        12.925769189245514
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ipi4ajnd",
+      "name": "Kursk",
+      "location": [
+        36.17729707291535,
+        51.756174111724505
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "o1wpep6h",
+      "name": "Sri Nagar",
+      "location": [
+        0,
+        0
+      ],
+      "ownerPolityId": "Kashmir",
+      "scale": 0.8
+    },
+    {
+      "id": "xwwf98m5",
+      "name": "Irkutsk",
+      "location": [
+        104.43571166235941,
+        52.15859335121917
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "5m740m6c",
+      "name": "Mukachevo",
+      "location": [
+        22.440138799690093,
+        48.45849877273949
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5nj578ua",
+      "name": "Bamako",
+      "location": [
+        -8.000871181848272,
+        12.592808604869816
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "pblw75sw",
+      "name": "San Diego",
+      "location": [
+        -117.14559416949788,
+        32.76955422304458
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "dywfy692",
+      "name": "Bukhara",
+      "location": [
+        64.57530377095728,
+        39.812881840269995
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "h4t8mx57",
+      "name": "Monaco",
+      "location": [
+        7.4149412848696254,
+        43.737780009167835
+      ],
+      "ownerPolityId": "Monaco",
+      "isCapital": true,
+      "scale": 0.8
+    },
+    {
+      "id": "45b38qut",
+      "name": "Panevėžys",
+      "location": [
+        24.491734313191095,
+        55.8389774092939
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "bje7bfry",
+      "name": "Medan",
+      "location": [
+        98.68393042637213,
+        3.679159655626364
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "q395ufnh",
+      "name": "Valladolid",
+      "location": [
+        -4.591743419980234,
+        41.51525285554783
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "r2m7ag38",
+      "name": "Charleroi",
+      "location": [
+        4.3905157478851295,
+        50.473058191361844
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5grr4n36",
+      "name": "Ordos",
+      "location": [
+        109.87014162001228,
+        39.85867942292913
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "frdwig1c",
+      "name": "Trabzon",
+      "location": [
+        39.73531013515213,
+        40.98452079895941
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vvrz851w",
+      "name": "Harar",
+      "location": [
+        42.01036236100492,
+        9.606986568826272
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "c1mcpxgb",
+      "name": "Yichang",
+      "location": [
+        111.28821905545344,
+        30.71861533215312
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ks0jc45b",
+      "name": "Taranto",
+      "location": [
+        17.25212895840322,
+        40.42128874783492
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ufe99asq",
+      "name": "Dar es Salaam",
+      "location": [
+        39.04582055706477,
+        -6.754188458753902
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "yf1z3ox3",
+      "name": "Guangzhouwan",
+      "location": [
+        110.3440235800429,
+        21.261591059437677
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "s3klo7a9",
+      "name": "Kazan",
+      "location": [
+        49.01306253616072,
+        55.80337708508054
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "3i6oqjg8",
+      "name": "Cluj",
+      "location": [
+        23.520104756383965,
+        46.79342341829587
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "yhh8wswx",
+      "name": "Cosenza",
+      "location": [
+        16.26279864245172,
+        39.30272563351673
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "k2irfgix",
+      "name": "Cherkasy",
+      "location": [
+        32.0430780676263,
+        49.42466192671901
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "e7ic0kqs",
+      "name": "Basra",
+      "location": [
+        47.76872453207227,
+        30.497405934499824
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "izvrqoyt",
+      "name": "Cusco",
+      "location": [
+        -71.80384322626064,
+        -13.769560213091609
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2eybpwbd",
+      "name": "Breda",
+      "location": [
+        4.756247305095738,
+        51.59840147313693
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ojyf4swo",
+      "name": "Tsitsihar",
+      "location": [
+        123.9374245310551,
+        47.35330781360739
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "e5w5xdqv",
+      "name": "Trondheim",
+      "location": [
+        10.426128511648736,
+        63.42929913773432
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "pxgpiu0u",
+      "name": "Port Moresby",
+      "location": [
+        147.21280104760285,
+        -9.40268824176934
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "09x5h4f0",
+      "name": "Stalinsk",
+      "location": [
+        87.19444370436024,
+        53.74634681985194
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "yqen6txh",
+      "name": "Kabul",
+      "location": [
+        69.26010465650036,
+        35.02634378037847
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "lqlpcw34",
+      "name": "Tartu",
+      "location": [
+        26.745404386240864,
+        58.37850753384197
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8y4qnwb7",
+      "name": "Guadalajara",
+      "location": [
+        -103.34905154977262,
+        20.625388121166097
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "mb80tlyo",
+      "name": "Yan’an",
+      "location": [
+        109.41305374491078,
+        36.714152907559324
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "v2gmqmw5",
+      "name": "Chengdu",
+      "location": [
+        104.06430698706382,
+        30.634710538977004
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "jwamqgth",
+      "name": "Poznań",
+      "location": [
+        16.897279168589858,
+        52.43382981924165
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "20pefb9r",
+      "name": "Novi Sad",
+      "location": [
+        19.82283298525292,
+        45.27353326483441
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1ftrxysn",
+      "name": "Ostrava",
+      "location": [
+        18.25548909214548,
+        49.815138888183185
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "4rk4euz8",
+      "name": "Toronto",
+      "location": [
+        -79.53123108180552,
+        43.88099408051397
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "oazs5zz7",
+      "name": "Yinchuan",
+      "location": [
+        106.25286786727627,
+        38.5841830726645
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gwczuzf2",
+      "name": "Graz",
+      "location": [
+        15.438371544981734,
+        47.079424340944314
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "8stncyi2",
+      "name": "Lorient",
+      "location": [
+        -3.379704390572925,
+        47.754684838169595
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zfugbp9g",
+      "name": "Pavlodar",
+      "location": [
+        76.96806661950883,
+        52.32384901617402
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wtcagdo7",
+      "name": "Odense",
+      "location": [
+        10.399140846062421,
+        55.4252206378778
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "qdxwgm2d",
+      "name": "Dali",
+      "location": [
+        100.28453971490725,
+        25.568396375907312
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2qww29wx",
+      "name": "Luanda",
+      "location": [
+        13.319962856101322,
+        -8.86116947977358
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "o6lowcjf",
+      "name": "Brazzaville",
+      "location": [
+        15.17387394804621,
+        -4.201963531423658
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "23chk248",
+      "name": "Sochi",
+      "location": [
+        39.73036436920239,
+        43.608299137303135
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "m43g1grj",
+      "name": "Chittagong",
+      "location": [
+        91.79113220907803,
+        22.345260977722035
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "jjj1isee",
+      "name": "Qingdao",
+      "location": [
+        120.38343542284244,
+        36.11304149106749
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "8cyr69gr",
+      "name": "Syracuse",
+      "location": [
+        15.279557428019217,
+        37.073709080479176
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1jaku36r",
+      "name": "Nanning",
+      "location": [
+        108.31379233549778,
+        22.820320137704257
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "46p40m9n",
+      "name": "Cologne",
+      "location": [
+        7.005803695054978,
+        50.942185964811586
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "pgycyxf8",
+      "name": "Guangzhou",
+      "location": [
+        113.45125902175117,
+        23.092586270980078
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "kkeh65f5",
+      "name": "Stettin",
+      "location": [
+        14.584891683703107,
+        53.545873420282135
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "5ad7o8r7",
+      "name": "Gilgit",
+      "location": [
+        74.41779477650772,
+        35.714298929736785
+      ],
+      "ownerPolityId": "Kashmir",
+      "scale": 1
+    },
+    {
+      "id": "kpy79prj",
+      "name": "Apia",
+      "location": [
+        -171.75965153544564,
+        -13.845727275797543
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "m0k4w0tn",
+      "name": "Tabriz",
+      "location": [
+        46.18597939954625,
+        38.120683073400016
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "sk094is9",
+      "name": "Kaluga",
+      "location": [
+        36.18686289623704,
+        54.54504590954434
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2lf47dli",
+      "name": "Baghdad",
+      "location": [
+        44.3226155633309,
+        33.343702948114
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "itc7imo8",
+      "name": "Fukuoka",
+      "location": [
+        130.3825510341828,
+        33.58497118458004
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "pw6qiz3w",
+      "name": "Fuzhou",
+      "location": [
+        119.30091756652018,
+        26.107427340712803
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "2gwmdqov",
+      "name": "Lwów",
+      "location": [
+        23.96722906847341,
+        49.83000593763907
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "dtg7lme8",
+      "name": "Nashville",
+      "location": [
+        -86.80301059461948,
+        36.17487427054705
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "fn9uwdkl",
+      "name": "Yantai",
+      "location": [
+        121.42163957645676,
+        37.496894255547744
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "svag2obn",
+      "name": "Hamamatsu",
+      "location": [
+        137.7080751296521,
+        34.740869973964465
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "14nbqs9y",
+      "name": "Dunedin",
+      "location": [
+        170.47931843190875,
+        -45.8823278572497
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ttyigeru",
+      "name": "Porto",
+      "location": [
+        -8.640488329753875,
+        41.15632820671553
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "qtt05xdo",
+      "name": "Lublin",
+      "location": [
+        22.56366907769662,
+        51.23520855785199
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "laegik5m",
+      "name": "George Town",
+      "location": [
+        100.31225021999477,
+        5.415397379153575
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "21kq0ws6",
+      "name": "Bangui",
+      "location": [
+        18.562926184285427,
+        4.405695292043319
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "h3a455be",
+      "name": "Buenos Aires",
+      "location": [
+        -58.643157880294396,
+        -34.63801180347517
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "d6zke39y",
+      "name": "Istanbul",
+      "location": [
+        28.89244048425668,
+        41.03920902869527
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "9znvpl0g",
+      "name": "West Jerusalem",
+      "location": [
+        35.26471070633919,
+        31.836542921636777
+      ],
+      "ownerPolityId": "Mandatory Palestine",
+      "scale": 1
+    },
+    {
+      "id": "ozvbk05z",
+      "name": "Uliastai",
+      "location": [
+        96.89703945040245,
+        47.73210466039487
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "d65ydca0",
+      "name": "Paris",
+      "location": [
+        2.333366402043562,
+        48.80458017710282
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "ihrwyrrt",
+      "name": "Perth",
+      "location": [
+        115.86534114564813,
+        -32.091037294303334
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "ehj6z5oc",
+      "name": "Saratov",
+      "location": [
+        45.97581153918443,
+        51.598639280056545
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "sw3rn96f",
+      "name": "Khovd",
+      "location": [
+        91.65160303212292,
+        47.99762932439896
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "rfhl0m9c",
+      "name": "Rennes",
+      "location": [
+        -1.7196480475860019,
+        48.209049380128704
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "jje51jrz",
+      "name": "Belo Horizonte",
+      "location": [
+        -44.01942913607308,
+        -19.873876565420474
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "aepu5n8q",
+      "name": "Rangoon",
+      "location": [
+        96.16026886815521,
+        16.854403601846144
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "7n3grzlt",
+      "name": "Lusaka",
+      "location": [
+        28.014186257756112,
+        -15.575279764064192
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "fqjyt2c3",
+      "name": "Hamburg",
+      "location": [
+        9.968600143710189,
+        53.53682807806993
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "cga9ojqi",
+      "name": "Nanchang",
+      "location": [
+        115.84982170265714,
+        28.67979876073757
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ss0he3n6",
+      "name": "Klaipėda",
+      "location": [
+        21.170761749527212,
+        55.7200705184747
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "uo87ub57",
+      "name": "Sanaa",
+      "location": [
+        43.73972495615388,
+        15.372721860036549
+      ],
+      "isCapital": true,
+      "scale": 0.8
+    },
+    {
+      "id": "6gzl7ryc",
+      "name": "Stalinabad",
+      "location": [
+        68.75800446177581,
+        38.534797088536635
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "92vk5c47",
+      "name": "Grenoble",
+      "location": [
+        5.710047396446103,
+        45.191022186283334
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "rhkgnv3z",
+      "name": "Karlsbad",
+      "location": [
+        12.811981581554027,
+        50.23519001593729
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zavrlau2",
+      "name": "Kotlas",
+      "location": [
+        46.65459601404076,
+        61.262025699183454
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "f36ebp01",
+      "name": "Wellington",
+      "location": [
+        174.74474657132387,
+        -41.243263199185705
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "e5jj788t",
+      "name": "Larisa",
+      "location": [
+        22.486840471162505,
+        39.62126008497344
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "moua6e8u",
+      "name": "Melbourne",
+      "location": [
+        145.11417484943672,
+        -37.86859873680562
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "94rk03ow",
+      "name": "Guantánamo",
+      "location": [
+        -75.20802499963868,
+        20.168471049886605
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "uh79zh7s",
+      "name": "Wuhan",
+      "location": [
+        114.30504560378273,
+        30.59332643089985
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "iimwm3um",
+      "name": "Turin",
+      "location": [
+        7.694694897562838,
+        45.08286132995141
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "0cjyvdr6",
+      "name": "Metz",
+      "location": [
+        6.223995594954029,
+        49.144427115058306
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "3p87m2zp",
+      "name": "Tomsk",
+      "location": [
+        84.98826051353979,
+        56.505233757110744
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "p3cb1bam",
+      "name": "Voronezh",
+      "location": [
+        39.1777327141292,
+        51.6737359942031
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "rluekqiv",
+      "name": "Manama",
+      "location": [
+        50.56241649989733,
+        26.232933415302
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "hcc397fm",
+      "name": "Düsseldorf",
+      "location": [
+        6.831800414985321,
+        51.186528459592665
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vl81sbot",
+      "name": "St. Louis",
+      "location": [
+        -90.30922609904496,
+        38.62377054206959
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "td1xt4mb",
+      "name": "Kalgan",
+      "location": [
+        114.92809129020193,
+        40.77575256605812
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "fx5fhtd1",
+      "name": "Fortaleza",
+      "location": [
+        -38.569636826697206,
+        -3.7833109263131206
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "dnsrtijm",
+      "name": "Tula",
+      "location": [
+        37.789614137751066,
+        54.178604314978514
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ijdvzarx",
+      "name": "Anchorage",
+      "location": [
+        -149.84352485424233,
+        61.21469748431295
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gnx3jwzm",
+      "name": "Yakutsk",
+      "location": [
+        129.76132043610514,
+        62.07733205909756
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "f6o4j7hj",
+      "name": "Osaka",
+      "location": [
+        135.46082626055394,
+        34.720667116586114
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "279k6a20",
+      "name": "Canberra",
+      "location": [
+        149.19929846652116,
+        -35.26335685154323
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "al1smc1z",
+      "name": "Vinnytsia",
+      "location": [
+        28.467295376028627,
+        49.2338099437691
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2e5ozxoq",
+      "name": "Antofagasta",
+      "location": [
+        -70.3548335915523,
+        -23.618835248698318
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "j64d17d4",
+      "name": "Edinburgh",
+      "location": [
+        -3.360712038045138,
+        55.97331820808134
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "pgel5hd6",
+      "name": "Catania",
+      "location": [
+        15.1002217589216,
+        37.52906676440786
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "y32nmymb",
+      "name": "Cairo",
+      "location": [
+        31.240628313036144,
+        30.04000855009906
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "vckz0vs2",
+      "name": "Asmara",
+      "location": [
+        39.1111546115223,
+        15.397126507668617
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "u2aakcko",
+      "name": "Łódź",
+      "location": [
+        19.47123906480257,
+        51.72605560815205
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "q1fmk3q4",
+      "name": "Viipuri",
+      "location": [
+        28.747018963486916,
+        60.708882745874746
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "p5ti75ut",
+      "name": "Manaus",
+      "location": [
+        -59.99447545566089,
+        -2.9655461587182117
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "taxaxa8d",
+      "name": "Wick",
+      "location": [
+        -3.0993903195109307,
+        58.429258064956684
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "icv5rdj0",
+      "name": "Plymouth",
+      "location": [
+        -4.160921468375543,
+        50.394565512974935
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "jn3h2w7s",
+      "name": "Sundsvall",
+      "location": [
+        17.25750673708837,
+        62.41876578067718
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "bwupq2h0",
+      "name": "Davao",
+      "location": [
+        125.54016062474436,
+        7.158746533231366
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "3g7aee86",
+      "name": "Buffalo",
+      "location": [
+        -78.82256552054567,
+        42.90057911912919
+      ],
+      "scale": 1
+    },
+    {
+      "id": "ks2snnp2",
+      "name": "Adelaide",
+      "location": [
+        138.67657107603895,
+        -34.89051275627928
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ysgznr6o",
+      "name": "Ponta Delgada",
+      "location": [
+        -25.682610087076753,
+        37.76116838950365
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "f7hnw5mj",
+      "name": "Houston",
+      "location": [
+        -95.18864736511482,
+        29.636526742378905
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "chvf2qfs",
+      "name": "Changsha",
+      "location": [
+        112.88489818848248,
+        28.254189756734604
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "4mx97w6w",
+      "name": "Portland",
+      "location": [
+        -122.6745371227877,
+        45.54070262379341
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "qervds2e",
+      "name": "Recife",
+      "location": [
+        -35.03497268390795,
+        -7.953655312774487
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "7xqd99rv",
+      "name": "Split",
+      "location": [
+        16.59418722797054,
+        43.53219491352786
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "i0u5y1o9",
+      "name": "Ceuta",
+      "location": [
+        -5.324987484744839,
+        35.888482760570454
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "sfbkgwdj",
+      "name": "Novosibirsk",
+      "location": [
+        82.8742521538964,
+        55.03683435742906
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "9cr3v1gj",
+      "name": "Liège",
+      "location": [
+        5.586320218829734,
+        50.633709620350515
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wts12qwi",
+      "name": "Cebu",
+      "location": [
+        123.89523240221574,
+        10.333381467771702
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "wbxqcbpk",
+      "name": "Denver",
+      "location": [
+        -104.98056925860932,
+        39.725262255850794
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "t2xee5gr",
+      "name": "Vichy",
+      "location": [
+        3.423065022764533,
+        46.12864085250672
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "jik5tdvz",
+      "name": "Bogotá",
+      "location": [
+        -74.10471523982363,
+        4.747336053575097
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "e60h7928",
+      "name": "Cincinnati",
+      "location": [
+        -84.59337481279557,
+        39.20472806372402
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "tkmakrgc",
+      "name": "Tallinn",
+      "location": [
+        24.714632578357016,
+        59.419548362462024
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "16ghuf4x",
+      "name": "Smolensk",
+      "location": [
+        32.03822408929277,
+        54.80461911589643
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "u88drq93",
+      "name": "Pskov",
+      "location": [
+        28.3356620212159,
+        57.81561047285737
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "dpg3ehfq",
+      "name": "Reims",
+      "location": [
+        4.138522627098943,
+        49.214648058912275
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "y0f2nzmt",
+      "name": "Teruel",
+      "location": [
+        -0.9419067985019506,
+        40.43922013767269
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ymub3vov",
+      "name": "Podolsk",
+      "location": [
+        37.495532659077924,
+        55.43145161474851
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "cc3t5fss",
+      "name": "Mogadishu",
+      "location": [
+        45.23372227110134,
+        2.162765142330059
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "w8kbcg9v",
+      "name": "Ashgabat",
+      "location": [
+        58.28620963946931,
+        37.98393812954659
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "6isvzb2e",
+      "name": "Taipei",
+      "location": [
+        121.52810839840767,
+        25.067969225274936
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "4h7qt68t",
+      "name": "Bern",
+      "location": [
+        7.455023771654509,
+        46.94736700073872
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "vplk4vw7",
+      "name": "Krasnodar",
+      "location": [
+        38.983673823508795,
+        45.064342213370026
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "2yjyebh0",
+      "name": "Taiyuan",
+      "location": [
+        112.4141218209429,
+        37.85050762169482
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "7hzuddi3",
+      "name": "San José",
+      "location": [
+        -84.06791617888899,
+        9.94841443347103
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "tqhevyz6",
+      "name": "Rotterdam",
+      "location": [
+        4.48038056940504,
+        51.92845675337921
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "q5lylxai",
+      "name": "Mytilene",
+      "location": [
+        26.531998470421687,
+        39.09866695353435
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ngno03yi",
+      "name": "Monrovia",
+      "location": [
+        -10.719308769138259,
+        6.373230672643544
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "30se6k3q",
+      "name": "Konya",
+      "location": [
+        32.606409744488225,
+        37.767160916728415
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "wwwrjjgv",
+      "name": "Chernihiv",
+      "location": [
+        31.292020261471066,
+        51.49318227522204
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "lwgecexe",
+      "name": "Limerick",
+      "location": [
+        -8.670386319565463,
+        52.66013858774434
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "cwxww5ln",
+      "name": "Punta Arenas",
+      "location": [
+        -71.0265945524792,
+        -53.107246990536574
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "w00nva4t",
+      "name": "Liverpool",
+      "location": [
+        -2.9107097334509056,
+        53.39381442594245
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "noumd3eu",
+      "name": "Bangkok",
+      "location": [
+        100.605541053641,
+        13.823908292316545
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "aiv7y8zs",
+      "name": "Vitebsk",
+      "location": [
+        30.21974469755712,
+        55.19730323447632
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "x9rgcis2",
+      "name": "Cherbourg",
+      "location": [
+        -1.5808350059354377,
+        49.638730915010285
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "5y8upfqn",
+      "name": "Southampton",
+      "location": [
+        -1.4643261768530398,
+        50.946890364568446
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nki0vrcj",
+      "name": "Königsberg",
+      "location": [
+        20.45681633232024,
+        54.69410450293748
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "56yrlnes",
+      "name": "Saarbrücken",
+      "location": [
+        6.959787575690675,
+        49.28357448509982
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ks085jpx",
+      "name": "Bryansk",
+      "location": [
+        34.38127336585566,
+        53.27881236138097
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "oavlpzz4",
+      "name": "Vaduz",
+      "location": [
+        9.557593768718041,
+        47.134946143487895
+      ],
+      "ownerPolityId": "Liechtenstein",
+      "isCapital": true,
+      "scale": 0.8
+    },
+    {
+      "id": "k52l4e0t",
+      "name": "Narva",
+      "location": [
+        28.056133490075425,
+        59.355834300786
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1zfykgiz",
+      "name": "Apúlia",
+      "location": [
+        -8.754607617038602,
+        41.4698812038211
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "a8zoaq6h",
+      "name": "Seattle",
+      "location": [
+        -122.35362781120753,
+        47.65960561027825
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "m2m79g3j",
+      "name": "Algiers",
+      "location": [
+        3.074736375768895,
+        36.72655550911065
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "vqvrof9u",
+      "name": "Christchurch",
+      "location": [
+        172.59078116466537,
+        -43.50844679742425
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nxd6wzf0",
+      "name": "Nantes",
+      "location": [
+        -1.6024745260771247,
+        47.25537634647026
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "upuodudp",
+      "name": "Mogilev",
+      "location": [
+        30.464154836662352,
+        53.89068430197236
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "9lznhpat",
+      "name": "Pilsen",
+      "location": [
+        13.372346295210937,
+        49.76119406058845
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "c8aq4a7u",
+      "name": "Orléans",
+      "location": [
+        1.887930000512071,
+        47.89324170154288
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "flyhrrv7",
+      "name": "Phnom Penh",
+      "location": [
+        104.90107420794806,
+        11.586060881070807
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "vy4xblv5",
+      "name": "Linz",
+      "location": [
+        14.292786636497597,
+        48.30600528772467
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "haf7xnsx",
+      "name": "Londonderry",
+      "location": [
+        -7.286565659580605,
+        55.029222265723035
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "iyf8u6li",
+      "name": "Guryev",
+      "location": [
+        51.873657757911545,
+        47.03679641448113
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "0qeddicc",
+      "name": "Hyderabad, Telangana",
+      "location": [
+        0,
+        0
+      ],
+      "ownerPolityId": "Hyderabad Princely State",
+      "isCapital": true,
+      "scale": 1
+    },
+    {
+      "id": "b1nk0wik",
+      "name": "Kharkov",
+      "location": [
+        36.316343192806116,
+        50.0601647093205
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "3s8swhrp",
+      "name": "Bydgoszcz",
+      "location": [
+        18.008532878151446,
+        53.1281169113287
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "0iy7p9oh",
+      "name": "Toulouse",
+      "location": [
+        1.4287681888328163,
+        43.598872238183645
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "uvpo04xf",
+      "name": "Choibalsan",
+      "location": [
+        114.47154108677351,
+        48.07956742935713
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "0plo36k7",
+      "name": "Accra",
+      "location": [
+        -0.1681208255888868,
+        5.633299971261934
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "srnxdoi4",
+      "name": "Tromsø",
+      "location": [
+        18.987737730873896,
+        69.64915632005605
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "jfmav1xm",
+      "name": "Chita",
+      "location": [
+        113.47324050483266,
+        52.067649519890864
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "knxd9la8",
+      "name": "Tel Aviv",
+      "location": [
+        34.80620993621235,
+        32.15004486837266
+      ],
+      "scale": 1.2
+    },
+    {
+      "id": "7i6ndda3",
+      "name": "Utrecht",
+      "location": [
+        5.114156148280833,
+        52.15492372213447
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "mmc9y4hm",
+      "name": "Joensuu",
+      "location": [
+        29.798373824666612,
+        62.62685680648653
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "pdkhowzz",
+      "name": "Ivanovo-Voznesensk",
+      "location": [
+        41.040402946826106,
+        57.00326866732567
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "pwkkh8cb",
+      "name": "Klagenfurt",
+      "location": [
+        14.281018990385379,
+        46.64549416496416
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "htao1goy",
+      "name": "Turku",
+      "location": [
+        22.24838029733828,
+        60.437202839538685
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "2k0le8xg",
+      "name": "Tarnopol",
+      "location": [
+        25.60080222546839,
+        49.54163968162749
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "9el60rlm",
+      "name": "Kansas City",
+      "location": [
+        -94.50873209724074,
+        39.147692262089095
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "jtaxau7i",
+      "name": "Sverdlovsk",
+      "location": [
+        60.581184484379385,
+        56.84614659402712
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "1hkph71v",
+      "name": "Riga",
+      "location": [
+        24.08641183428316,
+        56.991611160054276
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "27zqr7us",
+      "name": "Genoa",
+      "location": [
+        8.911891209856737,
+        44.42686783785231
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "jfo4drey",
+      "name": "Kanazawa",
+      "location": [
+        136.62907754989618,
+        36.59813477796463
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "8w6tpnzl",
+      "name": "Saint-Louis",
+      "location": [
+        -16.442104982132822,
+        16.00244885948466
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ov19kdyg",
+      "name": "Djibouti",
+      "location": [
+        43.15011500726408,
+        11.605829795819204
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "uf0lyjhy",
+      "name": "Sucre",
+      "location": [
+        -65.47424747275922,
+        -18.806119445914575
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "tbb6lrsb",
+      "name": "New Orleans",
+      "location": [
+        -89.99169277667808,
+        30.0103774729713
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "hq73es8w",
+      "name": "Auckland",
+      "location": [
+        174.7945912945862,
+        -36.875115775754225
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "b04rqben",
+      "name": "Tours",
+      "location": [
+        0.626590635579541,
+        47.379757202328136
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "13y5nvas",
+      "name": "Calcutta",
+      "location": [
+        88.27962870822977,
+        22.500335902227164
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "ud149pat",
+      "name": "Bordeaux",
+      "location": [
+        -0.6040028905417927,
+        44.83073460010604
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "y7qwnxd5",
+      "name": "Cardiff",
+      "location": [
+        -3.1722626193185843,
+        51.51945193885456
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "qub8bhcp",
+      "name": "Salekhard",
+      "location": [
+        66.56000291050695,
+        66.58591855074036
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "glvkekpv",
+      "name": "Omsk",
+      "location": [
+        73.29203178004911,
+        55.03763570683759
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "9hte3uqk",
+      "name": "San Marino",
+      "location": [
+        12.48174743871803,
+        43.99816653591711
+      ],
+      "ownerPolityId": "San Marino",
+      "isCapital": true,
+      "scale": 0.8
+    },
+    {
+      "id": "b1mv5qt8",
+      "name": "Athens",
+      "location": [
+        23.728723725646862,
+        37.97874057787577
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "nwlgpla1",
+      "name": "Cotonou",
+      "location": [
+        2.3763224213597733,
+        6.374603787215278
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "gd1z0z25",
+      "name": "Mosul",
+      "location": [
+        43.16899107871353,
+        36.35789366942727
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "995iadkp",
+      "name": "Damascus",
+      "location": [
+        36.34336178410376,
+        33.55235979915008
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "bnf9i4v9",
+      "name": "Santo Domingo",
+      "location": [
+        -70.01024004842621,
+        18.517003166622786
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "bqw14189",
+      "name": "Nice",
+      "location": [
+        7.253344607819453,
+        43.72174668561459
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "steqxkvu",
+      "name": "Tulagi",
+      "location": [
+        160.2295662264736,
+        -9.097827315404558
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "9xaiaeb2",
+      "name": "Lipetsk",
+      "location": [
+        39.62828920899283,
+        52.62470034886624
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "5751xoxe",
+      "name": "Vilnius",
+      "location": [
+        25.268371153439748,
+        54.69441199353142
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "t6xjezbs",
+      "name": "Carcassonne",
+      "location": [
+        2.349957768848287,
+        43.21702945304622
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "zltq8gyl",
+      "name": "Suzhou",
+      "location": [
+        120.40014419228449,
+        31.260004418573274
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "rfdk9dl1",
+      "name": "Lahore",
+      "location": [
+        74.34361100734215,
+        31.374873913917497
+      ],
+      "scale": 1
+    },
+    {
+      "id": "udoyfs7u",
+      "name": "Bologna",
+      "location": [
+        11.32875255255143,
+        44.51841272312646
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "62dl1sh1",
+      "name": "Newcastle",
+      "location": [
+        -1.7112460205057427,
+        55.00394077006564
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "a1lc9q3o",
+      "name": "Ivalo",
+      "location": [
+        27.520164223403782,
+        68.66294189627766
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "6vnyi05z",
+      "name": "Naples",
+      "location": [
+        14.24345648132214,
+        40.853986304248735
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "ma74apcj",
+      "name": "San Salvador",
+      "location": [
+        -89.18650648165122,
+        13.711356791478238
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "6vglci6y",
+      "name": "Bratislava",
+      "location": [
+        17.13487272210716,
+        48.159728553237784
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "w2fo8v9q",
+      "name": "Hangzhou",
+      "location": [
+        120.31211640369418,
+        30.31617792147459
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "84yrhvcv",
+      "name": "Constanța",
+      "location": [
+        28.602052032027814,
+        44.16460639061225
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "8f3avk31",
+      "name": "Fort-Shevchenko",
+      "location": [
+        50.291724741269135,
+        44.512122771676275
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "npqhp999",
+      "name": "Marseille",
+      "location": [
+        5.371142247496612,
+        43.3702554595333
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "wch9zatd",
+      "name": "Salzburg",
+      "location": [
+        13.041487423402566,
+        47.80725743238406
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "febp28hz",
+      "name": "Szeged",
+      "location": [
+        20.20319502752533,
+        46.290349125272826
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "12etcrui",
+      "name": "Alexandretta",
+      "location": [
+        36.15096085955722,
+        36.55102524010225
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "hw84jpj3",
+      "name": "Murmansk",
+      "location": [
+        33.106233249926795,
+        68.96414167568679
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "6ke8fnt4",
+      "name": "Perm",
+      "location": [
+        56.37492252832874,
+        58.056922337150326
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "4hqu480w",
+      "name": "Medellín",
+      "location": [
+        -75.56360123309251,
+        6.263386323792659
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "4l0mo4a8",
+      "name": "Agadir",
+      "location": [
+        -9.551119900511168,
+        30.458324563988043
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nkydxo2x",
+      "name": "Tehran",
+      "location": [
+        51.625809603435414,
+        35.7162698544778
+      ],
+      "isCapital": true,
+      "scale": 1.3
+    },
+    {
+      "id": "ix07i7ta",
+      "name": "Kuressaare",
+      "location": [
+        22.48951596280189,
+        58.262897905260644
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "jsmkmn57",
+      "name": "Surabaya",
+      "location": [
+        112.6811418683031,
+        -7.2883188415508755
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "eilfnlxa",
+      "name": "Lübeck",
+      "location": [
+        10.684213992731591,
+        53.87001992302169
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "nixzaf7s",
+      "name": "Berbera",
+      "location": [
+        45.0073571271619,
+        10.430510828775766
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1x4068b0",
+      "name": "Le Mans",
+      "location": [
+        0.2081056584386795,
+        47.89520929153446
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "0odjmvt0",
+      "name": "Beijing",
+      "location": [
+        116.45037530693524,
+        39.938144895376155
+      ],
+      "scale": 1.3
+    },
+    {
+      "id": "zfp7ujn9",
+      "name": "Xining",
+      "location": [
+        101.69871139281678,
+        36.637910902290855
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "1m0befvu",
+      "name": "Baden",
+      "location": [
+        8.185645084250861,
+        48.780368592649495
+      ],
+      "scale": 0.8
+    },
+    {
+      "id": "3ltyot14",
+      "name": "Jinan",
+      "location": [
+        117.01858030949177,
+        36.688593924275565
+      ],
+      "scale": 1.1
+    },
+    {
+      "id": "fbc5trfz",
+      "name": "La Rochelle",
+      "location": [
+        -1.0483868127437477,
+        45.9698572527916
+      ],
+      "scale": 0.8
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "o5c2g86u",
+      "name": "Mount Suribachi",
+      "type": "landmark",
+      "location": [
+        141.2921829721334,
+        24.757480218465076
+      ]
+    },
+    {
+      "id": "aatktwhn",
+      "name": "Khalkhin Gol",
+      "type": "landmark",
+      "location": [
+        117.84297705761679,
+        47.90713670956535
+      ]
+    },
+    {
+      "id": "e6e6d3vj",
+      "name": "Djado",
+      "type": "landmark",
+      "location": [
+        11.141851316062438,
+        20.786345930149167
+      ]
+    },
+    {
+      "id": "mzgh2zta",
+      "name": "Guantánamo Bay",
+      "type": "landmark",
+      "location": [
+        -75.08791620009988,
+        19.9923399019183
+      ]
+    },
+    {
+      "id": "k602lojo",
+      "name": "Point Barrow",
+      "type": "landmark",
+      "location": [
+        -156.4805697526141,
+        71.37946579609445
+      ]
+    }
+  ],
+  "battalions": [
+    {
+      "id": "jifldil6",
+      "ownerPolityId": "Sweden",
+      "location": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "fxc57u9z",
+      "ownerPolityId": "Israel",
+      "location": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ag7zdpig",
+      "ownerPolityId": "Norway",
+      "location": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "f6ly2o0m",
+      "ownerPolityId": "Union of Soviet Socialist Republics",
+      "location": [
+        0,
+        0
+      ]
+    }
+  ],
+  "regionOwnership": {
+    "1": "Kingdom of Greece",
+    "4": "United States",
+    "9": "United Kingdom",
+    "11": "British Suez Canal Administration",
+    "12": "Denmark",
+    "15": "Panama",
+    "20": "Republic of China",
+    "21": "Chinese Communists",
+    "22": "Republic of China",
+    "23": "Tibet",
+    "24": "Republic of China",
+    "25": "Tibet",
+    "26": "Republic of China",
+    "27": "Republic of China",
+    "28": "Republic of China",
+    "29": "Republic of China",
+    "30": "Republic of China",
+    "31": "Chinese Communists",
+    "32": "Republic of China",
+    "33": "Republic of China",
+    "34": "Chinese Communists",
+    "35": "Chinese Communists",
+    "36": "Republic of China",
+    "37": "Republic of China",
+    "38": "Republic of China",
+    "39": "Chinese Communists",
+    "40": "British Raj",
+    "41": "British Somaliland",
+    "42": "France",
+    "43": "Sweden",
+    "44": "Union of Soviet Socialist Republics",
+    "45": "Afghanistan",
+    "46": "Romania",
+    "47": "Bulgaria",
+    "48": "Albania",
+    "49": "Yugoslavia",
+    "50": "Italy",
+    "51": "United Kingdom",
+    "52": "Italy",
+    "53": "France",
+    "54": "Luxembourg",
+    "55": "Belgium",
+    "56": "British Administered Germany",
+    "57": "Francoist Spain",
+    "58": "Francoist Spain",
+    "59": "Portugal",
+    "60": "Regency of Tunis",
+    "61": "Egypt",
+    "62": "United Kingdom",
+    "63": "French West Africa",
+    "64": "Liberia",
+    "65": "British Sierra Leone",
+    "66": "French West Africa",
+    "67": "British Gold Coast",
+    "68": "French West Africa",
+    "69": "Belgian Congo",
+    "70": "Portuguese Angola",
+    "71": "South West Africa",
+    "72": "South Africa",
+    "73": "British East Africa",
+    "74": "British East Africa",
+    "75": "British East Africa",
+    "76": "United Kingdom",
+    "77": "Territory of the Afars and the Issas",
+    "78": "Ethiopia",
+    "79": "United Kingdom",
+    "80": "United Kingdom",
+    "81": "British Trucial States",
+    "82": "Bhutan",
+    "83": "Nepal",
+    "84": "French Laos",
+    "85": "Australia",
+    "86": "United Kingdom",
+    "87": "France",
+    "88": "New Zealand",
+    "89": "United Kingdom",
+    "90": "Republic of China",
+    "91": "United Kingdom",
+    "92": "Guatemala",
+    "93": "El Salvador",
+    "94": "Nicaragua",
+    "95": "Costa Rica",
+    "96": "Netherlands",
+    "97": "Venezuela",
+    "98": "Dominican Republic",
+    "99": "Haiti",
+    "100": "United Kingdom",
+    "101": "Cuba",
+    "102": "United Kingdom",
+    "103": "United Kingdom",
+    "104": "France",
+    "105": "United Kingdom",
+    "106": "Netherlands",
+    "107": "Uruguay",
+    "108": "Chile",
+    "109": "Iceland",
+    "110": "United Kingdom",
+    "111": "Northern Rhodesia",
+    "112": "Switzerland",
+    "113": "Argentina",
+    "114": "Portuguese Mozambique",
+    "115": "France",
+    "116": "French West Africa",
+    "117": "Denmark",
+    "118": "United Kingdom",
+    "119": "Honduras",
+    "120": "French West Africa",
+    "121": "United Kingdom",
+    "122": "Paraguay",
+    "123": "Peru",
+    "124": "Colombia",
+    "125": "Ireland",
+    "126": "United Kingdom",
+    "127": "United Kingdom",
+    "128": "Cochinchina",
+    "129": "Union of Soviet Socialist Republics",
+    "130": "Denmark",
+    "131": "Hungary",
+    "132": "Romania",
+    "133": "Incorporated Territory of Alaska",
+    "134": "US Administration of Philippines",
+    "135": "Incorporated Territory of Hawaii",
+    "136": "Anglo-Egyptian Sudan",
+    "137": "Francoist Spain",
+    "138": "Francoist Spain",
+    "139": "French Morocco",
+    "140": "Portugal",
+    "141": "Portugal",
+    "142": "Francoist Spain",
+    "143": "Portugal",
+    "153": "Bolivia",
+    "154": "Ecuador",
+    "156": "French Madagascar",
+    "157": "Francoist Spain",
+    "158": "British Raj",
+    "159": "Denmark",
+    "160": "American Administration of Japan",
+    "162": "Brazil",
+    "163": "United Kingdom",
+    "164": "Australia",
+    "165": "Portugal",
+    "166": "United Kingdom",
+    "167": "People's Republic of Mongolia",
+    "168": "Italy",
+    "169": "Republic of China",
+    "170": "United Kingdom",
+    "171": "Romania",
+    "172": "Romania",
+    "173": "United States",
+    "174": "France",
+    "175": "American Administration of Japan",
+    "176": "Republic of China",
+    "177": "Bulgaria",
+    "178": "France",
+    "179": "France",
+    "180": "France",
+    "181": "Belgium",
+    "182": "France",
+    "183": "France",
+    "184": "Belgium",
+    "185": "France",
+    "186": "France",
+    "187": "United Kingdom",
+    "188": "France",
+    "189": "France",
+    "190": "France",
+    "191": "France",
+    "192": "France",
+    "193": "France",
+    "195": "France",
+    "197": "Francoist Spain",
+    "198": "Francoist Spain",
+    "199": "Francoist Spain",
+    "200": "Francoist Spain",
+    "201": "Francoist Spain",
+    "202": "Francoist Spain",
+    "203": "Francoist Spain",
+    "204": "Francoist Spain",
+    "205": "Francoist Spain",
+    "206": "Francoist Spain",
+    "207": "Netherlands",
+    "208": "British Administered Germany",
+    "209": "French Administered Germany",
+    "210": "Netherlands",
+    "211": "Netherlands",
+    "212": "British Administered Germany",
+    "213": "British Administered Germany",
+    "214": "British Administered Germany",
+    "215": "French Administered Germany",
+    "216": "British Administered Germany",
+    "217": "American Administered Germany",
+    "218": "Poland",
+    "219": "Soviet Administered Germany",
+    "220": "American Administered Germany",
+    "221": "Soviet Administered Germany",
+    "222": "Soviet Administered Germany",
+    "223": "American Administered Germany",
+    "224": "Poland",
+    "225": "Saar Protectorate",
+    "226": "American Administered Germany",
+    "227": "Union of Soviet Socialist Republics",
+    "228": "Union of Soviet Socialist Republics",
+    "229": "Union of Soviet Socialist Republics",
+    "230": "Czechoslovakia",
+    "231": "Czechoslovakia",
+    "232": "Czechoslovakia",
+    "233": "Czechoslovakia",
+    "234": "Union of Soviet Socialist Republics",
+    "235": "Yugoslavia",
+    "236": "Yugoslavia",
+    "237": "Yugoslavia",
+    "238": "People's Republic of Greece",
+    "239": "Saudi Arabia",
+    "240": "North Yemen",
+    "241": "Turkey",
+    "242": "Turkey",
+    "243": "Saudi Arabia",
+    "244": "Czechoslovakia",
+    "245": "Czechoslovakia",
+    "246": "Turkey",
+    "247": "United Kingdom",
+    "248": "Yugoslavia",
+    "249": "Union of Soviet Socialist Republics",
+    "250": "Union of Soviet Socialist Republics",
+    "251": "Union of Soviet Socialist Republics",
+    "252": "Poland",
+    "253": "Turkey",
+    "254": "Turkey",
+    "255": "British Raj",
+    "256": "Italy",
+    "257": "Italy",
+    "258": "Italy",
+    "259": "Italy",
+    "260": "Italy",
+    "261": "Italy",
+    "262": "Italy",
+    "263": "Italy",
+    "264": "Italy",
+    "265": "Italy",
+    "266": "Italy",
+    "267": "Italy",
+    "268": "Italy",
+    "269": "Italy",
+    "271": "United Kingdom",
+    "272": "United Kingdom",
+    "273": "United Kingdom",
+    "274": "United Kingdom",
+    "275": "United Kingdom",
+    "276": "Union of Soviet Socialist Republics",
+    "277": "Union of Soviet Socialist Republics",
+    "278": "Union of Soviet Socialist Republics",
+    "279": "Union of Soviet Socialist Republics",
+    "280": "Union of Soviet Socialist Republics",
+    "281": "Union of Soviet Socialist Republics",
+    "282": "Union of Soviet Socialist Republics",
+    "283": "Union of Soviet Socialist Republics",
+    "284": "Union of Soviet Socialist Republics",
+    "285": "Union of Soviet Socialist Republics",
+    "286": "Union of Soviet Socialist Republics",
+    "287": "Union of Soviet Socialist Republics",
+    "288": "Union of Soviet Socialist Republics",
+    "289": "Union of Soviet Socialist Republics",
+    "290": "Union of Soviet Socialist Republics",
+    "291": "Union of Soviet Socialist Republics",
+    "292": "Union of Soviet Socialist Republics",
+    "293": "Union of Soviet Socialist Republics",
+    "294": "Union of Soviet Socialist Republics",
+    "295": "Union of Soviet Socialist Republics",
+    "296": "Union of Soviet Socialist Republics",
+    "297": "Union of Soviet Socialist Republics",
+    "298": "Union of Soviet Socialist Republics",
+    "299": "Union of Soviet Socialist Republics",
+    "300": "Union of Soviet Socialist Republics",
+    "301": "Union of Soviet Socialist Republics",
+    "302": "Union of Soviet Socialist Republics",
+    "303": "Union of Soviet Socialist Republics",
+    "304": "Union of Soviet Socialist Republics",
+    "305": "Union of Soviet Socialist Republics",
+    "306": "Union of Soviet Socialist Republics",
+    "307": "Union of Soviet Socialist Republics",
+    "308": "Union of Soviet Socialist Republics",
+    "309": "Union of Soviet Socialist Republics",
+    "310": "Union of Soviet Socialist Republics",
+    "311": "Union of Soviet Socialist Republics",
+    "312": "Union of Soviet Socialist Republics",
+    "313": "Union of Soviet Socialist Republics",
+    "314": "Union of Soviet Socialist Republics",
+    "315": "Union of Soviet Socialist Republics",
+    "316": "Union of Soviet Socialist Republics",
+    "317": "Union of Soviet Socialist Republics",
+    "318": "Union of Soviet Socialist Republics",
+    "319": "Union of Soviet Socialist Republics",
+    "320": "Union of Soviet Socialist Republics",
+    "321": "Union of Soviet Socialist Republics",
+    "322": "Union of Soviet Socialist Republics",
+    "323": "Union of Soviet Socialist Republics",
+    "324": "Union of Soviet Socialist Republics",
+    "325": "Union of Soviet Socialist Republics",
+    "326": "Union of Soviet Socialist Republics",
+    "327": "Union of Soviet Socialist Republics",
+    "328": "Union of Soviet Socialist Republics",
+    "329": "Union of Soviet Socialist Republics",
+    "330": "Indonesian Revolutionaries",
+    "331": "Union of Soviet Socialist Republics",
+    "332": "Baloch Princely States",
+    "333": "Kashmir",
+    "334": "Kashmir",
+    "335": "Kashmir",
+    "336": "Union of Soviet Socialist Republics",
+    "337": "Union of Soviet Socialist Republics",
+    "338": "Union of Soviet Socialist Republics",
+    "339": "British Raj",
+    "340": "British Raj",
+    "341": "British Raj",
+    "342": "Turkey",
+    "343": "British Ceylon",
+    "344": "Rajputana Princely Confederacy",
+    "345": "British Raj",
+    "346": "Junagadh Princely State",
+    "347": "Hyderabad Princely State",
+    "348": "British Raj",
+    "349": "British Ceylon",
+    "350": "Iran",
+    "351": "Iran",
+    "352": "Iran",
+    "353": "Iran",
+    "354": "Iran",
+    "355": "Iran",
+    "356": "Iran",
+    "357": "Iran",
+    "358": "Iran",
+    "359": "Iran",
+    "360": "Mandatory Palestine",
+    "361": "Hashemite Kingdom of Transjordan",
+    "362": "Syria",
+    "363": "Turkey",
+    "364": "Egypt",
+    "366": "Egypt",
+    "367": "Emirate of Cyrenaica",
+    "368": "Egypt",
+    "369": "Francoist Spain",
+    "370": "Francoist Spain",
+    "371": "Francoist Spain",
+    "372": "French Morocco",
+    "373": "French West Africa",
+    "374": "United States",
+    "375": "United States",
+    "376": "United States",
+    "377": "United States",
+    "378": "United States",
+    "379": "United States",
+    "380": "United States",
+    "381": "United States",
+    "382": "United States",
+    "383": "United States",
+    "384": "United States",
+    "385": "United States",
+    "386": "United States",
+    "387": "United States",
+    "388": "United States",
+    "389": "United States",
+    "390": "United States",
+    "391": "United States",
+    "392": "United States",
+    "393": "United States",
+    "394": "United States",
+    "395": "United States",
+    "396": "United States",
+    "397": "United States",
+    "398": "United States",
+    "399": "United States",
+    "400": "United States",
+    "401": "United States",
+    "402": "United States",
+    "403": "United States",
+    "404": "United States",
+    "405": "United States",
+    "406": "United States",
+    "407": "United States",
+    "408": "United States",
+    "409": "United States",
+    "410": "United States",
+    "411": "United States",
+    "412": "United States",
+    "413": "United States",
+    "414": "United States",
+    "415": "United States",
+    "416": "United States",
+    "417": "United States",
+    "418": "Canada",
+    "419": "Canada",
+    "420": "Canada",
+    "421": "Union of Soviet Socialist Republics",
+    "422": "Union of Soviet Socialist Republics",
+    "423": "Union of Soviet Socialist Republics",
+    "424": "Republic of China",
+    "425": "Republic of China",
+    "426": "Republic of China",
+    "427": "Republic of China",
+    "428": "Republic of China",
+    "429": "Republic of China",
+    "430": "British Burma",
+    "431": "British Burma",
+    "432": "British Burma",
+    "433": "British Burma",
+    "434": "Siam",
+    "435": "United Kingdom",
+    "436": "Canada",
+    "437": "Canada",
+    "438": "Canada",
+    "439": "Canada",
+    "440": "Canada",
+    "441": "Union of Soviet Socialist Republics",
+    "442": "Union of Soviet Socialist Republics",
+    "443": "Union of Soviet Socialist Republics",
+    "444": "American Administration of Japan",
+    "445": "American Administration of Japan",
+    "446": "United States",
+    "447": "American Administration of Japan",
+    "448": "Sultanate of Muscat and Oman",
+    "449": "Iran",
+    "450": "British South Yemen",
+    "451": "Francoist Spain",
+    "452": "Soviet Administered Germany",
+    "453": "Kingdom of Greece",
+    "454": "British Military Administation in Aegean",
+    "455": "Union of Soviet Socialist Republics",
+    "456": "Union of Soviet Socialist Republics",
+    "457": "Kingdom of Greece",
+    "458": "Kingdom of Greece",
+    "460": "British Burma",
+    "461": "British Burma",
+    "462": "British Raj",
+    "463": "Portugal",
+    "464": "Francoist Spain",
+    "465": "Trieste Territory",
+    "466": "United States",
+    "467": "United States",
+    "468": "United States",
+    "469": "United States",
+    "471": "Mexico",
+    "472": "Turkey",
+    "473": "Union of Soviet Socialist Republics",
+    "474": "Republic of China",
+    "475": "France",
+    "476": "Netherlands",
+    "477": "United Kingdom",
+    "478": "French West Africa",
+    "479": "United Kingdom",
+    "480": "Iraq",
+    "481": "Iraq",
+    "482": "Iraq",
+    "483": "Republic of China",
+    "484": "Republic of China",
+    "485": "American Administration of Japan",
+    "486": "American Administration of Japan",
+    "487": "American Administration of Japan",
+    "488": "American Administration of Japan",
+    "489": "Union of Soviet Socialist Republics",
+    "490": "Norway",
+    "491": "Norway",
+    "492": "Union of Soviet Socialist Republics",
+    "493": "Union of Soviet Socialist Republics",
+    "494": "Union of Soviet Socialist Republics",
+    "495": "British Burma",
+    "496": "British Burma",
+    "497": "Federated Malay States",
+    "498": "Union of Soviet Socialist Republics",
+    "499": "Union of Soviet Socialist Republics",
+    "500": "Union of Soviet Socialist Republics",
+    "501": "Union of Soviet Socialist Republics",
+    "503": "Union of Soviet Socialist Republics",
+    "504": "Republic of China",
+    "505": "Chinese Communists",
+    "506": "Union of Soviet Socialist Republics",
+    "507": "Chinese Communists",
+    "508": "Chinese Communists",
+    "509": "Chinese Communists",
+    "510": "Chinese Communists",
+    "511": "United States",
+    "512": "Canada",
+    "513": "United States",
+    "514": "US Administration of Philippines",
+    "515": "American Administration of Japan",
+    "516": "American Administration of Japan",
+    "517": "United States",
+    "518": "American Administration of Japan",
+    "519": "Finland",
+    "520": "Finland",
+    "521": "Finland",
+    "522": "Finland",
+    "523": "Finland",
+    "524": "Finland",
+    "525": "Union of Soviet Socialist Republics",
+    "527": "French West Africa",
+    "528": "United Kingdom",
+    "529": "Norway",
+    "530": "Norway",
+    "531": "Norway",
+    "532": "Poland",
+    "533": "Union of Soviet Socialist Republics",
+    "534": "Union of Soviet Socialist Republics",
+    "535": "Norway",
+    "536": "Siam",
+    "537": "United Kingdom",
+    "538": "Dutch East Indies",
+    "539": "British North Borneo",
+    "541": "Union of Soviet Socialist Republics",
+    "542": "American Administered Austria",
+    "543": "Yugoslavia",
+    "544": "Union of Soviet Socialist Republics",
+    "545": "Union of Soviet Socialist Republics",
+    "546": "Union of Soviet Socialist Republics",
+    "547": "Romania",
+    "548": "British Military Administration of Libya",
+    "549": "French Equatorial Guinea",
+    "550": "Poland",
+    "551": "Poland",
+    "552": "Poland",
+    "553": "Poland",
+    "554": "Poland",
+    "555": "Poland",
+    "556": "Poland",
+    "557": "Poland",
+    "558": "Poland",
+    "559": "Francoist Spain",
+    "560": "Francoist Spain",
+    "561": "Francoist Spain",
+    "562": "Union of Soviet Socialist Republics",
+    "563": "Union of Soviet Socialist Republics",
+    "564": "Union of Soviet Socialist Republics",
+    "565": "Union of Soviet Socialist Republics",
+    "566": "Union of Soviet Socialist Republics",
+    "568": "Union of Soviet Socialist Republics",
+    "569": "Union of Soviet Socialist Republics",
+    "570": "Union of Soviet Socialist Republics",
+    "571": "Union of Soviet Socialist Republics",
+    "572": "Military Territory of Fezzan-Ghadames",
+    "573": "Yugoslavia",
+    "574": "Yugoslavia",
+    "575": "Turkey",
+    "576": "Iran",
+    "577": "Iran",
+    "578": "British Raj",
+    "580": "British Raj",
+    "581": "British Nigeria",
+    "583": "American Administration of Japan",
+    "584": "United Kingdom",
+    "585": "France",
+    "586": "France",
+    "587": "France",
+    "588": "Francoist Spain",
+    "589": "Belgian Rwanda-Urundi",
+    "590": "Belgian Rwanda-Urundi",
+    "591": "United Kingdom",
+    "592": "United Kingdom",
+    "593": "France",
+    "594": "France",
+    "595": "France",
+    "596": "British Raj",
+    "597": "Kashmir",
+    "598": "Kashmir",
+    "599": "East Turkestan",
+    "600": "Afghanistan",
+    "601": "France",
+    "602": "People's Republic of Mahabad",
+    "603": "People's Republic of South Azerbaijan",
+    "604": "French Cambodia",
+    "605": "Mandatory Palestine",
+    "606": "Mandatory Palestine",
+    "607": "French Lebanon",
+    "608": "Union of Soviet Socialist Republics",
+    "609": "Union of Soviet Socialist Republics",
+    "610": "Sultanate of Muscat and Oman",
+    "611": "British Raj",
+    "612": "Saudi Arabia",
+    "613": "British Raj",
+    "614": "Dutch East Indies",
+    "615": "Mysore Princely State",
+    "616": "Indonesian Revolutionaries",
+    "617": "Sikkim",
+    "618": "Turkey",
+    "619": "Turkey",
+    "620": "Turkey",
+    "621": "Syria",
+    "622": "Bechuanaland Protectorate",
+    "623": "Southern Rhodesia",
+    "624": "Nyasaland",
+    "625": "Iraq",
+    "626": "United States",
+    "627": "Union of Soviet Socialist Republics",
+    "628": "Mandatory Palestine",
+    "629": "Syria",
+    "630": "Mandatory Palestine",
+    "631": "Mandatory Palestine",
+    "632": "Mandatory Palestine",
+    "633": "Mandatory Palestine",
+    "634": "Hashemite Kingdom of Transjordan",
+    "635": "Hashemite Kingdom of Transjordan",
+    "636": "French Lebanon",
+    "637": "Bahawalpur Princely State",
+    "638": "Brazil",
+    "639": "Chile",
+    "640": "Paraguay",
+    "641": "Argentina",
+    "642": "Peru",
+    "643": "Argentina",
+    "644": "Brazil",
+    "645": "United Kingdom",
+    "646": "Brazil",
+    "647": "Mexico",
+    "648": "Egypt",
+    "649": "American Administered Germany",
+    "650": "Soviet Administered Germany",
+    "651": "Afghanistan",
+    "652": "Afghanistan",
+    "653": "Kingdom of Greece",
+    "654": "Kingdom of Greece",
+    "655": "Kingdom of Greece",
+    "656": "Kingdom of Greece",
+    "657": "French Equatorial Guinea",
+    "658": "French Equatorial Guinea",
+    "659": "French Equatorial Guinea",
+    "660": "French Equatorial Guinea",
+    "661": "Anglo-Egyptian Sudan",
+    "662": "South Africa",
+    "663": "British Eswatini",
+    "664": "French Indochina",
+    "665": "Mandatory Palestine",
+    "666": "Mandatory Palestine",
+    "667": "Mandatory Palestine",
+    "668": "United Kingdom",
+    "669": "Mandatory Palestine",
+    "670": "Syria",
+    "671": "British North Borneo",
+    "672": "Brunei Protectorate",
+    "673": "Federated Malay States",
+    "674": "US Administration of Philippines",
+    "675": "US Administration of Philippines",
+    "676": "Australia",
+    "677": "Australia",
+    "678": "Australia",
+    "679": "Australia",
+    "680": "Australia",
+    "681": "Australia",
+    "682": "Australia",
+    "683": "Indonesian Revolutionaries",
+    "684": "Dutch East Indies",
+    "685": "New Zealand",
+    "686": "Siam",
+    "687": "Siam",
+    "688": "Siam",
+    "689": "Cochinchina",
+    "690": "French Annam",
+    "691": "Portugal",
+    "692": "Portugal",
+    "693": "Dutch East Indies",
+    "694": "Brunei Protectorate",
+    "695": "British South Yemen",
+    "696": "British Military Administration in Ogaden and Haud",
+    "697": "Ethiopia",
+    "698": "Ethiopia",
+    "699": "British Nigeria",
+    "700": "British Nigeria",
+    "701": "South Africa",
+    "702": "South Africa",
+    "703": "British Lesotho",
+    "704": "South Africa",
+    "705": "South Africa",
+    "706": "South Africa",
+    "707": "South Africa",
+    "708": "Anglo-Egyptian Sudan",
+    "709": "Francoist Spain",
+    "710": "Egypt",
+    "711": "Belgian Congo",
+    "712": "Saudi Arabia",
+    "713": "British Trucial States",
+    "714": "British Raj",
+    "715": "British Raj",
+    "716": "British Raj",
+    "717": "British Raj",
+    "718": "British Raj",
+    "719": "Khairpur Princely State",
+    "720": "British Raj",
+    "721": "Baloch Princely States",
+    "722": "British Raj",
+    "723": "Iran",
+    "724": "Colombia",
+    "725": "Venezuela",
+    "726": "Venezuela",
+    "727": "Brazil",
+    "728": "Brazil",
+    "729": "Brazil",
+    "730": "Brazil",
+    "731": "Brazil",
+    "732": "Brazil",
+    "733": "Brazil",
+    "734": "British Raj",
+    "735": "Kashmir",
+    "736": "Kashmir",
+    "737": "Tripura Princely State",
+    "738": "Ireland",
+    "739": "Ireland",
+    "740": "Portugal",
+    "741": "Portugal",
+    "742": "Portugal",
+    "743": "Portugal",
+    "744": "France",
+    "745": "France",
+    "746": "France",
+    "747": "France",
+    "748": "Mexico",
+    "749": "Mexico",
+    "750": "Mexico",
+    "751": "Mexico",
+    "752": "Mexico",
+    "753": "Mexico",
+    "754": "Mexico",
+    "755": "Mexico",
+    "756": "Cuba",
+    "757": "Cuba",
+    "758": "British East Africa",
+    "759": "France",
+    "760": "France",
+    "761": "Bulgaria",
+    "762": "Travancore Princely State",
+    "763": "Manipur Princely State",
+    "764": "Ecuador",
+    "765": "Bolivia",
+    "766": "Argentina",
+    "775": "United Nations",
+    "776": "Saudi Arabia",
+    "778": "Saudi Arabia",
+    "779": "Saudi Arabia",
+    "780": "Saudi Arabia",
+    "781": "Saudi Arabia",
+    "782": "Belgian Congo",
+    "783": "Belgian Congo",
+    "784": "Canada",
+    "785": "Canada",
+    "786": "Canada",
+    "787": "Canada",
+    "788": "Canada",
+    "789": "Union of Soviet Socialist Republics",
+    "790": "Union of Soviet Socialist Republics",
+    "791": "United States",
+    "792": "United States",
+    "793": "United States",
+    "794": "United States",
+    "795": "United Kingdom",
+    "796": "Soviet Administered Germany",
+    "797": "Union of Soviet Socialist Republics",
+    "798": "Mandatory Palestine",
+    "799": "Turkey",
+    "800": "British Trucial States",
+    "801": "Union of Soviet Socialist Republics",
+    "802": "British Trucial States",
+    "803": "British Trucial States",
+    "804": "British Trucial States",
+    "805": "British Trucial States",
+    "806": "British Trucial States",
+    "807": "Sultanate of Muscat and Oman",
+    "811": "Netherlands",
+    "812": "Netherlands",
+    "815": "Union of Soviet Socialist Republics",
+    "816": "France",
+    "817": "United Kingdom",
+    "818": "Egypt",
+    "819": "Egypt",
+    "820": "Egypt",
+    "821": "Egypt",
+    "822": "Egypt",
+    "823": "Egypt",
+    "824": "Egypt",
+    "825": "Egypt",
+    "826": "Egypt",
+    "827": "Egypt",
+    "828": "Union of Soviet Socialist Republics",
+    "829": "French West Africa",
+    "830": "Brazil",
+    "831": "Tangier International Zone",
+    "832": "Brazil",
+    "833": "Brazil",
+    "834": "Brazil",
+    "835": "Brazil",
+    "836": "Brazil",
+    "837": "Brazil",
+    "838": "Brazil",
+    "839": "Brazil",
+    "840": "Kingdom of Greece",
+    "842": "Kingdom of Greece",
+    "843": "Iraq",
+    "844": "British Burma",
+    "847": "Syria",
+    "848": "Turkey",
+    "852": "Sultanate of Muscat and Oman",
+    "853": "Iran",
+    "854": "United Kingdom",
+    "860": "Sweden",
+    "867": "Union of Soviet Socialist Republics",
+    "868": "British Cameroons",
+    "869": "Kingdom of Sanwi",
+    "870": "British Togoland",
+    "871": "Dutch East Indies",
+    "f2a26fbd-e22d-4a88-b667-a5a8ff0809a4": "Egypt",
+    "96037c6a-96ff-4f5b-8f99-aa3182ba8735": "Egypt",
+    "913bcd82-b72e-4edf-b1d3-b430ec043275": "Egypt",
+    "8fbe8ae0-0a23-40b2-88d5-21cffe6000bf": "Egypt",
+    "2623cf92-cec8-44dd-a756-01f9c7949482": "Egypt",
+    "d8678c21-9177-4029-a92d-e92906a20aca": "Egypt",
+    "788eb4bf-ac63-41ec-8146-65d6fee4678c": "Egypt",
+    "b2674fb2-0a43-4587-9af7-e54d4dbcb23a": "Egypt",
+    "17e463d7-f30c-4f1c-8d73-659d4b0a0a67": "Egypt",
+    "b5519e83-c322-4b67-936b-4ec84292b0b6": "Iraq",
+    "a4224b17-83e3-4456-83c1-b0357bcbe84f": "Iraq",
+    "86640841-cba4-4296-8db5-c7822d2562a4": "Iraq",
+    "dbf93a93-1063-49c1-a788-6d297c30365a": "French Morocco",
+    "b8b5917f-156b-4222-844a-9f8bbd9d0084": "French Morocco",
+    "2dd3491b-febb-417d-b5f4-53d56a7fe683": "French Morocco",
+    "ccd563c4-1a68-4eb1-b8ff-dfc6e8aaca37": "Mexico",
+    "1660b891-1c64-499c-983e-15fcb31b31ca": "Mexico",
+    "e20d7fe8-5f3e-426f-8c31-5b1b04f19d1f": "Mexico",
+    "768044b3-51bf-4a69-9806-383603238327": "Mexico",
+    "0a3d8126-33dd-4fd1-9bf4-1a1a018a6ef3": "Mexico",
+    "9f66649f-02e2-4652-a9f2-5a59dd323e60": "Mexico",
+    "a60e0c94-ca1c-4197-996d-507d313f52c1": "British Raj",
+    "d45f5647-e7ff-48e7-b5d2-a0da348c38a9": "British Raj",
+    "557a291e-17d3-45f4-98ee-937151609fbd": "British Raj",
+    "fd863448-8743-448b-bf26-365ec1d6b18e": "British Raj",
+    "9d7c5053-18bc-4ee0-b6ab-bd18643a11a6": "British Raj",
+    "c0caf644-9f65-484a-8669-85d49a77ecf0": "British Raj",
+    "0573ad70-cf5b-468d-88a9-bc11c98cef70": "Chitral Princely State",
+    "cffc1483-a30a-4694-a688-580af837958b": "Saudi Arabia",
+    "aaedfdc3-f19c-4bae-a704-af970bfa5759": "Saudi Arabia",
+    "985c53b4-af71-4576-99cb-f91054e1f60a": "Saudi Arabia",
+    "3ffdbabd-7f81-42b3-a2a8-ff092d81c621": "Saudi Arabia",
+    "dbabc399-4979-49f0-8e4f-8a196558a60b": "Saudi Arabia"
+  },
+  "capturedAt": "2026-06-22T01:28:23.169Z"
+}

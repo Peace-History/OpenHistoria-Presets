@@ -1,0 +1,27 @@
+{
+  "name": "open-historia-presets",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "tools/pax-ripper",
+    "tools/preset-exporter"
+  ],
+  "scripts": {
+    "rip": "bun run tools/pax-ripper/src/index.ts",
+    "export": "bun run tools/preset-exporter/src/cli.ts",
+    "test": "bun test tools/preset-exporter/tests/",
+    "typecheck": "tsc --noEmit -p tools/preset-exporter/tsconfig.json && tsc --noEmit -p tools/pax-ripper/tsconfig.json",
+    "check-reference": "bun run tools/preset-exporter/scripts/check-reference.ts",
+    "export-smoke": "bun run tools/preset-exporter/scripts/export-smoke.ts"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^26.1.1"
+  }
+}

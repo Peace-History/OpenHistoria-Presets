@@ -1,0 +1,8 @@
+{
+  "id": "modern-day-test",
+  "publishedVersionID": "1",
+  "title": "Modern Day",
+  "description": "Synthetic modern-day fixture for hermetic transform test",
+  "tags": ["test"],
+  "extras": {}
+}

@@ -1,0 +1,13 @@
+{
+  "name": "modern-day-test",
+  "community": true,
+  "tags": [],
+  "geometry": {
+    "0": {
+      "geometry": "{\"type\":\"Polygon\",\"coordinates\":[[[-180,-90],[180,-90],[180,90],[-180,90],[-180,-90]]]}",
+      "centroid": "{\"type\":\"Point\",\"coordinates\":[0,0]}",
+      "adjacencies": [],
+      "type": "Land"
+    }
+  }
+}

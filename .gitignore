@@ -1,0 +1,30 @@
+# Build artifacts
+node_modules/
+dist/
+
+# Capture cache + transient output
+out/cache/
+out/runs/
+out/*.smoke.json
+out/*.check.json
+
+# Reference bundle is the one committed exception
+!out/modern-day.json
+!out/modern-day.json.run_summary.json
+
+# Runtime DBs (mitmproxy session captures, regenerable)
+mitm_mcp_traffic.db
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Local env
+.env
+.env.local
+
+# Bun
+.bun/
+bun.lockb

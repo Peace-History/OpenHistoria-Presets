@@ -1,0 +1,12 @@
+{
+  "polities": [
+    {"id": "United States", "name": "United States", "color": "#3C3B6E"}
+  ],
+  "cities": [
+    {"id": "nyc", "name": "New York", "location": [-74.006, 40.7128], "scale": 1}
+  ],
+  "landmarks": [],
+  "battalions": [],
+  "regionOwnership": {"0": "United States"},
+  "capturedAt": "2026-07-16T00:00:00Z"
+}
