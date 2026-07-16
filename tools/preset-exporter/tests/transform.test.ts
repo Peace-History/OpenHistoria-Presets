@@ -364,6 +364,90 @@ describe("transform", () => {
     }
   });
 
+  it("emits no Ocean/Strait features into regionsGeojson or regionOwnershipOverrides", () => {
+    // Pax data shape: water tiles (Ocean/Strait) exist in geometry but have
+    // no entry in regionOwnership. Before the fix, buildRegionsFeatureCollection
+    // would assign a synthetic Z## owner to water tiles (canonicalize("") ->
+    // hash-mint), and the FeatureCollection would emit features with
+    // properties.owner === "Z##" -- but the override emission loop wouldn't
+    // add them to regionOwnershipOverrides. Result: internally inconsistent
+    // bundle; openhistoria.com/play renders the ocean red and labels it "z26".
+    // Fix: skip water regions at both emission sites.
+    const sample: PaxCapture = {
+      ...SAMPLE,
+      geometry: {
+        ...SAMPLE.geometry,
+        geometry: {
+          // Land + coastal regions from SAMPLE, indexed 0 and 1.
+          ...SAMPLE.geometry.geometry,
+          // Water regions -- geometry entries with NO regionOwnership entries.
+          "2": {
+            geometry: '{"type":"Polygon","coordinates":[[[2,0],[3,0],[3,1],[2,1],[2,0]]]}',
+            centroid: '{"type":"Point","coordinates":[2.5,0.5]}',
+            adjacencies: [],
+            type: "Ocean",
+          },
+          "3": {
+            geometry: '{"type":"Polygon","coordinates":[[[3,0],[4,0],[4,1],[3,1],[3,0]]]}',
+            centroid: '{"type":"Point","coordinates":[3.5,0.5]}',
+            adjacencies: [],
+            type: "Strait",
+          },
+          "4": {
+            geometry: '{"type":"Polygon","coordinates":[[[4,0],[5,0],[5,1],[4,1],[4,0]]]}',
+            centroid: '{"type":"Point","coordinates":[4.5,0.5]}',
+            adjacencies: [],
+            type: "Coastal",
+          },
+        },
+      },
+      // regionOwnership deliberately has NO entries for water regions "2" or "3".
+      // Coastal region "4" stays mapped so we cover the filter boundary.
+      features: {
+        ...SAMPLE.features,
+        regionOwnership: {
+          ...SAMPLE.features.regionOwnership,
+          "4": "Land of A",
+        },
+      },
+    };
+    const result = transform(sample, { mode: "full" });
+    const { bundle, assets } = result;
+
+    // assets.regionsGeojson.data is base64-encoded JSON; decode to access features.
+    // Narrow the discriminated union first.
+    if (assets.regionsGeojson.mode !== "embedded") {
+      throw new Error("expected embedded regionsGeojson");
+    }
+    type GeoFeature = { type: "Feature"; properties: { typeId: string; owner: string; id: string } };
+    const fcDecoded = JSON.parse(
+      Buffer.from(assets.regionsGeojson.data, "base64").toString("utf8"),
+    ) as { type: "FeatureCollection"; features: GeoFeature[] };
+    const fcFeatures: GeoFeature[] = fcDecoded.features;
+
+    // (a) No water features in the FeatureCollection.
+    const waterFeatures = fcFeatures.filter(
+      (f) => f.properties.typeId === "ocean" || f.properties.typeId === "strait",
+    );
+    expect(waterFeatures).toEqual([]);
+
+    // (b) regionOwnershipOverrides has no entries corresponding to water regions.
+    // Since water regions are filtered out of the FeatureCollection entirely,
+    // their Pax keys (2, 3) MUST NOT appear as override suffixes.
+    const overrideKeys = Object.keys(bundle.data.world.regionOwnershipOverrides);
+    for (const k of overrideKeys) {
+      // suffix is everything between the dot and "_1".
+      const suffix = k.split(".")[1].split("_")[0];
+      // Pax key "2" -> idx 2; "3" -> idx 3. Coastal "4" -> idx 4 (kept, owned).
+      expect(["2", "3"]).not.toContain(suffix);
+    }
+
+    // (c) The kept Coastal region "4" still appears -- confirms we didn't over-filter.
+    const coastalKey = overrideKeys.find((k) => k.startsWith("Z") && k.endsWith(".4_1"))
+      ?? overrideKeys.find((k) => k.endsWith(".4_1"));
+    expect(coastalKey).toBeDefined();
+  });
+
   it("emits polityOverrides as Record<code, {code, name, aliases, color, note}>", () => {
     const { bundle } = transform(SAMPLE, { mode: "full" });
     const overrides = bundle.data.world.polityOverrides;

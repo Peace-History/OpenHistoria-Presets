@@ -4,6 +4,6 @@
   "version": "79",
   "mode": "full",
   "outputBundlePath": "/home/john/Projects/OpenHistoria-Presets/out/modern-day.json",
-  "transformDurationMs": 48,
+  "transformDurationMs": 24,
   "pmtilesBytes": {}
 }

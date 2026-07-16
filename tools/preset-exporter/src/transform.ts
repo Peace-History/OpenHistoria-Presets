@@ -77,6 +77,11 @@ function buildRegionsFeatureCollection(
   const features: GeoJSON.Feature[] = [];
   let idx = 0;
   for (const [index, region] of Object.entries(geometry)) {
+    // Water tiles (Ocean/Strait) have no real owner; Pax's regionOwnership
+    // map has no entry for them, which would hash-mint a synthetic Z## code
+    // (canonicalize("")) and produce an internally inconsistent bundle.
+    // Skip them so they fall through to the renderer's baseColor fallback.
+    if (region.type === "Ocean" || region.type === "Strait") continue;
     const polygon = parseRegionGeometry(region.geometry, index);
     const centroid = parseRegionCentroid(region.centroid);
     const polityName = ownership[index] ?? "";
@@ -345,6 +350,11 @@ export function transform(capture: PaxCapture, opts: { mode: "light" | "full" })
 
   const overrides: Record<string, string> = {};
   for (const [paxKey, polityName] of Object.entries(ownership)) {
+    // Defense-in-depth: skip water regions even if Pax's regionOwnership
+    // somehow carries an entry for them (would otherwise mint a synthetic
+    // Z## owner for a tile that has no real owner).
+    const regionType = capture.geometry.geometry[paxKey]?.type;
+    if (regionType === "Ocean" || regionType === "Strait") continue;
     const canonical = canonicalize(polityName);
     const idx = integerIndex[paxKey];
     if (idx === undefined) continue; // ownership references a region with no geometry - skip
