@@ -50,7 +50,6 @@ function fixture(): TransformResult {
         contentType: "application/geo+json" as const,
         data: Buffer.from(JSON.stringify({ type: "FeatureCollection", features: [] })).toString("base64"),
       },
-      backgroundData: { mode: "default" as const, fileName: "background.json" },
       cities: { mode: "default" as const, fileName: "cities.pmtiles", droppedOverride: false },
       countries: { mode: "default" as const, fileName: "countries.pmtiles", droppedOverride: false },
       regions: { mode: "default" as const, fileName: "regions.pmtiles", droppedOverride: false },

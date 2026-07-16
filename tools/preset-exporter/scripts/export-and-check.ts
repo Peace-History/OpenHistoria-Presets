@@ -44,7 +44,7 @@ if (existsSync(captureDir)) {
 }
 
 const OUT = join(ROOT, "out/conformance-check.json");
-const flag = isFixtureProxy ? "--offline" : "--offline";
+const flag = "--offline";
 const proc = spawn({
   cmd: ["bun", "run", join(ROOT, "tools/preset-exporter/src/cli.ts"), flag, sourcePath, "--output", OUT],
   stdio: ["inherit", "inherit", "inherit"],
