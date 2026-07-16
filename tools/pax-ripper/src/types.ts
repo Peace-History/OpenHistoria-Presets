@@ -133,6 +133,11 @@ export interface CaptureManifest {
    *  'copy:<paxID>' when we copied the preset to capture it, undefined
    *  when --with-editor wasn't used. */
   editorSource?: 'original' | `copy:${string}`;
+  /** Set when the editor sub-pass threw but the capture continued (e.g. Copy
+   *  popup timeout, editor walk returned empty ipd, "Target crashed" mid-walk).
+   *  dump-all reads this to surface a specific FAIL reason instead of the
+   *  generic "geometry.json missing" downstream. */
+  incomplete?: string;
 }
 
 export interface RunSummary {

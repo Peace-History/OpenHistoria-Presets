@@ -262,6 +262,15 @@ async function main(): Promise<void> {
         cookiesFile: args.cookiesFile ?? undefined,
       });
       console.log(chalk.green(`\nDone. status=${result.status}`));
+      // Exit non-zero when the editor sub-pass threw so dump-all can detect
+      // "captured but incomplete" before attempting loadCaptureFromDir.
+      // Exit 2 = captured but incomplete; 0 = clean success.
+      if (result.manifest?.incomplete) {
+        console.log(
+          chalk.yellow(`(capture incomplete: ${result.manifest.incomplete} - exiting with code 2)`),
+        );
+        process.exit(2);
+      }
       return;
     }
 

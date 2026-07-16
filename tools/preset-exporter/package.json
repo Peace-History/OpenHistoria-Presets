@@ -5,6 +5,8 @@
   "scripts": {
     "export": "bun run src/cli.ts",
     "check-hub-conformance": "bun run scripts/check-hub-conformance.ts",
-    "export-and-check": "bun run scripts/export-and-check.ts"
+    "export-and-check": "bun run scripts/export-and-check.ts",
+    "dump-all": "bun run scripts/dump-all.ts",
+    "verify-out": "bun run scripts/verify-out-bundles.ts"
   }
 }

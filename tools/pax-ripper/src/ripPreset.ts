@@ -294,14 +294,44 @@ export async function ensureCopyOfPreset(
   await copyBtn.click();
   console.log(chalk.gray(`${P}   clicked Copy button`));
 
-  // 5b) Wait for the in-window popup with "Create a Copy" button.
+  // 5b) Wait for the in-window popup with "Create a Copy" button. Pax's UI
+  // sometimes takes >10s to render the confirmation modal after the Copy
+  // POST completes; try a 20s follow-up on the first timeout before giving up.
+  // The first-attempt error is preserved in the message so postmortem can
+  // distinguish "popup never mounted" from "popup late but eventually shown".
   const createCopy = page.locator('button:has-text("Create a Copy")').first();
-  const popupAppeared = await createCopy
-    .waitFor({ state: 'visible', timeout: 10_000 })
-    .then(() => true)
-    .catch(() => false);
+  let popupAppeared = false;
+  let firstAttemptError: Error | null = null;
+  try {
+    await createCopy.waitFor({ state: 'visible', timeout: 10_000 });
+    popupAppeared = true;
+  } catch (e) {
+    firstAttemptError = e instanceof Error ? e : new Error(String(e));
+    console.log(
+      chalk.yellow(
+        `${P}   "Create a Copy" popup not visible after 10s - re-clicking Copy and waiting 20s more`,
+      ),
+    );
+    try {
+      await copyBtn.click({ timeout: 5_000 });
+    } catch {
+      // ignore re-click errors; the second wait will fail anyway
+    }
+    try {
+      await createCopy.waitFor({ state: 'visible', timeout: 20_000 });
+      popupAppeared = true;
+    } catch (e2) {
+      const secondErr = e2 instanceof Error ? e2 : new Error(String(e2));
+      // Try to dismiss any open modal/popup before throwing
+      await dismissPopups(page);
+      throw new RipError(
+        'copy_blocked',
+        `"Create a Copy" popup never appeared after clicking Copy (1st: ${firstAttemptError.message}; 2nd: ${secondErr.message})`,
+      );
+    }
+  }
   if (!popupAppeared) {
-    // Try to dismiss any open modal/popup before throwing
+    // Unreachable: the second-attempt throw above exits before we get here.
     await dismissPopups(page);
     throw new RipError(
       'copy_blocked',
@@ -540,6 +570,9 @@ export async function capturePreset(
   let copyFlow: CopyFlowResult | null = null;
   let editorCaptured = false;
   let editorDerivedFeatures = false;
+  // Reason string surfaced to dump-all via manifest.incomplete when the editor
+  // sub-pass threw. Set in the catch block below; consumed by writeManifest.
+  let editorIncompleteReason: string | undefined = undefined;
   if (opts.withEditor) {
     try {
       copyFlow = await ensureCopyOfPreset(
@@ -647,11 +680,22 @@ export async function capturePreset(
         );
       }
     } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e);
       console.log(
-        chalk.yellow(
-          `${P}   editor capture errored: ${e instanceof Error ? e.message : String(e)}`,
-        ),
+        chalk.yellow(`${P}   editor capture errored: ${msg}`),
       );
+      // Encode the failure as a short tag so dump-all can surface it without
+      // re-running the capture. Keep the tag machine-greppable (lowercase
+      // snake_case, no spaces) so it can be parsed by future tooling.
+      if (msg.includes('copy_blocked') || msg.includes('Create a Copy')) {
+        editorIncompleteReason = 'copy_popup_timeout';
+      } else if (msg.includes('mapGeometryDocumentID')) {
+        editorIncompleteReason = 'editor_walk_no_geometry_id';
+      } else if (msg.includes('Target crashed') || msg.includes('crashed')) {
+        editorIncompleteReason = 'editor_walk_target_crashed';
+      } else {
+        editorIncompleteReason = 'editor_capture_failed';
+      }
     }
   }
 
@@ -841,6 +885,7 @@ export async function capturePreset(
     files,
     featuresStatus,
     editorSource: copyFlow?.editorSource,
+    ...(editorIncompleteReason ? { incomplete: editorIncompleteReason } : {}),
   };
   writeManifest(targetDir, manifest);
 

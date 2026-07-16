@@ -73,7 +73,7 @@ export async function loadHubBundles(dir: string): Promise<HubBundle[]> {
 }
 
 /** Union of keys at `bundle.data.<path>` across all hub bundles (after descending one level via `parts`). */
-function unionOfKeysAt(bundles: HubBundle[], parts: string[]): Set<string> {
+export function unionOfKeysAt(bundles: HubBundle[], parts: string[]): Set<string> {
   const acc = new Set<string>();
   for (const { data } of bundles) {
     let cursor: unknown = data;
