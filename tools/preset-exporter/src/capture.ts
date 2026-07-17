@@ -4,7 +4,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import { existsSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
-import type { PaxCapture } from "./types";
+import type { PaxCapture, PaxRegion } from "./types";
 
 export async function loadCaptureFromDir(captureDir: string): Promise<PaxCapture> {
   const entries = await readdir(captureDir);
@@ -28,7 +28,7 @@ export async function loadCaptureFromDir(captureDir: string): Promise<PaxCapture
       }
     } catch (e) {
       if (e instanceof SyntaxError) {
-        // malformed manifest - fall through to the existing geometry/preset checks
+        // malformed manifest -- fall through to the existing geometry/preset checks
       } else {
         throw e;
       }
@@ -42,7 +42,46 @@ export async function loadCaptureFromDir(captureDir: string): Promise<PaxCapture
     : { polities: [], cities: [], regionOwnership: {} };
   const editor = editorPath
     ? JSON.parse(await readFile(join(captureDir, editorPath), "utf8"))
-    : undefined;
+    : {};
+
+  // Basemap geometry lives in api_responses/editor_state_raw.json under
+  // state.baseMapGeometry.geometry. pax-ripper's vendored shaper drops it from
+  // editor.json's basemapMetadata, so we read it from the raw file ourselves.
+  // Tolerate missing file, missing state.baseMapGeometry, and malformed shapes.
+  // Read editor_state_raw.json independently of whether editor.json exists.
+  // Tolerate missing api_responses/ dir, missing raw file, missing
+  // state.baseMapGeometry, and malformed shapes.
+  if (existsSync(join(captureDir, "api_responses"))) {
+    try {
+      const rawPath = join(captureDir, "api_responses", "editor_state_raw.json");
+      if (existsSync(rawPath)) {
+        const raw = JSON.parse(await readFile(rawPath, "utf8")) as Record<string, unknown>;
+        const state = (raw.state ?? raw) as Record<string, unknown>;
+        const baseMapGeometry = state.baseMapGeometry as Record<string, unknown> | undefined;
+        const geometryObj = baseMapGeometry?.geometry as Record<string, unknown> | undefined;
+        if (geometryObj && typeof geometryObj === "object" && !Array.isArray(geometryObj)) {
+          const basemapGeometry: Record<string, PaxRegion> = {};
+          for (const [key, region] of Object.entries(geometryObj)) {
+            if (region && typeof region === "object" && !Array.isArray(region)) {
+              const r = region as Record<string, unknown>;
+              basemapGeometry[key] = {
+                geometry: typeof r.geometry === "string" ? r.geometry : "",
+                centroid: typeof r.centroid === "string" ? r.centroid : "",
+                adjacencies: Array.isArray(r.adjacencies) ? (r.adjacencies as string[]) : [],
+                type: typeof r.type === "string" ? r.type : "Land",
+              };
+            }
+          }
+          if (Object.keys(basemapGeometry).length > 0) {
+            (editor as { basemapGeometry?: Record<string, PaxRegion> }).basemapGeometry = basemapGeometry;
+          }
+        }
+      }
+    } catch {
+      // Malformed raw file or IO error -- leave basemapGeometry undefined.
+      // The transform step will treat absence as "no basemap" and skip emission.
+    }
+  }
 
   let cover: Uint8Array | undefined;
   const coverEntry = entries.find((e) => e === "landing.png" || e === "cover.png");

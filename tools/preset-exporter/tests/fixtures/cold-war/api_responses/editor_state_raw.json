@@ -1,0 +1,21 @@
+{
+  "state": {
+    "baseMapGeometry": {
+      "name": "Cold-War Basemap (fixture)",
+      "geometry": {
+        "0": {
+          "geometry": "{\"type\":\"Polygon\",\"coordinates\":[[[0,0],[1,0],[1,1],[0,1],[0,0]]]}",
+          "centroid": "{\"type\":\"Point\",\"coordinates\":[0.5,0.5]}",
+          "adjacencies": ["1"],
+          "type": "Land"
+        },
+        "1": {
+          "geometry": "{\"type\":\"Polygon\",\"coordinates\":[[[1,0],[2,0],[2,1],[1,1],[1,0]]]}",
+          "centroid": "{\"type\":\"Point\",\"coordinates\":[1.5,0.5]}",
+          "adjacencies": ["0"],
+          "type": "Coastal"
+        }
+      }
+    }
+  }
+}

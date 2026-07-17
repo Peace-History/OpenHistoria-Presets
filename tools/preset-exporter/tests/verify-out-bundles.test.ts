@@ -251,8 +251,8 @@ describe("loadOutBundles", () => {
     rmSync(scratch, { recursive: true, force: true });
   });
 
-  it("returns [] when the directory does not exist", async () => {
-    expect(await loadOutBundles(join(scratch, "missing"))).toEqual([]);
+  it("returns {bundles:[], malformed:[]} when the directory does not exist", async () => {
+    expect(await loadOutBundles(join(scratch, "missing"))).toEqual({ bundles: [], malformed: [] });
   });
 
   it("returns sorted *.json files, skipping sidecars", async () => {
@@ -260,13 +260,25 @@ describe("loadOutBundles", () => {
     writeFileSync(join(scratch, "BBBB.json"), JSON.stringify(goodBundle()));
     writeFileSync(join(scratch, "AAAA.json.run_summary.json"), "{}");
     const out = await loadOutBundles(scratch);
-    expect(out.map((b) => b.name)).toEqual(["AAAA.json", "BBBB.json"]);
+    expect(out.bundles.map((b) => b.name)).toEqual(["AAAA.json", "BBBB.json"]);
+    expect(out.malformed).toEqual([]);
   });
 
-  it("skips malformed JSON instead of crashing", async () => {
+  it("records malformed JSON filenames in `malformed` instead of dropping silently", async () => {
     writeFileSync(join(scratch, "AAAA.json"), JSON.stringify(goodBundle()));
     writeFileSync(join(scratch, "BBBB.json"), "{not json");
+    writeFileSync(join(scratch, "CCCC.json"), "also bad");
     const out = await loadOutBundles(scratch);
-    expect(out.map((b) => b.name)).toEqual(["AAAA.json"]);
+    expect(out.bundles.map((b) => b.name)).toEqual(["AAAA.json"]);
+    expect(out.malformed).toEqual(["BBBB.json", "CCCC.json"]);
+  });
+
+  it("flags countryNameOverrides when given an array (wrong shape)", () => {
+    const b = goodBundle();
+    (b.scenario as Record<string, unknown>).countryNameOverrides = ["USA", "GBR"];
+    const r = valueTypeChecks(b);
+    const cnoCheck = r.find((c) => c.check.includes("countryNameOverrides"));
+    expect(cnoCheck?.pass).toBe(false);
+    expect(cnoCheck?.detail).toContain("array");
   });
 });

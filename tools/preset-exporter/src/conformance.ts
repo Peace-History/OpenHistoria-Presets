@@ -10,6 +10,21 @@
 // union-of-keys approach: any new key appearing in any hub bundle becomes
 // part of the expected set; the exporter must include it.
 
+/** Asset keys accepted by the Open-Historia importer (`UPLOADABLE_SCENARIO_ASSET_KEYS`).
+ *  Mirrors open-historia/src/runtime/web/models.js:26-31 - keep in sync if the
+ *  importer allow-list ever grows. */
+export const HUB_ACCEPTED_ASSET_KEYS = new Set<string>([
+  "cover",
+  "colors",
+  "flags",
+  "cities",
+  "countries",
+  "regions",
+  "regionsGeojson",
+  "citiesGeojson",
+  "backgroundData",
+]);
+
 export type HubBundle = {
   /** Bundle file basename for reporting. */
   name: string;
@@ -166,13 +181,18 @@ export function diffAgainstHubBundles(bundle: Record<string, unknown>, hubBundle
     detail: `export=${sortedKeys(bundle.scenario).join(",")}; hub union=${[...scenarioUnion].sort().join(",")}`,
   });
 
-  // 7. assets keys subset.
+  // 7. assets keys subset (also accepts importer allow-list extras like backgroundData).
   const assetsUnion = unionOfKeysAt(hubBundles, ["assets"]);
+  // Treat HUB_ACCEPTED_ASSET_KEYS as an additional accepted union: keys in
+  // this set are accepted even when no hub bundle carries them (mirrors the
+  // consumer-side allow-list). This is the same soft-warn path verify.ts:259
+  // applies per-bundle.
+  const expandedUnion = new Set<string>([...assetsUnion, ...HUB_ACCEPTED_ASSET_KEYS]);
   const assetsKeys = keySet(bundle.assets);
   results.push({
-    check: "assets keys subset of hub union",
-    pass: isSubset(assetsKeys, assetsUnion),
-    detail: `export=${sortedKeys(bundle.assets).join(",")}; hub union=${[...assetsUnion].sort().join(",")}`,
+    check: "assets keys subset of hub union (or importer-accepted extras)",
+    pass: isSubset(assetsKeys, expandedUnion),
+    detail: `export=${sortedKeys(bundle.assets).join(",")}; hub union=${[...assetsUnion].sort().join(",")}; accepted=${[...HUB_ACCEPTED_ASSET_KEYS].sort().join(",")}`,
   });
 
   // 8. region ownership key format: <code>.<n>_<v> with code ∈ [A-Z]{2,4} or Z\d{2}.

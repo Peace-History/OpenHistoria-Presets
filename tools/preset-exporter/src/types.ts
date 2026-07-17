@@ -75,6 +75,13 @@ export interface PaxEditor {
   /** Optional nested template-tasks that map onto `data.prompts.tasks`. */
   templateTasks?: Record<string, string>;
   extras?: { initialPresetData?: { mapGeometryDocumentID?: string; startDate?: string } } & Record<string, unknown>;
+  /** The underlying basemap geometry, extracted from the capture's
+   *  `api_responses/editor_state_raw.json` `state.baseMapGeometry.geometry`
+   *  by `loadCaptureFromDir`. pax-ripper's vendored shaper drops the geometry
+   *  from `editor.json`'s `basemapMetadata`, so preset-exporter reads it
+   *  directly from the raw state dump. Required only when capture ran
+   *  with `--with-editor`. */
+  basemapGeometry?: Record<string, PaxRegion>;
 }
 
 export interface PaxCapture {
@@ -116,6 +123,18 @@ export interface BundleAssets {
   cities: { mode: "embedded" | "default"; fileName: string; droppedOverride: boolean };
   countries: { mode: "embedded" | "default"; fileName: string; droppedOverride: boolean };
   regions: { mode: "embedded" | "default"; fileName: string; droppedOverride: boolean };
+  /** Vector basemap (the underlying map layer under the post-game regions).
+   *  Emitted only when capture.editor?.basemapGeometry is present (i.e. the
+   *  capture was run with --with-editor and the basemap geometry was
+   *  extracted from api_responses/editor_state_raw.json).
+   *  Consumer: open-historia's useCustomBackground vector path. */
+  backgroundData?: {
+    mode: "embedded";
+    fileName: "basemap.geojson";
+    encoding: "base64";
+    contentType: "application/geo+json";
+    data: string;
+  };
 }
 
 /** Oracle-shape world block (see `example.json` `data.world`). */

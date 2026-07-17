@@ -116,6 +116,29 @@ describe("contract: emitted bundle matches example.json shape", () => {
     }
   });
 
+  it("assets.colors has exactly 3 keys (data, fileName, mode) matching the hub oracle", async () => {
+    // Verified against /home/john/Projects/Open-historia-scenarios/bundles/*.json
+    // and example.json: all 7 bundles carry {data, fileName, mode} with NO
+    // encoding or contentType field. The current emission already matches.
+    const dir = join(tmpdir(), `contract-test-${Date.now()}-colors-shape`);
+    await mkdir(dir, { recursive: true });
+    const outPath = join(dir, "out.json");
+    try {
+      const capture = minimalCapture();
+      const { bundle, assets } = transform(capture, { mode: "full" });
+      await writeBundle({ bundle, assets }, { outputPath: outPath, paxID: "X", version: "1" });
+      const written = JSON.parse(await readFile(outPath, "utf8"));
+      expect(Object.keys(written.assets.colors).sort()).toEqual([
+        "data",
+        "fileName",
+        "mode",
+      ]);
+      expect(written.assets.colors.mode).toBe("embedded");
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+
   it("cities/countries/regions assets include droppedOverride: false", async () => {
     const dir = join(tmpdir(), `contract-test-${Date.now()}-drop`);
     await mkdir(dir, { recursive: true });
@@ -144,6 +167,37 @@ describe("contract: emitted bundle matches example.json shape", () => {
       const written = JSON.parse(await readFile(outPath, "utf8"));
       expect(written.assets.regionsGeojson.contentType).toBe("application/geo+json");
       expect(written.assets.citiesGeojson.contentType).toBe("application/geo+json");
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("regionsGeojson and citiesGeojson have exactly 5 keys (mode, fileName, encoding, contentType, data)", async () => {
+    const dir = join(tmpdir(), `contract-test-${Date.now()}-geojson-shape`);
+    await mkdir(dir, { recursive: true });
+    const outPath = join(dir, "out.json");
+    try {
+      const capture = minimalCapture();
+      const { bundle, assets } = transform(capture, { mode: "full" });
+      await writeBundle({ bundle, assets }, { outputPath: outPath, paxID: "X", version: "1" });
+      const written = JSON.parse(await readFile(outPath, "utf8"));
+      for (const assetName of ["regionsGeojson", "citiesGeojson"] as const) {
+        const a = written.assets[assetName];
+        expect(a.mode).toBe("embedded");
+        expect(Object.keys(a).sort()).toEqual([
+          "contentType",
+          "data",
+          "encoding",
+          "fileName",
+          "mode",
+        ]);
+        expect(a.encoding).toBe("base64");
+        expect(a.contentType).toBe("application/geo+json");
+        // Round-trip: base64 decode -> JSON.parse -> valid GeoJSON FeatureCollection.
+        const decoded = JSON.parse(Buffer.from(a.data, "base64").toString("utf8"));
+        expect(decoded.type).toBe("FeatureCollection");
+        expect(Array.isArray(decoded.features)).toBe(true);
+      }
     } finally {
       await rm(dir, { recursive: true, force: true });
     }

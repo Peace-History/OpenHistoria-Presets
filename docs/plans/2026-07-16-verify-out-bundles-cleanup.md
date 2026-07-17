@@ -131,7 +131,7 @@ This plan covers CLI/tool changes only. No browser verification needed.
 
 - [x] Task 1: Write Reproducing Tests (RED)
 - [x] Task 2: Apply Fixes at Root Cause
-- [ ] Task 3: Quality Gate
+- [x] Task 3: Quality Gate
 
 ### Task 1: Write Reproducing Tests (RED)
 

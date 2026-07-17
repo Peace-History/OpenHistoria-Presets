@@ -4,6 +4,99 @@ import { mkdir, writeFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 
+describe("loadCaptureFromDir basemap geometry", () => {
+  it("populates editor.basemapGeometry from api_responses/editor_state_raw.json when state.baseMapGeometry.geometry is present", async () => {
+    const dir = join(tmpdir(), `capture-basemap-${Date.now()}`);
+    await mkdir(dir, { recursive: true });
+    try {
+      await writeFile(
+        join(dir, "preset.json"),
+        JSON.stringify({ id: "TEST", publishedVersionID: "1", title: "T", description: "" }),
+      );
+      await writeFile(
+        join(dir, "geometry.json"),
+        JSON.stringify({ name: "g", geometry: { "0": { geometry: "{}", centroid: "{}", adjacencies: [], type: "Land" } }, community: false, tags: [] }),
+      );
+      await writeFile(
+        join(dir, "features.json"),
+        JSON.stringify({ polities: [], cities: [], regionOwnership: {}, capturedAt: "" }),
+      );
+      // editor_state_raw.json lives under api_responses/ subdir per pax-ripper's capture layout.
+      const apiDir = join(dir, "api_responses");
+      await mkdir(apiDir, { recursive: true });
+      const regions = {
+        "0": { geometry: '{"type":"Polygon","coordinates":[[[0,0],[1,0],[1,1],[0,1],[0,0]]]}', centroid: '{"type":"Point","coordinates":[0.5,0.5]}', adjacencies: [], type: "Land" },
+        "1": { geometry: '{"type":"Polygon","coordinates":[[[1,0],[2,0],[2,1],[1,1],[1,0]]]}', centroid: '{"type":"Point","coordinates":[1.5,0.5]}', adjacencies: [], type: "Coastal" },
+        "f2a26fbd-e22d-4a88-b667-a5a8ff0809a4": { geometry: '{"type":"Polygon","coordinates":[[[2,0],[3,0],[3,1],[2,1],[2,0]]]}', centroid: '{"type":"Point","coordinates":[2.5,0.5]}', adjacencies: [], type: "Ocean" },
+      };
+      await writeFile(
+        join(apiDir, "editor_state_raw.json"),
+        JSON.stringify({ state: { baseMapGeometry: { name: "TestBasemap", geometry: regions } } }),
+      );
+      const capture = await loadCaptureFromDir(dir);
+      expect(capture.editor?.basemapGeometry).toBeDefined();
+      expect(Object.keys(capture.editor!.basemapGeometry!)).toHaveLength(3);
+      expect(capture.editor!.basemapGeometry!["0"].type).toBe("Land");
+      expect(capture.editor!.basemapGeometry!["f2a26fbd-e22d-4a88-b667-a5a8ff0809a4"].type).toBe("Ocean");
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("leaves editor.basemapGeometry undefined when editor_state_raw.json is absent", async () => {
+    const dir = join(tmpdir(), `capture-noraw-${Date.now()}`);
+    await mkdir(dir, { recursive: true });
+    try {
+      await writeFile(join(dir, "preset.json"), JSON.stringify({ id: "T", publishedVersionID: "1", title: "t", description: "" }));
+      await writeFile(join(dir, "geometry.json"), JSON.stringify({ name: "g", geometry: {}, community: false, tags: [] }));
+      await writeFile(join(dir, "features.json"), JSON.stringify({ polities: [], cities: [], regionOwnership: {}, capturedAt: "" }));
+      const capture = await loadCaptureFromDir(dir);
+      expect(capture.editor?.basemapGeometry).toBeUndefined();
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("leaves editor.basemapGeometry undefined when state.baseMapGeometry is missing from raw file", async () => {
+    const dir = join(tmpdir(), `capture-emptyrraw-${Date.now()}`);
+    await mkdir(dir, { recursive: true });
+    try {
+      await writeFile(join(dir, "preset.json"), JSON.stringify({ id: "T", publishedVersionID: "1", title: "t", description: "" }));
+      await writeFile(join(dir, "geometry.json"), JSON.stringify({ name: "g", geometry: {}, community: false, tags: [] }));
+      await writeFile(join(dir, "features.json"), JSON.stringify({ polities: [], cities: [], regionOwnership: {}, capturedAt: "" }));
+      const apiDir = join(dir, "api_responses");
+      await mkdir(apiDir, { recursive: true });
+      // Raw file present but state.baseMapGeometry is missing
+      await writeFile(join(apiDir, "editor_state_raw.json"), JSON.stringify({ state: { someOtherKey: "value" } }));
+      const capture = await loadCaptureFromDir(dir);
+      expect(capture.editor?.basemapGeometry).toBeUndefined();
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("leaves editor.basemapGeometry undefined when state.baseMapGeometry.geometry is malformed (empty/null/non-object)", async () => {
+    const dir = join(tmpdir(), `capture-malformed-${Date.now()}`);
+    await mkdir(dir, { recursive: true });
+    try {
+      await writeFile(join(dir, "preset.json"), JSON.stringify({ id: "T", publishedVersionID: "1", title: "t", description: "" }));
+      await writeFile(join(dir, "geometry.json"), JSON.stringify({ name: "g", geometry: {}, community: false, tags: [] }));
+      await writeFile(join(dir, "features.json"), JSON.stringify({ polities: [], cities: [], regionOwnership: {}, capturedAt: "" }));
+      const apiDir = join(dir, "api_responses");
+      await mkdir(apiDir, { recursive: true });
+      // Malformed: geometry is null
+      await writeFile(
+        join(apiDir, "editor_state_raw.json"),
+        JSON.stringify({ state: { baseMapGeometry: { geometry: null } } }),
+      );
+      const capture = await loadCaptureFromDir(dir);
+      expect(capture.editor?.basemapGeometry).toBeUndefined();
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+});
+
 describe("loadCaptureFromDir", () => {
   it("loads preset/geometry/features/editor from a directory", async () => {
     const dir = join(tmpdir(), `capture-test-${Date.now()}`);

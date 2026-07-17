@@ -17,18 +17,10 @@ import type { CheckResult } from "./conformance";
 
 /** Asset keys accepted by the Open-Historia importer (`UPLOADABLE_SCENARIO_ASSET_KEYS`).
  *  Mirrors open-historia/src/runtime/web/models.js:26-31 - keep in sync if the
- *  importer allow-list ever grows. */
-export const HUB_ACCEPTED_ASSET_KEYS = new Set<string>([
-  "cover",
-  "colors",
-  "flags",
-  "cities",
-  "countries",
-  "regions",
-  "regionsGeojson",
-  "citiesGeojson",
-  "backgroundData",
-]);
+ *  importer allow-list ever grows. Imported from conformance.ts where the
+ *  canonical declaration lives. */
+import { HUB_ACCEPTED_ASSET_KEYS } from "./conformance";
+export { HUB_ACCEPTED_ASSET_KEYS };
 
 /** Image content types accepted for `assets.cover`. Mirrors
  *  open-historia/src/runtime/web/models.js:45-47 SUPPORTED_IMAGE_CONTENT_TYPES. */
@@ -67,18 +59,13 @@ function isoWithinDays(iso: string, days: number): boolean {
   return t >= cutoff;
 }
 
+// True charset + padding check, no decode. We avoid Buffer.from().toString()
+// round-trips because they materialise a buffer proportional to input size -
+// defeating the "length-only" perf claim for large base64 payloads.
+const BASE64_CHARSET_RE = /^[A-Za-z0-9+/]+={0,2}$/;
 function isBase64(v: string): boolean {
-  // Length-only fast check; full decode of 15MB covers is too expensive here.
-  // Bun's Buffer.from with "base64" silently strips invalid chars; check that
-  // the cleaned length is a multiple of 4 (with padding) and the re-encode
-  // round-trips. This rejects obvious garbage without materialising the buffer.
   if (v.length === 0) return false;
-  if (v.length % 4 !== 0) return false;
-  try {
-    return Buffer.from(v, "base64").toString("base64").replace(/=+$/, "") === v.replace(/=+$/, "");
-  } catch {
-    return false;
-  }
+  return BASE64_CHARSET_RE.test(v) && v.length % 4 === 0;
 }
 
 function rgbTupleOk(v: unknown): boolean {
@@ -133,13 +120,20 @@ export function valueTypeChecks(bundle: Record<string, unknown>): CheckResult[] 
   });
 
   const overrides = scenario.countryNameOverrides;
+  const overridesOk =
+    overrides == null ||
+    (!Array.isArray(overrides) &&
+      typeof overrides === "object" &&
+      Object.values(overrides as Record<string, unknown>).every(isString));
   r.push({
     check: "scenario.countryNameOverrides values are strings",
-    pass:
-      overrides == null ||
-      (typeof overrides === "object" &&
-        Object.values(overrides as Record<string, unknown>).every(isString)),
-    detail: overrides == null ? "absent" : `${Object.keys(overrides as object).length} entries`,
+    pass: overridesOk,
+    detail:
+      overrides == null
+        ? "absent"
+        : Array.isArray(overrides)
+          ? `wrong shape: array of ${overrides.length} (expected string-keyed map)`
+          : `${Object.keys(overrides as object).length} entries`,
   });
 
   const data = asObject(bundle.data);
@@ -250,17 +244,16 @@ export function valueTypeChecks(bundle: Record<string, unknown>): CheckResult[] 
     detail: unknownColor ? `unknown color key: ${unknownColor}` : `${Object.keys(colorsData).length} ok`,
   });
 
-  // Asset-key allow-list check: extras that are in the importer allow-list
-  // (e.g. `backgroundData`) are reported as pass:true with a soft warning
-  // detail; extras outside the allow-list fail the check.
+  // Asset-key classification: a single pass labels each key as canonical
+  // (in hub union or HUB_ACCEPTED_ASSET_KEYS), importer-accepted-but-not-
+  // hub-unioned (e.g. `backgroundData`, soft-warn), or truly unknown (FAIL).
   const assetKeyExtras: string[] = [];
   const assetKeySoft: string[] = [];
   for (const k of Object.keys(assets)) {
-    if (HUB_ACCEPTED_ASSET_KEYS.has(k)) continue;
-    if (isHubUnionAssetKey(k)) continue;
+    if (HUB_ACCEPTED_ASSET_KEYS.has(k) || isHubUnionAssetKey(k)) continue;
+    // Not in hub union AND not in importer allow-list: truly unknown.
     assetKeyExtras.push(k);
   }
-  // soft: hub-accepted-but-not-hub-unioned
   for (const k of Object.keys(assets)) {
     if (HUB_ACCEPTED_ASSET_KEYS.has(k) && !isHubUnionAssetKey(k)) assetKeySoft.push(k);
   }
@@ -292,31 +285,44 @@ export function isHubUnionAssetKey(k: string): boolean {
   return hubUnionAssetKeys.has(k);
 }
 
+/** Result of scanning `out/` for bundles. `bundles` is the sorted, parseable
+ *  set; `malformed` lists filenames that failed JSON.parse so the orchestrator
+ *  can surface them instead of silently dropping them. */
+export type LoadOutResult = {
+  bundles: { name: string; data: Record<string, unknown> }[];
+  malformed: string[];
+};
+
 /** Load every `*.json` directly under `dir`. Skips `*.run_summary.json` sidecars
- *  by default. Returns `[]` if `dir` does not exist. Malformed JSON files are
- *  skipped silently (the orchestrator decides how to surface that - a row is
- *  printed for each successful parse). */
+ *  by default. Returns `{bundles:[], malformed:[]}` if `dir` does not exist.
+ *  ENOENT is the only readdir error swallowed - other failures (EACCES, EBUSY)
+ *  propagate so the operator sees the real cause. */
 export async function loadOutBundles(
   dir: string,
   opts: { skipSidecars?: boolean } = {},
-): Promise<{ name: string; data: Record<string, unknown> }[]> {
+): Promise<LoadOutResult> {
   const { readdir, readFile } = await import("node:fs/promises");
+  const { join } = await import("node:path");
   const skipSidecars = opts.skipSidecars ?? true;
   let entries: string[];
   try {
     entries = await readdir(dir);
-  } catch {
-    return [];
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code === "ENOENT") {
+      return { bundles: [], malformed: [] };
+    }
+    throw e;
   }
-  const out: { name: string; data: Record<string, unknown> }[] = [];
+  const bundles: { name: string; data: Record<string, unknown> }[] = [];
+  const malformed: string[] = [];
   for (const name of entries.filter((f) => f.endsWith(".json")).sort()) {
     if (skipSidecars && name.endsWith(".run_summary.json")) continue;
     try {
-      const data = JSON.parse(await readFile(`${dir}/${name}`, "utf8")) as Record<string, unknown>;
-      out.push({ name, data });
+      const data = JSON.parse(await readFile(join(dir, name), "utf8")) as Record<string, unknown>;
+      bundles.push({ name, data });
     } catch {
-      // skip malformed
+      malformed.push(name);
     }
   }
-  return out;
+  return { bundles, malformed };
 }

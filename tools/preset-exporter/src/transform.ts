@@ -15,6 +15,7 @@ import type {
   BundleAssets,
 } from "./types";
 import { TransformError } from "./types";
+import type { Feature, FeatureCollection } from "geojson";
 
 interface GeoJsonPolygon {
   type: "Polygon";
@@ -73,9 +74,9 @@ function hexToRgb(hex: string): [number, number, number] {
 function buildRegionsFeatureCollection(
   geometry: Record<string, PaxRegion>,
   ownership: Record<string, string>,
+  regionIndex: Record<string, number>,
 ): GeoJSON.FeatureCollection {
   const features: GeoJSON.Feature[] = [];
-  let idx = 0;
   for (const [index, region] of Object.entries(geometry)) {
     // Water tiles (Ocean/Strait) have no real owner; Pax's regionOwnership
     // map has no entry for them, which would hash-mint a synthetic Z## code
@@ -87,11 +88,21 @@ function buildRegionsFeatureCollection(
     const polityName = ownership[index] ?? "";
     const canonical = canonicalize(polityName);
     // Canonical key: <ISO3-or-Z##>.{integer_index}_1. Pax region keys are
-    // sometimes integer strings and sometimes UUIDs; we enumerate geometry
-    // to assign a stable integer so the override map and feature id agree,
-    // and the suffix matches the hub schema `^[A-Z]{2,4}\.\d+_1$`.
+    // sometimes integer strings and sometimes UUIDs; we use the SHARED
+    // regionIndex (water-inclusive) so the feature id suffix matches the
+    // override key suffix for the same Pax region. The suffix matches the
+    // hub schema `^[A-Z]{2,4}\.\d+_1$`.
+    const idx = regionIndex[index];
+    if (idx === undefined) {
+      // Should be structurally impossible: index came from Object.keys(geometry)
+      // and regionIndex was built from the same keys. Throw rather than
+      // silently skip - a future refactor that decouples these sources would
+      // otherwise drop features with no signal.
+      throw new TransformError(
+        `buildRegionsFeatureCollection: regionIndex missing key "${index}" (regionIndex and geometry are out of sync)`,
+      );
+    }
     const featureId = `${canonical.code}.${idx}_1`;
-    idx++;
     features.push({
       type: "Feature",
       geometry: polygon,
@@ -310,7 +321,10 @@ function derivePrompts(
   const src = editor?.aiPrompts ?? {};
   for (const [key, value] of Object.entries(src)) {
     const mapped = PAX_TO_OPEN_HISTORIA_PROMPT_KEY[key];
-    if (!mapped) continue;
+    if (!mapped) {
+      console.warn(`derivePrompts: unmapped Pax prompt key "${key}" dropped`);
+      continue;
+    }
     if (!STRING_ROLES.includes(mapped as (typeof STRING_ROLES)[number])) continue;
     prompts[mapped] = extractPromptText(value);
   }
@@ -332,21 +346,31 @@ export function transform(capture: PaxCapture, opts: { mode: "light" | "full" })
   }
 
   const ownership = capture.features?.regionOwnership ?? {};
-  const regionsFC = buildRegionsFeatureCollection(capture.geometry.geometry, ownership);
-  const citiesFC = buildCitiesFeatureCollection(capture.features?.cities ?? []);
-  const colors = buildColors(capture.features?.polities ?? []);
 
   // Pax region keys are sometimes integer strings ("3", "83") and sometimes
   // UUIDs ("f2a26fbd-..."). The hub schema requires the override key suffix
   // to be \d+ (regex `^[A-Z]{2,4}\.\d+_1$`), so enumerate geometry once and
-  // map each Pax key to a stable integer index (insertion order).
-  const integerIndex: Record<string, number> = {};
+  // map each Pax key to a stable integer index (insertion order). This
+  // single shared index is used by both buildRegionsFeatureCollection
+  // (feature id suffix) and the override map below (key suffix) so the two
+  // counters agree on the integer <n> for the same Pax region. Without this
+  // shared counter, water regions would cause the feature-id and override-key
+  // suffixes to diverge, silently breaking the importer's owner-color lookup.
+  const regionIndex: Record<string, number> = {};
   {
     let i = 0;
     for (const key of Object.keys(capture.geometry.geometry)) {
-      integerIndex[key] = i++;
+      regionIndex[key] = i++;
     }
   }
+
+  const regionsFC = buildRegionsFeatureCollection(
+    capture.geometry.geometry,
+    ownership,
+    regionIndex,
+  );
+  const citiesFC = buildCitiesFeatureCollection(capture.features?.cities ?? []);
+  const colors = buildColors(capture.features?.polities ?? []);
 
   const overrides: Record<string, string> = {};
   for (const [paxKey, polityName] of Object.entries(ownership)) {
@@ -356,7 +380,7 @@ export function transform(capture: PaxCapture, opts: { mode: "light" | "full" })
     const regionType = capture.geometry.geometry[paxKey]?.type;
     if (regionType === "Ocean" || regionType === "Strait") continue;
     const canonical = canonicalize(polityName);
-    const idx = integerIndex[paxKey];
+    const idx = regionIndex[paxKey];
     if (idx === undefined) continue; // ownership references a region with no geometry - skip
     overrides[`${canonical.code}.${idx}_1`] = canonical.code;
   }
@@ -431,6 +455,34 @@ export function transform(capture: PaxCapture, opts: { mode: "light" | "full" })
   const coverBytes = capture.cover;
   const coverName = capture.coverName ?? "cover.png";
   const coverContentType = deriveContentType(coverName);
+
+  // Basemap FeatureCollection -- emitted only when editor capture supplied
+  // the underlying map geometry. Feature IDs use the BASEMAP_<n> namespace
+  // so they don't collide with post-game <CODE>.<n>_1 IDs in regionsGeojson.
+  // No `owner` property -- the basemap is ownerless (it's the layer UNDER the regions).
+  const basemapGeometry = capture.editor?.basemapGeometry;
+  let basemapFC: FeatureCollection | null = null;
+  if (basemapGeometry && Object.keys(basemapGeometry).length > 0) {
+    const features: Feature[] = [];
+    let idx = 0;
+    for (const [key, region] of Object.entries(basemapGeometry)) {
+      const r = region as PaxRegion;
+      const polygon = parseRegionGeometry(r.geometry, key);
+      const centroid = parseRegionCentroid(r.centroid);
+      features.push({
+        type: "Feature",
+        geometry: polygon,
+        properties: {
+          id: `BASEMAP_${idx}`,
+          typeId: r.type.toLowerCase(),
+          ...(centroid ? { centroid: centroid.coordinates } : {}),
+        },
+      });
+      idx++;
+    }
+    basemapFC = { type: "FeatureCollection", features };
+  }
+
   const assets: BundleAssets = {
     cover: coverBytes
       ? {
@@ -463,6 +515,17 @@ export function transform(capture: PaxCapture, opts: { mode: "light" | "full" })
     cities: { mode: "default", fileName: "cities.pmtiles", droppedOverride: false },
     countries: { mode: "default", fileName: "countries.pmtiles", droppedOverride: false },
     regions: { mode: "default", fileName: "regions.pmtiles", droppedOverride: false },
+    ...(basemapFC
+      ? {
+          backgroundData: {
+            mode: "embedded" as const,
+            fileName: "basemap.geojson" as const,
+            encoding: "base64" as const,
+            contentType: "application/geo+json" as const,
+            data: Buffer.from(JSON.stringify(basemapFC), "utf8").toString("base64"),
+          },
+        }
+      : {}),
   };
 
   return { bundle, assets };

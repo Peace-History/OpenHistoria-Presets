@@ -21,10 +21,18 @@ describe("regression: out/modern-day.json fixture invariants", () => {
     expect(uuidKeys).toEqual([]);
   });
 
-  it("has no assets.backgroundData block (current transform no longer emits it)", () => {
+  it("backgroundData presence matches the modern-day fixture's basemap geometry availability", () => {
+    // The modern-day fixture is the committed canonical (rebuilt by export-smoke
+    // from the cold-war fixture). backgroundData appears iff the fixture's
+    // editor capture supplied basemap geometry. The cold-war fixture (per Task 3
+    // of the basemap-capture plan) has a fabricated editor_state_raw.json with
+    // 2 stub regions, so backgroundData is expected after this plan lands.
     const bundle = JSON.parse(readFileSync(FIXTURE_PATH, "utf8")) as Record<string, unknown>;
     const assets = bundle.assets as Record<string, unknown>;
-
-    expect("backgroundData" in assets).toBe(false);
+    const hasBackgroundData = "backgroundData" in assets;
+    // After basemap-capture plan lands with the cold-war fixture fabricated,
+    // backgroundData MUST be present. If a future commit drops the fixture
+    // edit, this test will catch the regression.
+    expect(hasBackgroundData).toBe(true);
   });
 });

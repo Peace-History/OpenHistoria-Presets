@@ -99,9 +99,59 @@ describe("transform", () => {
     expect(decoded.features.length).toBe(2);
   });
 
-  it("does NOT emit backgroundData (none of the 6 hub bundles carry it; importer falls back to its built-in)", () => {
+  it("does NOT emit backgroundData when editor.basemapGeometry is absent", () => {
+    // Default SAMPLE has no editor.basemapGeometry (Play Now only -- no
+    // --with-editor capture). The exporter must omit backgroundData entirely.
     const { assets } = transform(SAMPLE, { mode: "full" });
     expect(assets).not.toHaveProperty("backgroundData");
+  });
+
+  it("emits assets.backgroundData (vector kind) when editor.basemapGeometry is present", () => {
+    // When --with-editor capture supplies basemap geometry, the exporter
+    // emits it as assets.backgroundData so the consumer's useCustomBackground
+    // vector path renders the underlying map. contentType is the discriminator
+    // (no separate `kind` field -- consumer infers vector vs image from contentType).
+    const sample: PaxCapture = {
+      ...SAMPLE,
+      editor: {
+        ...(SAMPLE.editor ?? {}),
+        basemapGeometry: {
+          "0": {
+            geometry: '{"type":"Polygon","coordinates":[[[0,0],[1,0],[1,1],[0,1],[0,0]]]}',
+            centroid: '{"type":"Point","coordinates":[0.5,0.5]}',
+            adjacencies: [],
+            type: "Land",
+          },
+          "1": {
+            geometry: '{"type":"Polygon","coordinates":[[[1,0],[2,0],[2,1],[1,1],[1,0]]]}',
+            centroid: '{"type":"Point","coordinates":[1.5,0.5]}',
+            adjacencies: [],
+            type: "Coastal",
+          },
+        },
+      },
+    };
+    const { assets } = transform(sample, { mode: "full" });
+    expect(assets.backgroundData).toBeDefined();
+    const bg = assets.backgroundData!;
+    if (bg.mode !== "embedded") throw new Error("expected embedded mode");
+    expect(bg.mode).toBe("embedded");
+    expect(bg.contentType).toBe("application/geo+json");
+    expect(bg.encoding).toBe("base64");
+    expect(bg.fileName).toBe("basemap.geojson");
+    const decoded = JSON.parse(Buffer.from(bg.data, "base64").toString("utf8")) as {
+      type: "FeatureCollection";
+      features: Array<{ properties: { id: string; typeId: string; owner?: string } }>;
+    };
+    expect(decoded.type).toBe("FeatureCollection");
+    expect(decoded.features.length).toBe(2);
+    // Feature IDs use the BASEMAP_<n> namespace to avoid colliding with post-game
+    // <CODE>.<n>_1 IDs in the same bundle.
+    expect(decoded.features[0].properties.id).toMatch(/^BASEMAP_\d+$/);
+    expect(decoded.features[0].properties.typeId).toBe("land");
+    expect(decoded.features[1].properties.typeId).toBe("coastal");
+    // Basemap features have no `owner` property -- the underlying map is ownerless.
+    expect(decoded.features[0].properties.owner).toBeUndefined();
   });
 
   it("derives colors from polities (hex -> [r,g,b]) keyed by canonical/synthetic code", () => {
@@ -202,6 +252,27 @@ describe("transform", () => {
     expect(bundle.data.prompts.actions).toBe("");
     expect(bundle.data.prompts.gameMaster).toBe("");
     expect(bundle.data.prompts.helpers).toEqual({});
+  });
+
+  it("warns on unmapped Pax prompt keys (so future Pax additions surface in CI)", () => {
+    const sample: PaxCapture = {
+      ...SAMPLE,
+      editor: {
+        aiPrompts: {
+          chatWithUser: "be nice",
+          unknownNewPaxRole: "do something unknown", // not in PAX_TO_OPEN_HISTORIA_PROMPT_KEY
+        },
+      },
+    };
+    const warnings: string[] = [];
+    const origWarn = console.warn;
+    console.warn = (msg: string) => warnings.push(msg);
+    try {
+      transform(sample, { mode: "full" });
+    } finally {
+      console.warn = origWarn;
+    }
+    expect(warnings.some((w) => w.includes("unknownNewPaxRole"))).toBe(true);
   });
 
   it("emits regionOwnershipOverrides keyed in <code>.<n>_1 format (ISO3 or Z##)", () => {
@@ -535,5 +606,116 @@ describe("transform", () => {
       },
     };
     expect(() => transform(broken, { mode: "full" })).toThrow(/TransformError|geometry/);
+  });
+
+  it("feature id integer suffix matches override key suffix for every owned region (parity invariant)", () => {
+    // SAMPLE has no water regions. Build a fixture with water-then-land so
+    // the two counters (filtered in buildRegionsFeatureCollection vs.
+    // water-inclusive in the override loop) would diverge if not aligned.
+    const withWater: PaxCapture = {
+      ...SAMPLE,
+      geometry: {
+        ...SAMPLE.geometry,
+        geometry: {
+          // Index 0: ocean (skipped in feature emission, included in override counter)
+          "0": {
+            geometry: '{"type":"Polygon","coordinates":[[[0,0],[1,0],[1,1],[0,1],[0,0]]]}',
+            centroid: '{"type":"Point","coordinates":[0.5,0.5]}',
+            adjacencies: ["1"],
+            type: "Ocean",
+          },
+          // Index 1: land, owned by Land of A
+          "1": {
+            geometry: '{"type":"Polygon","coordinates":[[[1,0],[2,0],[2,1],[1,1],[1,0]]]}',
+            centroid: '{"type":"Point","coordinates":[1.5,0.5]}',
+            adjacencies: ["0"],
+            type: "Land",
+          },
+          // Index 2: land, owned by Land of B
+          "2": {
+            geometry: '{"type":"Polygon","coordinates":[[[2,0],[3,0],[3,1],[2,1],[2,0]]]}',
+            centroid: '{"type":"Point","coordinates":[2.5,0.5]}',
+            adjacencies: ["1"],
+            type: "Land",
+          },
+        },
+      },
+      features: {
+        ...SAMPLE.features,
+        regionOwnership: {
+          // No entry for index 0 (water); land regions 1 and 2 have owners.
+          "1": "Land of A",
+          "2": "Land of B",
+        },
+      },
+    };
+    const { bundle, assets } = transform(withWater, { mode: "full" });
+    if (assets.regionsGeojson.mode !== "embedded") throw new Error("not embedded");
+    const fc = JSON.parse(
+      Buffer.from(assets.regionsGeojson.data, "base64").toString("utf8"),
+    );
+    const overrides = bundle.data.world.regionOwnershipOverrides;
+    // For every override key, the matching feature must exist with the same
+    // integer suffix in its `properties.id`. If the suffix parity invariant
+    // holds, the importer's lookup will resolve owner colors.
+    expect(Object.keys(overrides).length).toBeGreaterThan(0);
+    for (const overrideKey of Object.keys(overrides)) {
+      const suffixMatch = overrideKey.match(/^([A-Z]{2,4}|Z\d{2})\.(\d+)_1$/);
+      expect(suffixMatch).not.toBeNull();
+      const overrideSuffix = suffixMatch![2];
+      const feature = fc.features.find(
+        (f: { properties: { id: string; owner: string } }) => f.properties.id === overrideKey,
+      );
+      expect(feature).toBeDefined();
+      const featureSuffixMatch = feature!.properties.id.match(/^([A-Z]{2,4}|Z\d{2})\.(\d+)_1$/);
+      expect(featureSuffixMatch![2]).toBe(overrideSuffix);
+      expect(feature!.properties.owner).toBe(overrides[overrideKey]);
+    }
+  });
+
+  it("regionOwnershipOverrides contains no key for an Ocean or Strait region (water skip invariant)", () => {
+    // The cold-war fixture (verified elsewhere) contains ocean regions. Verify
+    // none of those ocean regions leak synthetic Z## codes into the override
+    // map. Use the same fixture as the parity test above.
+    const withWater: PaxCapture = {
+      ...SAMPLE,
+      geometry: {
+        ...SAMPLE.geometry,
+        geometry: {
+          "0": {
+            geometry: '{"type":"Polygon","coordinates":[[[0,0],[1,0],[1,1],[0,1],[0,0]]]}',
+            centroid: '{"type":"Point","coordinates":[0.5,0.5]}',
+            adjacencies: ["1"],
+            type: "Ocean",
+          },
+          "1": {
+            geometry: '{"type":"Polygon","coordinates":[[[1,0],[2,0],[2,1],[1,1],[1,0]]]}',
+            centroid: '{"type":"Point","coordinates":[1.5,0.5]}',
+            adjacencies: ["0"],
+            type: "Land",
+          },
+        },
+      },
+      features: {
+        ...SAMPLE.features,
+        regionOwnership: {
+          // Defense-in-depth: even if Pax's regionOwnership carries an ocean
+          // entry (hand-authored capture), the override map must skip it.
+          "0": "Phantom Ocean Owner",
+          "1": "Land of A",
+        },
+      },
+    };
+    const { bundle } = transform(withWater, { mode: "full" });
+    const overrides = bundle.data.world.regionOwnershipOverrides;
+    // No override key should correspond to ocean region index 0.
+    // We assert by enumerating keys and checking the suffix.
+    const oceanOverrideKeys = Object.keys(overrides).filter((k) => {
+      const m = k.match(/^([A-Z]{2,4}|Z\d{2})\.(\d+)_1$/);
+      return m && m[2] === "0";
+    });
+    expect(oceanOverrideKeys).toEqual([]);
+    // Sanity: the Land of A entry for index 1 IS present.
+    expect(Object.keys(overrides).length).toBe(1);
   });
 });

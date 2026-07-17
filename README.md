@@ -361,6 +361,25 @@ Before submitting a PR:
 Schema drift in any future hub bundle is auto-detected (union-of-keys), so a new
 required field surfaces as a FAIL rather than a silent mismatch.
 
+## Submitting a preset to the hub
+
+Each `out/<UID>.json` is one submission. The hub accepts content via GitHub
+Issues (the in-game Community tab reads directly from `issues?labels=scenario`):
+
+1. Run `bun run export-and-check <UID>` — confirms the bundle passes hub
+   conformance (exits 0 on PASS, 2 on fixture-proxy with `fixture proxy` in stdout).
+2. Open <https://github.com/Open-Historia/Open-historia-scenarios/issues/new?template=scenario.yml>.
+3. Drag the `out/<UID>.json` into the description box — that download link is
+   what the game's Community tab reads.
+4. Submit. The form auto-applies the `scenario` label; the post appears in
+   in-game **Community → Scenarios** immediately.
+
+For bulk capture, run `bun run dump-all --limit N --resume` in chunks; each
+PASSing `out/<UID>.json` becomes one Issue. Live E2E verification (visually
+confirming a bundle imports with correct owner colors) requires an open-historia
+dev env bootstrapped on this host — out of scope per
+`docs/plans/.evidence/2026-07-16-hub-alignment-verify.md`.
+
 ## Dumping all presets
 
 For exporting every UID listed in `IDs` (1,230 actual UIDs after the 11

@@ -13,13 +13,13 @@
 //
 // Exit codes:
 //   0 = at least one bundle checked, all PASS
-//   1 = at least one FAIL
+//   1 = at least one FAIL (including all-malformed out/)
 //   2 = out/ is empty (nothing to check)
 //   3 = out/ contains only *.run_summary.json sidecars
 
 import { existsSync } from "node:fs";
 import { join, resolve } from "node:path";
-import { diffAgainstHubBundles, loadHubBundles, unionOfKeysAt, type HubBundle } from "../src/conformance";
+import { diffAgainstHubBundles, HUB_ACCEPTED_ASSET_KEYS, loadHubBundles, unionOfKeysAt, type HubBundle } from "../src/conformance";
 import { isHubUnionAssetKey, loadOutBundles, setHubUnionAssetKeys, valueTypeChecks } from "../src/verify";
 
 const ROOT = new URL("../../..", import.meta.url).pathname;
@@ -40,12 +40,18 @@ export function parseArgs(argv: string[]): Args {
   };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    const take = () => argv[++i];
+    const take = (flag: string): string => {
+      const v = argv[++i];
+      if (v === undefined || v.startsWith("--")) {
+        throw new Error(`${flag} requires a value (got ${v === undefined ? "end of args" : v})`);
+      }
+      return v;
+    };
     switch (a) {
       case "--help":
       case "-h": out.help = true; break;
-      case "--out": out.outDir = resolve(take()); break;
-      case "--hub": out.hubDir = resolve(take()); break;
+      case "--out": out.outDir = resolve(take("--out")); break;
+      case "--hub": out.hubDir = resolve(take("--hub")); break;
       case "--quiet": out.quiet = true; break;
       default: throw new Error(`unknown flag: ${a}`);
     }
@@ -70,7 +76,7 @@ function printHelp(): void {
       "",
       "Exit codes:",
       "  0 = at least one bundle checked, all PASS",
-      "  1 = at least one FAIL",
+      "  1 = at least one FAIL (including all-malformed out/)",
       "  2 = out/ is empty (nothing to check)",
       "  3 = out/ contains only *.run_summary.json sidecars",
     ].join("\n"),
@@ -89,24 +95,24 @@ async function checkOne(
   const valueResults = valueTypeChecks(data);
   const all = [...diff.results, ...valueResults];
 
-  // diffAgainstHubBundles's "assets keys subset of hub union" check is
-  // strict against the hub union. Soft-warn the bundle whenever it carries
-  // any asset key not in the hub union (e.g. backgroundData) - those extras
-  // are accepted by the importer even if no hub bundle carries them. Truly
-  // unknown asset keys (not in the union AND not in the importer allow-list)
-  // still fail via the parallel check in valueTypeChecks.
+  // Soft-warn the bundle when it carries asset keys that are importer-accepted
+  // but absent from the hub union (e.g. `backgroundData`). The string match
+  // is intentional: only keys in HUB_ACCEPTED_ASSET_KEYS that are NOT in the
+  // hub union qualify. Truly unknown keys (not in either set) are surfaced
+  // by the parallel `assets.* keys are subset of hub union + importer
+  // allow-list` check in valueTypeChecks - they FAIL, never get labelled
+  // "importer-accepted".
   const assetKeys = new Set<string>(
     Object.keys(((data.assets ?? {}) as Record<string, unknown>)),
   );
-  const importerExtras = [...assetKeys].filter((k) => !isHubUnionAssetKey(k));
-  const softWarn = importerExtras.length > 0 ? `WARN: importer-accepted extras: ${importerExtras.sort().join(",")}` : "";
-  const realFails = all.filter((r) => {
-    if (r.pass) return false;
-    if (r.check === "assets keys subset of hub union" && importerExtras.length > 0) {
-      return false;
-    }
-    return true;
-  });
+  const importerExtras = [...assetKeys]
+    .filter((k) => !isHubUnionAssetKey(k))
+    .filter((k) => HUB_ACCEPTED_ASSET_KEYS.has(k))
+    .sort();
+  const softWarn = importerExtras.length > 0
+    ? `WARN: importer-accepted extras: ${importerExtras.join(",")}`
+    : "";
+  const realFails = all.filter((r) => !r.pass);
 
   if (realFails.length === 0) {
     const detail = softWarn;
@@ -141,16 +147,25 @@ async function main(): Promise<number> {
     console.error(`error: out dir not found at ${args.outDir}`);
     return 2;
   }
-  const bundles = await loadOutBundles(args.outDir);
+  const { bundles, malformed } = await loadOutBundles(args.outDir);
+
+  if (malformed.length > 0) {
+    console.error(`error: ${malformed.length} malformed bundle(s) skipped: ${malformed.sort().join(",")}`);
+  }
+
   if (bundles.length === 0) {
     // Distinguish "empty" from "only sidecars" by checking the dir contents directly.
     const { readdir } = await import("node:fs/promises");
     const entries = await readdir(args.outDir);
     const realBundles = entries.filter((f) => f.endsWith(".json") && !f.endsWith(".run_summary.json"));
     if (realBundles.length === 0) {
+      // Truly empty (or only sidecars): not a data-loss signal.
       console.error(`error: out/ contains no *.json bundles at ${args.outDir}`);
       return entries.length === 0 ? 2 : 3;
     }
+    // Real *.json bundles existed but every one was malformed: this IS a
+    // data-loss signal - exit 1 (FAIL), not 3 ("only sidecars").
+    return 1;
   }
 
   console.log(`hub bundles: ${hubBundles.length} (${hubBundles.map((b) => b.name).join(", ")})`);
