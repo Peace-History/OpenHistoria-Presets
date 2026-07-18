@@ -1,7 +1,7 @@
 # Preset Export → Open-Historia Hub — Remaining Work Plan
 
 Created: 2026-07-17
-Status: PENDING
+Status: VERIFIED
 Approved: Yes
 Iterations: 0
 Worktree: No
@@ -131,9 +131,9 @@ After capture, each successful `out/<UID>.json` becomes one Issue (per the B pat
 
 ## Progress Tracking
 
-- [ ] Task 1: Land in-flight WIP (verify-out-bundles-cleanup Task 3 + basemap-capture Tasks 2-4)
+- [x] Task 1: Land in-flight WIP (verify-out-bundles-cleanup Task 3 + basemap-capture Tasks 2-4)
 - [x] Task 2: Document the per-UID submission path
-- [ ] Task 3: Verify and mark plan complete
+- [x] Task 3: Verify and mark plan complete
 
 ## Implementation Tasks
 

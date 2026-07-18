@@ -183,6 +183,26 @@ export function captureIncompleteReason(versionDir: string): string | undefined 
   return undefined;
 }
 
+/** Decide what status to surface when the capture sub-process exits non-zero.
+ *  Reads manifest.incomplete to distinguish transients (SKIP — operator can
+ *  retry later) from real failures (null — let the caller write a generic
+ *  FAIL row with the exit code).
+ *
+ *  Currently handles: `copy_protected:Nd` — Pax-side temporary copy-protection
+ *  window set by the preset author. The capture sub-process exits 2 with this
+ *  reason in the manifest; dump-all should SKIP and let the operator know when
+ *  to retry (N days from now). */
+export function classifyIncompleteReason(
+  reason: string | undefined,
+): { status: "SKIP"; detail: string } | null {
+  if (!reason) return null;
+  if (reason.startsWith("copy_protected:")) {
+    const days = reason.split(":")[1] ?? "?";
+    return { status: "SKIP", detail: `copy_protected (${days})` };
+  }
+  return null;
+}
+
 async function ensureDir(dir: string): Promise<void> {
   await mkdir(dir, { recursive: true });
 }

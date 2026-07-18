@@ -27,4 +27,7 @@ mitm_mcp_traffic.db
 
 # Bun
 .bun/
-bun.lockb
+bun.lock
+presets/
+out/diag/
+out/dump-all-logs/

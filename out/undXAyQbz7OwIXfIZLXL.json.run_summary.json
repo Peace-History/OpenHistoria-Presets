@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-07-17T03:46:38.833Z",
+  "runAt": "2026-07-17T18:14:50.171Z",
   "paxID": "undXAyQbz7OwIXfIZLXL",
   "version": "136",
   "mode": "full",
-  "outputBundlePath": "./out/undXAyQbz7OwIXfIZLXL.json",
-  "transformDurationMs": 139,
+  "outputBundlePath": "/home/john/Projects/OpenHistoria-Presets/out/undXAyQbz7OwIXfIZLXL.json",
+  "transformDurationMs": 2447,
   "pmtilesBytes": {}
 }

@@ -195,3 +195,46 @@ describe("dump-all captureIncompleteReason", () => {
     expect(captureIncompleteReason(v1)).toBeUndefined();
   });
 });
+
+describe("dump-all classifyIncompleteReason", () => {
+  it("returns null for undefined reason (use generic FAIL)", () => {
+    expect(
+      (dumpAllFilter as unknown as { classifyIncompleteReason(r?: string): unknown })
+        .classifyIncompleteReason(undefined),
+    ).toBeNull();
+  });
+
+  it("returns null for copy_blocked (a real failure, not a transient)", () => {
+    expect(
+      (dumpAllFilter as unknown as { classifyIncompleteReason(r?: string): unknown })
+        .classifyIncompleteReason("copy_blocked"),
+    ).toBeNull();
+  });
+
+  it("returns null for copy_popup_timeout (real failure, not transient)", () => {
+    expect(
+      (dumpAllFilter as unknown as { classifyIncompleteReason(r?: string): unknown })
+        .classifyIncompleteReason("copy_popup_timeout"),
+    ).toBeNull();
+  });
+
+  it("returns SKIP with day detail for copy_protected:Nd reason", () => {
+    const result = (dumpAllFilter as unknown as {
+      classifyIncompleteReason(r?: string): { status: string; detail: string } | null;
+    }).classifyIncompleteReason("copy_protected:7d");
+    expect(result).not.toBeNull();
+    expect(result!.status).toBe("SKIP");
+    expect(result!.detail).toContain("7");
+  });
+
+  it("returns SKIP for copy_protected:1d", () => {
+    const result = (dumpAllFilter as unknown as {
+      classifyIncompleteReason(r?: string): { status: string; detail: string } | null;
+    }).classifyIncompleteReason("copy_protected:1d");
+    expect(result).not.toBeNull();
+    expect(result!.status).toBe("SKIP");
+  });
+});
+
+// Late-bound import so we can keep the public exports as the test target.
+import * as dumpAllFilter from "../scripts/dump-all";
